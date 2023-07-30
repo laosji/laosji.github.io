@@ -30,3 +30,11 @@ url = "https://mp.weixin.qq.com/s/BLnizy3_WDwrgBElva8A3Q"
 
 [social.params]
 icon = "brand-wechat"
+
+[[social]]
+identifier = "pokeai"
+name = "pokeai"
+url = "https://emoecho.com"
+
+[social.params]
+icon = "pokeai-app"
