@@ -22,3 +22,11 @@ url = "https://twitter.com"
 
 [social.params]
 icon = "brand-twitter"
+
+[[social]]
+identifier = "wechat"
+name = "wecaht"
+url = "https://mp.weixin.qq.com/s/BLnizy3_WDwrgBElva8A3Q"
+
+[social.params]
+icon = "brand-wechat"
