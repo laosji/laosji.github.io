@@ -86,7 +86,7 @@ admin = ""
 adminLabel = ""
 
 [comments.utterances]
-repo = ""
+repo = "laosji/comment"
 issueTerm = "pathname"
 label = "utterances"
 
