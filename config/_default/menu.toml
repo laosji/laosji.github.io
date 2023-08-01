@@ -12,7 +12,7 @@ identifier = "nav"
 name = "老司机导航"
 url = "https://www.laosji.net"
 [main.params]
-icon = "menu-nav.svg"
+icon = "menu-nav"
 newtab = true
 
 [[social]]
