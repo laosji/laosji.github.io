@@ -22,11 +22,11 @@ tags:
 打开![GitHub] (https://github.com/),如果你还没有账号的话，请注册一个。如果你已经拥有一个GitHub账号，请直接登录。
 
 ### 第二步，新建仓库
-我使用的是Stack主题，这个主题不仅简单美观，而且可以快速部署。打开这个项目![hugo-theme-stack-starter](https://github.com/CaiJimmy/hugo-theme-stack-starter),根据readme.md的说明，我们点击“use this template”的绿色按钮，选择“Crete a new repository”。如图：
-![use this template](https://user-images.githubusercontent.com/5889006/156916624-20b2a784-f3a9-4718-aa5f-ce2a436b241f.png)
+我使用的是Stack主题，这个主题不仅简单美观，而且可以快速部署。打开这个项目[hugo-theme-stack-starter](https://github.com/CaiJimmy/hugo-theme-stack-starter),根据readme.md的说明，我们点击“use this template”的绿色按钮，选择“Crete a new repository”。如图：
+[use this template](https://user-images.githubusercontent.com/5889006/156916624-20b2a784-f3a9-4718-aa5f-ce2a436b241f.png)
 仓库可以命名为“username.github.io”,这样就可以直接访问这个地址来打开你的博客。
 ### 第三步，创建代码空间，可在线编辑代码
-![创建代码空间]（https://user-images.githubusercontent.com/5889006/156916672-43b7b6e9-4ffb-4704-b4ba-d5ca40ffcae7.png）
+[创建代码空间]（https://user-images.githubusercontent.com/5889006/156916672-43b7b6e9-4ffb-4704-b4ba-d5ca40ffcae7.png）
 ### 第四步，预览你的网站
 在代码空间运行"hugo server"，开启Hugo 服务器，此时就可以在浏览器中预览你的网站啦。
 ### 第五步，配置 Hugo
@@ -43,8 +43,8 @@ hasCJKLanguage = ture
 disqusShortname = "laosji.net"
 ```
 
->修改头像：替换themes/hugo-theme-stack/assets/img/avatar.png下的avatar.png即可
-
+#### 修改头像：
+> 替换themes/hugo-theme-stack/assets/img/avatar.png下的avatar.png即可
 #### 菜单编辑
 打开“menu.toml”文件, 修改自己的社交媒体账号链接即可
 ```
