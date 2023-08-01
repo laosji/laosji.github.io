@@ -7,6 +7,14 @@
 #icon = "home"
 #newtab = true
 
+[[main]]
+identifier = "nav"
+name = "老司机导航"
+url = "https://www.laosji.net"
+[main.params]
+icon = "menu-nav.svg"
+newtab = true
+
 [[social]]
 identifier = "github"
 name = "GitHub"
