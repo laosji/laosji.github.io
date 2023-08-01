@@ -11,7 +11,7 @@ math:
 license: 
 hidden: false
 comments: true
-draft: true
+draft: false
 ---
 
 ## 如何修改hugo stack主题中的social link
