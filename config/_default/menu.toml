@@ -10,7 +10,7 @@
 [[main]]
 identifier = "nav"
 name = "老司机导航"
-url = "https://www.laosji.net"
+url = "https://dh.laosji.net"
 [main.params]
 icon = "menu-nav"
 newtab = true
