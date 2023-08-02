@@ -6,7 +6,7 @@ image: https://cdn.jsdelivr.net/gh/Johnsmart/PokeAI/photos/v2-38183ff438c8ae08d3
 categories:
     - 阅读
 tags:
-    - 书单
+    - 书单 
     - 产品经理
 math: 
 license: 

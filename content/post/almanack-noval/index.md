@@ -7,7 +7,6 @@ categories:
     - 阅读
 tags:
     - 书单
-    - 纳瓦尔宝典
 math: 
 license: 
 hidden: false
