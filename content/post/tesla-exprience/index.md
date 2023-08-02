@@ -4,7 +4,7 @@ description:
 date: 2023-08-02T02:04:01Z
 image: Tesla-conception.png
 categories:
-    - 电动汽车
+    - 科技
 tags:
     - 特斯拉Tesla
 math: 
