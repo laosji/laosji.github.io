@@ -1,7 +1,8 @@
 ---
 title: "用手机号怎么查询对方的微博和QQ？"
 description: 
-date: 2023-08-02T08:27:44Z
+slug: 手机号获取微博及QQ
+date: 2023-08-01T08:35:44Z
 image: privacy.png
 categories:
     - 工具
