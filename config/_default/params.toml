@@ -147,3 +147,6 @@ clientSecret = ""
 [comments.cusdis]
 host = ""
 id = ""
+
+[params]
+googleAnalytics = 'G-7FE97DJB5Y'
