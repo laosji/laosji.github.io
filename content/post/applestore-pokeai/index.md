@@ -42,5 +42,5 @@ draft: false
 
 ### 下载
 
-- [ios](https://apps.apple.com/us/app/pokeai/id6449488376)
-- [安卓](https://play.google.com/store/apps/details?id=cn.itianxia.chatme)
+* [ios](https://apps.apple.com/us/app/pokeai/id6449488376)
+* [安卓](https://play.google.com/store/apps/details?id=cn.itianxia.chatme)
