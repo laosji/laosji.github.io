@@ -14,7 +14,7 @@ comments: true
 draft: false
 ---
 
-# Github Page多个仓库用同一个域名，如何绑定二级域名？
+# Github Page 多个仓库用同一个域名，如何绑定二级域名？  
 
 ## 背景
 
@@ -41,4 +41,4 @@ draft: false
 进入 Github Page 仓库，修改CNAME文件（没有则手动创建文件），将自己的二级域名添加到文件第一行（内容必须为一行），如图：
 ![仓库配置](https://cdn.jsdelivr.net/gh/Johnsmart/PokeAI/photos/20200209183526783.png)
 
-## 完成打开你的网址试试看吧
+## 完成打开你的网址试试看吧!  
