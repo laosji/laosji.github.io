@@ -1,5 +1,5 @@
 ---
-title: "Github Card"
+title: "Github Card这个网站可以生成你的GitHub名片"
 description: 
 date: 2023-08-08T08:31:48Z
 image: https://cdn.jsdelivr.net/gh/Johnsmart/PokeAI/photos/laosji-github-business-card.png
@@ -11,11 +11,10 @@ math:
 license: 
 hidden: false
 comments: true
-draft: true
+draft: false
 ---
 
 # 生成你的GitHub名片
-
 
 这个网页可以生成你的GitHub名片，只要输入你的GitHub用户名，等待几秒钟就可以看到你的GitHub名片。作者说写这个项目是为了好玩，完全开源[github-business-card](https://github.com/scastiel/github-business-card)。他还写可一个关于如果生成图像的教程，如果你对如何生成图片感兴趣可以去该作者的GitHub看看。
 
