@@ -2,7 +2,7 @@
 title: "将工作变简单居然如此之爽"
 description: 
 date: 2023-08-15T12:45:25Z
-image: 
+image: https://cdn.jsdelivr.net/gh/Johnsmart/PokeAI/photos/20230815194314.png
 categories:
     - 
 tags:
