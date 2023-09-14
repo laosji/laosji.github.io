@@ -2,7 +2,7 @@
 title: "创业项目的进度怎么样了？跟大家分享一下"
 description: 
 date: 2023-09-08T08:48:16Z
-image: 
+image: https://cdn.jsdelivr.net/gh/Johnsmart/PokeAI/photos/20230914010753.png
 math: 
 license: 
 hidden: false
