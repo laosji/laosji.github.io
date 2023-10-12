@@ -5,12 +5,17 @@ links:
     description: GitHub is the world's largest software development platform.
     website: https://github.com
     image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
+
+  - title: 老司机导航
+    description: 老司机导航-懂你的网址导航.
+    website: https://itianxia.cn
+    image: https://laosji.net/favicon.png
+
 menu:
     main: 
         weight: 4
         params:
             icon: link
-
 comments: false
 ---
 
