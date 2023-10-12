@@ -11,11 +11,10 @@ links:
     website: https://itianxia.cn
     image: https://laosji.net/favicon.png
 
-    - title: 张俊杰个人博客
+  - title: 张俊杰个人博客
     description: 一个码农的软件开发学习记录和分享
     website: https://www.phpzjj.com/
     image: https://www.phpzjj.com/images/ayer-side.svg
-
 
 menu:
     main: 
