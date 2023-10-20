@@ -14,7 +14,7 @@ menu:
 > --- 理想MEGA官方设计图公布 ---
 
 ![理想MEGA](LXMEGA.jpg) ![理想MEGA](LXMEGAR.jpg) ![理想MEGA](MEGA-FACE.jpg) ![理想MEGA](MEGA-LEFT.jpg)
- ![理想MEGA](LXMEGAB.jpg)
+![理想MEGA](LXMEGAB.jpg)
 
 
 > --- 这是一个相册页面 ---
