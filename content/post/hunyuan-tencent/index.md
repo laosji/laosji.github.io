@@ -21,12 +21,14 @@ draft: false
 打开首页是一个对话页面，为了让用户快速开始一个对话，这里有一个关于腾讯混元助手介绍和5条系统推荐的prompt，你可以通过换一换按钮更新系统推荐的prompt。另外，除了对话，还有一个“灵感发现”的tab可以切换，灵感发现页面有很多系统指令可以直接使用，比如：模仿鲁迅、写邮件等。
 
 > “你好，嘿，我是”腾讯混元助手”，你的AI搭档，可以和你聊天、讲笑话、玩文字游戏。而且不管你有啥问题，我都会尽力帮你解决的”
+
 ![首页](https://raw.githubusercontent.com/laosji/img/main/img/20231024030544.png)
 ![灵感发现](https://raw.githubusercontent.com/laosji/img/main/img/20231024030631.png)
 
 ## 指令集
 
 在对话页面输入prompt时，可以从系统指令集中选择一个指令，还可以创建指令，在对话时使用。
+
 ![首页](https://raw.githubusercontent.com/laosji/img/main/img/20231024030616.png)
 
 
