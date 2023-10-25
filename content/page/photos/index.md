@@ -13,13 +13,10 @@ menu:
 
 > --- 索尼本田移动公司于CES 2023发布AFEELA品牌及原型车
 
-![](02_gallery-02-2400x1350.jpg) ![](02_gallery-09-2400x1350.jpg) ![](02_gallery-04-2400x1350.jpg) 
+![](02_gallery-11-2400x1350.jpg) ![](02_gallery-02-2400x1350.jpg) ![](02_gallery-04-2400x1350.jpg) ![](02_gallery-09-2400x1350.jpg) ![](02_gallery-12-2400x1350.jpg) ![AFEELA](afeela.jpg) 
 
-![](02_gallery-05-2400x1350.jpg) ![](02_gallery-06-2400x1350.jpg) ![](02_gallery-07-2400x1350.jpg) 
+![](02_gallery-05-2400x1350.jpg) ![](02_gallery-06-2400x1350.jpg) ![](02_gallery-07-2400x1350.jpg) ![](02_gallery-08-2400x1350.jpg) ![](02_gallery-03-2400x1350.jpg) ![](02_gallery-10-2400x1350.jpg) 
 
-![](02_gallery-08-2400x1350.jpg) ![](02_gallery-03-2400x1350.jpg) ![](02_gallery-10-2400x1350.jpg) 
-
-![](02_gallery-11-2400x1350.jpg) ![](02_gallery-12-2400x1350.jpg) ![AFEELA](afeela.jpg) 
 
 > --- 理想MEGA官方设计图公布 ---
 
