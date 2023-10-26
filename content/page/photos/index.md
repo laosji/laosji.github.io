@@ -11,6 +11,17 @@ menu:
 ---
 
 
+> --- 日产发布Hyper Force概念跑车：纯电GT-R来了 ---
+
+在2023东京车展上，日产发布了全新的电动超跑概念车Hyper Force，就设计而言，该车可以视为是纯电版GT-R。GT-R可以说是日产家的图腾，经久不衰，在世界范围内都有大批量的粉丝，那么这款纯电跑车能否接过交接棒？
+
+![](9Hyper-Force.jpg) ![](10Hyper-Force.jpg) ![](3Hyper-Force.jpg) ![](8Hyper-Force.jpg)
+
+![](7Hyper-Force.jpg) ![](4Hyper-Force.jpg) ![](5Hyper-Force.jpg) ![](6Hyper-Force.jpg)
+
+![](11Hyper-Force.jpg) ![](12Hyper-Force.jpg) ![](13Hyper-Force.jpg)
+
+
 > --- 索尼本田移动公司于CES 2023发布AFEELA品牌及原型车 ---
 
 ![](02_gallery-11-2400x1350.jpg) ![](02_gallery-02-2400x1350.jpg) ![](02_gallery-04-2400x1350.jpg) ![](02_gallery-09-2400x1350.jpg) ![](02_gallery-12-2400x1350.jpg) ![AFEELA](afeela.jpg) 
