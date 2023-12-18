@@ -2,7 +2,7 @@
 title: "一个专门推荐高分电影的网站A Good Moive to Watch"
 description: 
 date: 2023-12-18T05:54:07Z
-image: ![](https://raw.githubusercontent.com/laosji/img/main/img/agoodmoivetowatch.png)
+image: https://raw.githubusercontent.com/laosji/img/main/img/agoodmoivetowatch.png
 math: 
 license: 
 hidden: false
