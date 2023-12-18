@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>hugo on laosji</title><link>https://laosji.net/categories/hugo/</link><description>Recent content in hugo on laosji</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 03 Aug 2023 01:03:14 +0000</lastBuildDate><atom:link href="https://laosji.net/categories/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Github Page多个仓库用同一个域名，如何绑定二级域名？</title><link>https://laosji.net/p/github-page%E5%A4%9A%E4%B8%AA%E4%BB%93%E5%BA%93%E7%94%A8%E5%90%8C%E4%B8%80%E4%B8%AA%E5%9F%9F%E5%90%8D%E5%A6%82%E4%BD%95%E7%BB%91%E5%AE%9A%E4%BA%8C%E7%BA%A7%E5%9F%9F%E5%90%8D/</link><pubDate>Thu, 03 Aug 2023 01:03:14 +0000</pubDate><guid>https://laosji.net/p/github-page%E5%A4%9A%E4%B8%AA%E4%BB%93%E5%BA%93%E7%94%A8%E5%90%8C%E4%B8%80%E4%B8%AA%E5%9F%9F%E5%90%8D%E5%A6%82%E4%BD%95%E7%BB%91%E5%AE%9A%E4%BA%8C%E7%BA%A7%E5%9F%9F%E5%90%8D/</guid><description>&lt;img src="https://cdn.jsdelivr.net/gh/Johnsmart/PokeAI/photos/aguedes_Create_an_illustration_of_space_with_planets_orbiting_a_bf93ba3b-a5a1-46a6-8cb9-299c8da5a365.png" alt="Featured image of post Github Page多个仓库用同一个域名，如何绑定二级域名？" />&lt;h1 id="github-page-多个仓库用同一个域名如何绑定二级域名">Github Page 多个仓库用同一个域名，如何绑定二级域名？&lt;/h1>
+&lt;h2 id="背景">背景&lt;/h2>
+&lt;p>先来说说我在搭建这个博客的经历，本来是想通过博客申请Google AdSense，申请成功之后把域名换成我的网址导航站。因为这个导航站已经做了很多年而且有一定的用户基础，前段时间也选定了一个比较合适域名&amp;quot;laosji.net&amp;quot;,这样挂着广告也可以有一笔收入（做美梦中）。
+接下来我终于把博客搭建起来了，完全被hugo的stack主题征服，整个发布博文的方式也很特别，此时的我已经想要在这个博客上大干一场了。于是主域名被我解析到了博客主页，导航站又没有域名了，这可怎么办呢？能不能解析二级域名啊，Google了一下居然站的可以，话不多说就是你现在看到的效果，我把导航站的链接放在了博客的左侧菜单，点击一下看看效果吧。&lt;/p>
+&lt;h2 id="方案设计">方案设计&lt;/h2>
+&lt;ul>
+&lt;li>将主域名laosji.net解析到我的博客仓库（laosji.github.io）&lt;/li>
+&lt;li>将二级域名解析到我的导航站的仓库（chaodior.github.io）&lt;/li>
+&lt;/ul>
+&lt;p>域名很快就解析好了，但是我发现导航站不能访问。有问题找Google嘛，看到一篇博客说仓库缺少CNAME文件。于是我就去照做，在导航站的仓库中新建了一个CNAME的文件，里面填上二级域名，这里我的决定使用&amp;quot;dh.laosji.net&amp;quot;这个域名，编辑完后保存并更新，不知道现在访问会出现什么结果，希望可以正常访问吧。果然，可以正常打开了。&lt;/p>
+&lt;h2 id="域名解析">域名解析&lt;/h2>
+&lt;p>这里我用的是阿里云，在阿里云域名设置里添加一条如下记录：
+1 记录类型选择CNAME
+2 主机记录填写自己要绑定的二级域名
+3 记录值填写自己的仓库地址
+&lt;img src="https://cdn.jsdelivr.net/gh/Johnsmart/PokeAI/photos/20200209182617491.png"
+loading="lazy"
+alt="域名解析"
+>&lt;/p>
+&lt;h2 id="修改仓库配置">修改仓库配置&lt;/h2>
+&lt;p>进入 Github Page 仓库，修改CNAME文件（没有则手动创建文件），将自己的二级域名添加到文件第一行（内容必须为一行），如图：
+&lt;img src="https://cdn.jsdelivr.net/gh/Johnsmart/PokeAI/photos/20200209183526783.png"
+loading="lazy"
+alt="仓库配置"
+>&lt;/p>
+&lt;h2 id="完成打开你的网址试试看吧">完成打开你的网址试试看吧!&lt;/h2></description></item><item><title>hugo stack怎么发布文章</title><link>https://laosji.net/p/hugo-stack%E6%80%8E%E4%B9%88%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0/</link><pubDate>Tue, 01 Aug 2023 07:09:06 +0000</pubDate><guid>https://laosji.net/p/hugo-stack%E6%80%8E%E4%B9%88%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0/</guid><description>&lt;img src="https://laosji.net/p/hugo-stack%E6%80%8E%E4%B9%88%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0/post-Blog.jpg" alt="Featured image of post hugo stack怎么发布文章" />&lt;p>博客搭建好之后，最应该做的事情就是发布文章，对于之前没有使用过markdown的我来说，一开始还是有些麻烦。当我在写这边文章，其实是我的第三篇博文，我已经通过今天的3次练习，强化了对于这种写法的记忆，逐渐的我已经爱上了这种方式，感觉真的像是开辟新大陆一样，非常之爽，相信你也一样在迫不及待的准备着第一篇博文。下面我们就来介绍一下怎么发布一篇博文。&lt;/p>
+&lt;h3 id="怎么发布文章">怎么发布文章？&lt;/h3>
+&lt;h4 id="首先要创建文章模板页面使用以下命令">首先要创建文章模板页面，使用以下命令:&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">hugo new post/article-name/index.md
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>看到 Content &amp;ldquo;/workspaces/yourusername.github.io/content/post/post-article/index.md&amp;rdquo; created，表示已经创建成功，现在可以去编辑文章内容了。&lt;/p>
+&lt;h4 id="编辑文章内容">编辑文章内容&lt;/h4>
+&lt;p>找到刚刚创建的“index.md”文件，打开后在空白处直接输入或粘贴文章内容即可。常用的markdown语法有：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>语法&lt;/th>
+&lt;th>Style&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>#&lt;/td>
+&lt;td>一级标题&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>##&lt;/td>
+&lt;td>二级标题&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>###&lt;/td>
+&lt;td>三级标题&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>-&lt;/td>
+&lt;td>无序列表&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>1&lt;/td>
+&lt;td>有序列表&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&amp;gt;&lt;/td>
+&lt;td>引用&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code> &lt;/code>&lt;/td>
+&lt;td>代码块&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>** **&lt;/td>
+&lt;td>加粗&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&amp;ndash; &amp;ndash;&lt;/td>
+&lt;td>加粗&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>* *&lt;/td>
+&lt;td>斜体&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>~~ ~~&lt;/td>
+&lt;td>删除线&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>sub&lt;/td>
+&lt;td>下标&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>sup&lt;/td>
+&lt;td>上标&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="封面图配置">封面图配置&lt;/h3>
+&lt;p>在文章页面顶部，找到image，填写图片名称。如果还没有图片，可以上传一张图片到文章标题的文件夹下面。比如：我们刚刚新建的文章名叫“article-name”，在这个文件夹下面上传封面图片。&lt;/p>
+&lt;h3 id="文章发布">文章发布&lt;/h3>
+&lt;p>现在我们已经编辑好了文章内容，并且已经设置了封面图，只要将“draft”的值修改为：“false”，然后将最新的代码更新上去，文章就会正常显示啦。赶快去发布一篇博文试试吧！&lt;/p></description></item><item><title>hugo stack修改社交链接</title><link>https://laosji.net/p/hugo-stack%E4%BF%AE%E6%94%B9%E7%A4%BE%E4%BA%A4%E9%93%BE%E6%8E%A5/</link><pubDate>Tue, 01 Aug 2023 06:07:07 +0000</pubDate><guid>https://laosji.net/p/hugo-stack%E4%BF%AE%E6%94%B9%E7%A4%BE%E4%BA%A4%E9%93%BE%E6%8E%A5/</guid><description>&lt;img src="https://laosji.net/p/hugo-stack%E4%BF%AE%E6%94%B9%E7%A4%BE%E4%BA%A4%E9%93%BE%E6%8E%A5/social-icon.png" alt="Featured image of post hugo stack修改社交链接" />&lt;h2 id="如何修改hugo-stack主题中的social-link">如何修改hugo stack主题中的social link&lt;/h2>
+&lt;p>stack这款主题的社交链接会默认显示GitHub和twitter，如果想要增加，我们先要准备好icon。然后再通过修改配置文件，将icon链接到你的链接地址。&lt;/p>
+&lt;h3 id="准备icon">准备icon&lt;/h3>
+&lt;ul>
+&lt;li>icon最好用svg格式，官方推荐的icon平台是[tablericons]（https://tablericons.com/）。在这个平台中找到你想添加的icon，点击复制即可。&lt;/li>
+&lt;li>然后在assets/icon文件夹下面新建svg文件,并将刚复制的icon代码粘贴到改文件。这时候icon已经准备完毕了，去添加你的链接地址吧。&lt;/li>
+&lt;/ul>
+&lt;h3 id="编辑menutoml配置文件">编辑“menu.toml”配置文件&lt;/h3>
+&lt;p>要增加多个链接，可以多复制几次下面的代码。&lt;/p>
+&lt;ul>
+&lt;li>identifier:标识&lt;/li>
+&lt;li>name:名称&lt;/li>
+&lt;li>在url处填写你自己的链接；&lt;/li>
+&lt;li>icon：填写你刚刚添加的icon名称，注意不要带上后缀名.svg&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">[[social]]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">identifier = &amp;#34;github&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">name = &amp;#34;GitHub&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">url = &amp;#34;https://github.com/CaiJimmy/hugo-theme-stack&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[social.params]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">icon = &amp;#34;brand-github&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>编辑完成后，就大功告成了，可以提交代码查看效果啦。&lt;/p></description></item><item><title>永久免费的个人博客github page+hugo，如何搭建？</title><link>https://laosji.net/p/build-a-free-blog/</link><pubDate>Tue, 01 Aug 2023 02:27:36 +0000</pubDate><guid>https://laosji.net/p/build-a-free-blog/</guid><description>&lt;img src="https://laosji.net/p/build-a-free-blog/blog.png" alt="Featured image of post 永久免费的个人博客github page+hugo，如何搭建？" />&lt;p>搭建个人博客最好的方案是什么？相信很多人肯定会毫不犹豫的说出“WordPress”,的确wordpress是一个不错的方案，安装简单，主题多插件丰富，而且带后台，很多VPS也都支持一键安装。但是缺点是不免费，不仅要买服务器，还要买域名。对很多心血来潮的朋友来说，在VPS上搭建好了wordpress博客之后，很久都不更新。渐渐的这个博客也就被遗忘了，服务器也不续费了，域名也过期了，自己曾经写过的东西一点也没留下，从此消失在了信息大爆炸的互联网中。但是如果使用免费的方案，就算你不更新，只要GitHub不关停，你的博客就会一直保留。折腾了这么多的程序之后，我自己的服务器上的内容全部已经丢失，就再也不想折腾了，何不用免费的呢？省心、省钱，哈哈哈···。下面是我折腾hugo Stack主题的具体操作，如果你也想拥有这样一个博客，就跟着下面的步骤来开始操作吧，真的非常简单，只要3分钟就能搭建完成。&lt;/p>
+&lt;h3 id="第一步注册github账号">第一步，注册GitHub账号&lt;/h3>
+&lt;p>打开![GitHub] (&lt;a class="link" href="https://github.com/%29" target="_blank" rel="noopener"
+>https://github.com/)&lt;/a>,如果你还没有账号的话，请注册一个。如果你已经拥有一个GitHub账号，请直接登录。&lt;/p>
+&lt;h3 id="第二步新建仓库">第二步，新建仓库&lt;/h3>
+&lt;p>我使用的是Stack主题，这个主题不仅简单美观，而且可以快速部署。打开这个项目&lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack-starter" target="_blank" rel="noopener"
+>hugo-theme-stack-starter&lt;/a>,根据readme.md的说明，我们点击“use this template”的绿色按钮，选择“Crete a new repository”。如图：
+&lt;a class="link" href="https://user-images.githubusercontent.com/5889006/156916624-20b2a784-f3a9-4718-aa5f-ce2a436b241f.png" target="_blank" rel="noopener"
+>use this template&lt;/a>
+仓库可以命名为“username.github.io”,这样就可以直接访问这个地址来打开你的博客。&lt;/p>
+&lt;h3 id="第三步创建代码空间可在线编辑代码">第三步，创建代码空间，可在线编辑代码&lt;/h3>
+&lt;p>[创建代码空间]（https://user-images.githubusercontent.com/5889006/156916672-43b7b6e9-4ffb-4704-b4ba-d5ca40ffcae7.png）&lt;/p>
+&lt;h3 id="第四步预览你的网站">第四步，预览你的网站&lt;/h3>
+&lt;p>在代码空间运行&amp;quot;hugo server&amp;quot;，开启Hugo 服务器，此时就可以在浏览器中预览你的网站啦。&lt;/p>
+&lt;h3 id="第五步配置-hugo">第五步，配置 Hugo&lt;/h3>
+&lt;p>打开 config.toml 文件，根据您的需求进行配置，例如设置网站标题、作者等信息。&lt;/p>
+&lt;blockquote>
+&lt;/blockquote>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">baseurl = &amp;#34;https://laosji.net&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">languageCode = &amp;#34;zh-cn&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">paginate = 5
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">title = &amp;#34;laosji.net&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">DefaultContentLanguage = &amp;#34;zh-cn&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">hasCJKLanguage = ture
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"># Change it to your Disqus shortname before using
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">disqusShortname = &amp;#34;laosji.net&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="修改头像">修改头像：&lt;/h4>
+&lt;blockquote>
+&lt;p>替换themes/hugo-theme-stack/assets/img/avatar.png下的avatar.png即可&lt;/p>
+&lt;/blockquote>
+&lt;h4 id="菜单编辑">菜单编辑&lt;/h4>
+&lt;p>打开“menu.toml”文件, 修改自己的社交媒体账号链接即可&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">[[social]]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">identifier = &amp;#34;github&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">name = &amp;#34;GitHub&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">url = &amp;#34;https://github.com/koala9527&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[social.params]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">icon = &amp;#34;brand-github&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>到此你的博客已经搭建完成了，快去看看吧&lt;/p></description></item></channel></rss>
