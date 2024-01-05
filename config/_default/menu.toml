@@ -9,16 +9,16 @@
 
 [[main]]
 identifier = "nav"
-name = "laosji导航"
-url = "https://dh.laosji.net"
+name = "AI导航"
+url = "https://ai.laosji.net"
 [main.params]
 icon = "menu-nav"
 newtab = true
 
 [[social]]
-identifier = "github"
-name = "GitHub"
-url = "https://github.com/CaiJimmy/hugo-theme-stack"
+identifier = "导航"
+name = "导航"
+url = "https://dh.laosji.net"
 
 [social.params]
 icon = "brand-github"
@@ -26,7 +26,7 @@ icon = "brand-github"
 [[social]]
 identifier = "twitter"
 name = "Twitter"
-url = "https://twitter.com"
+url = "https://twitter.com/laosji188937"
 
 [social.params]
 icon = "brand-twitter"
