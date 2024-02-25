@@ -9,14 +9,14 @@ links:
   - title: 老司机导航
     description: 老司机导航-懂你的网址导航.
     website: https://itianxia.cn
-    image: https://laosji.net/favicon.png
+    image: https://itianxia.cn/img/laosji.png
 
-    - title: AI导航
+  - title: AI导航
     description: Exploration the best AI tools.
     website: https://ai.laosji.net
     image: https://raw.githubusercontent.com/laosji/img/main/img/logo.ai.png
 
-    - title: laosji导航
+  - title: laosji导航
     description: 老司机导航-懂你的网址导航.
     website: https://dh.laosji.net
     image: https://raw.githubusercontent.com/laosji/img/main/img/laosji.logo.png
