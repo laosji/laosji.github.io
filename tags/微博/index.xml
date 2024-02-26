@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>微博 on laosji</title><link>https://laosji.net/tags/%E5%BE%AE%E5%8D%9A/</link><description>Recent content in 微博 on laosji</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 01 Aug 2023 08:35:44 +0000</lastBuildDate><atom:link href="https://laosji.net/tags/%E5%BE%AE%E5%8D%9A/index.xml" rel="self" type="application/rss+xml"/><item><title>用手机号怎么查询对方的微博和QQ？</title><link>https://laosji.net/p/%E6%89%8B%E6%9C%BA%E5%8F%B7%E8%8E%B7%E5%8F%96%E5%BE%AE%E5%8D%9A%E5%8F%8Aqq/</link><pubDate>Tue, 01 Aug 2023 08:35:44 +0000</pubDate><guid>https://laosji.net/p/%E6%89%8B%E6%9C%BA%E5%8F%B7%E8%8E%B7%E5%8F%96%E5%BE%AE%E5%8D%9A%E5%8F%8Aqq/</guid><description>&lt;img src="https://laosji.net/p/%E6%89%8B%E6%9C%BA%E5%8F%B7%E8%8E%B7%E5%8F%96%E5%BE%AE%E5%8D%9A%E5%8F%8Aqq/privacy.jpg" alt="Featured image of post 用手机号怎么查询对方的微博和QQ？" />&lt;h2 id="用手机号怎么查询微博账号">用手机号怎么查询微博账号？&lt;/h2>
+&lt;blockquote>
+&lt;p>为什么会有这个需求呢？倾听我有个朋友的故事。
+我有个朋友喜欢上了自己的某位同事，通过其他同事已经知道了她的名字，正常来说企业微信、手机号都是可以和对方取得联系。可是他为什么费尽周折要去查询其他的联系方式呢？首先，通过内部通讯工具极可能被冠以骚扰同事的恶名，其次这些只是一个沟通的渠道，并不能了解到关于她的更多信息。有了微博就可以去看她的日常，还有机会和她进行互动，渐渐的从路人变成网友，从网友变成（自己想）···。所以就Google了以下，居然真的有这种操作。下面就给大家分享一下如何通过手机号反查微博账号、甚至QQ账号，一分钱不花就能查到哦。&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="第一步">第一步&lt;/h3>
+&lt;ul>
+&lt;li>将以下网址放进浏览器（=后面是目标手机号）&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">https://zy.xywlapi.cc/wbphone?phone=手机号
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>如果可以查到，就会得到如下结果：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">{&amp;#34;status&amp;#34;:200,&amp;#34;message&amp;#34;:&amp;#34;查询成功&amp;#34;,&amp;#34;id&amp;#34;:&amp;#34;2158622190&amp;#34;,&amp;#34;phone&amp;#34;:&amp;#34;18891791796&amp;#34;,&amp;#34;phonediqu&amp;#34;:&amp;#34;陕西省西安市移动&amp;#34;}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="第二步">第二步&lt;/h3>
+&lt;p>在浏览器中打开下面的网址，需要将上一步得到的id替换，这样就可以进入改手机号绑定的微博主页啦。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">https://weibo.com/u/上一步的id号
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="我还想知道qq该怎么查">我还想知道QQ，该怎么查？&lt;/h2>
+&lt;h3 id="第一步打开浏览器">第一步，打开浏览器&lt;/h3>
+&lt;p>复制粘贴打开这个网址：“https://zy.xywlapi.cc/qqphone?phone=18888888888”&lt;/p>
+&lt;h3 id="第二步替换目标手机号">第二步，替换目标手机号&lt;/h3>
+&lt;p>将上一步输入的网站后缀手机号修改为你要查询的手机号，在返回结果中就可以看到查询到的QQ。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">{&amp;#34;status&amp;#34;:200,&amp;#34;message&amp;#34;:&amp;#34;查询成功&amp;#34;,&amp;#34;qq&amp;#34;:&amp;#34;272788977&amp;#34;,&amp;#34;&amp;#34;:&amp;#34;15051902017&amp;#34;,&amp;#34;phonediqu&amp;#34;:&amp;#34;江苏省南京市移动&amp;#34;}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>如果返回“error”，表示没有查询到相关的信息。&lt;/p>
+&lt;blockquote>
+&lt;p>注意：这个数据库比较老，注册比较早的账号都能查到，新的号码查询效果不好，随缘使用吧。&lt;/p>
+&lt;/blockquote></description></item></channel></rss>

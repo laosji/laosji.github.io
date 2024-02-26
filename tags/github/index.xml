@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GitHub on laosji</title><link>https://laosji.net/tags/github/</link><description>Recent content in GitHub on laosji</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 08 Aug 2023 08:31:48 +0000</lastBuildDate><atom:link href="https://laosji.net/tags/github/index.xml" rel="self" type="application/rss+xml"/><item><title>Github Card这个网站可以生成你的GitHub名片</title><link>https://laosji.net/p/github-card%E8%BF%99%E4%B8%AA%E7%BD%91%E7%AB%99%E5%8F%AF%E4%BB%A5%E7%94%9F%E6%88%90%E4%BD%A0%E7%9A%84github%E5%90%8D%E7%89%87/</link><pubDate>Tue, 08 Aug 2023 08:31:48 +0000</pubDate><guid>https://laosji.net/p/github-card%E8%BF%99%E4%B8%AA%E7%BD%91%E7%AB%99%E5%8F%AF%E4%BB%A5%E7%94%9F%E6%88%90%E4%BD%A0%E7%9A%84github%E5%90%8D%E7%89%87/</guid><description>&lt;img src="https://cdn.jsdelivr.net/gh/Johnsmart/PokeAI/photos/laosji-github-business-card.png" alt="Featured image of post Github Card这个网站可以生成你的GitHub名片" />&lt;h1 id="生成你的github名片">生成你的GitHub名片&lt;/h1>
+&lt;p>这个网页可以生成你的GitHub名片，只要输入你的GitHub用户名，等待几秒钟就可以看到你的GitHub名片。作者说写这个项目是为了好玩，完全开源&lt;a class="link" href="https://github.com/scastiel/github-business-card" target="_blank" rel="noopener"
+>github-business-card&lt;/a>。他还写可一个关于如果生成图像的教程，如果你对如何生成图片感兴趣可以去该作者的GitHub看看。&lt;/p>
+&lt;p>在这个名片上会显示你的账号头像、GitHub pages地址以及二维码，如果你不喜欢白色还可以选择Dark model。另外，生成的名片可以下载图片，或者复制HTML code嵌入你的网站，还有markdown格式，一键复制放在任何你想要显示的位置。下面是我生成的效果，如图：
+&lt;img src="https://scastiel.dev/api/image/laosji?dark"
+loading="lazy"
+alt="laosji’s GitHub image"
+>&lt;/p>
+&lt;p>&lt;a class="link" href="https://scastiel.dev/github-card/laosji" target="_blank" rel="noopener"
+>GitHub Card Generator&lt;/a>&lt;/p></description></item></channel></rss>
