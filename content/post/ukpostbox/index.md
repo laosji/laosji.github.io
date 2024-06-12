@@ -2,12 +2,16 @@
 title: "免费注册一个英国通讯地址「UKPOSTBOX」：Wise英国实体卡收卡必备，接受信件、海淘转运全都能安全搞定，还能注册公司"
 description: 上周收到了英国的wise实体卡和好几张英国的手机卡，都是通过UKPostBox进行转运的。之前为大家分享过wise的账户的注册，我把链接放在文末给之前没有看到的朋友。今天来跟大家分享一下“如何通过英国转运地址收取wise实体卡”。
 date: 2024-06-12T07:10:17Z
-image: 
+image: https://github.com/laosji/img/blob/main/img/0.jpg?raw=true
 math: 
+categories:
+    - 工具
+tags:
+    - ukpostbox
 license: 
 hidden: false
 comments: true
-draft: true
+draft: false
 ---
 
 
