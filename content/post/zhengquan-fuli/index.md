@@ -2,7 +2,7 @@
 title: "6月港美股证券开户福利，laosji专属"
 description: 富途牛牛、老虎证券、盈透证券、美国第一证券、美国嘉信理财港美股开户福利领取
 date: 2024-06-13T06:20:16Z
-image: 
+image: futu.jpg
 math: 
 license: 
 hidden: false
