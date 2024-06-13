@@ -46,3 +46,12 @@ url = "https://emoecho.com"
 
 [social.params]
 icon = "pokeai-app"
+
+
+[[social]]
+identifier = "telegram"
+name = "TG群"
+url = "https://t.me/+p94vAr_bPIBiNzZl"
+
+[social.params]
+icon = "tg"
