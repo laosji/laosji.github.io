@@ -40,9 +40,9 @@ url = "https://mp.weixin.qq.com/s/BLnizy3_WDwrgBElva8A3Q"
 icon = "brand-wechat"
 
 [[social]]
-identifier = "pokeai"
-name = "pokeai"
-url = "https://emoecho.com"
+identifier = "老司机导航"
+name = "老司机导航"
+url = "https://www.itianxia.cn"
 
 [social.params]
 icon = "pokeai-app"
