@@ -20,6 +20,19 @@ identifier = "导航"
 name = "导航"
 url = "https://dh.laosji.net"
 
+[[main]]
+identifier = "nav"
+name = "领福利"
+url = "https://fuli.laosji.net"
+[main.params]
+icon = "menu-nav"
+newtab = true
+
+[[social]]
+identifier = "领福利"
+name = "领福利"
+url = "https://fuli.laosji.net"
+
 [social.params]
 icon = "brand-github"
 
