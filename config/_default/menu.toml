@@ -25,7 +25,7 @@ identifier = "nav"
 name = "领福利"
 url = "https://fuli.laosji.net"
 [main.params]
-icon = "menu-nav"
+icon = "fuli.svg"
 newtab = true
 
 [[social]]
