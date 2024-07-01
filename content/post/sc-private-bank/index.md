@@ -1,5 +1,5 @@
 ---
-title: "Sc Private Bank"
+title: "渣打私人银行700万开户：全球转账免手续费"
 description: 渣打私人银行开户攻略
 date: 2024-06-18T09:21:08Z
 image: hk-cxam.jpeg
