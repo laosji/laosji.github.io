@@ -52,7 +52,7 @@ draft: false
 4. 存量证明（2023年5月19日之前其他境外券商证明）
 5. 务必使用群公告链接、或者专属邀请码LAOSJI
 ![老虎证券开户福利](tiger.jpg)
-![老虎证券开户福利](%20tigerqa.jpg)
+![老虎证券开户福利](tigerqa.jpg)
 
 
 # 华盛6月新用户活动，赠送1100港币交易现金券+一股可口可乐，套利到手1400港币现金左右。
@@ -81,7 +81,7 @@ draft: false
 
 
 # 美国嘉信理财开户可免出入金电报费
-[](https://www.schwab.com/client-referral?refrid=REFERCHPQ83NZ)
+[嘉信理财](https://www.schwab.com/client-referral?refrid=REFERCHPQ83NZ)
 
 
 # 美国第一证券
