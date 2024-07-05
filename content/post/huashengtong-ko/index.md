@@ -2,7 +2,7 @@
 title: "美股第一桶金： 华盛通开户送一股可口可乐，特斯拉看涨我梭哈了一把！"
 description: 美股第一桶金： 华盛通开户送一股可口可乐，特斯拉看涨我梭哈了一把！
 date: 2024-07-05T01:20:47Z
-image: https://prod-files-secure.s3.us-west-2.amazonaws.com/895044c1-354e-49fb-b52f-6b8c06c8981b/dc580f66-c629-48f2-81ee-f59a605bf3d1/Untitled.png
+image: hst7.jpg
 math: 
 categories:
     - 港美股
