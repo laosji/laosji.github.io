@@ -3,7 +3,7 @@ title: "持有这些国家的护照居民可以在「汇丰银行」HSBC HK App�
 description: 持有这些国家的护照居民可以在「汇丰银行」HSBC HK App上在线开户
 date: 2024-07-08T03:36:00Z
 image: hsbc-card.png
- categories:
+categories:
     - 银行开户
 tags:
     - 香港汇丰银行
