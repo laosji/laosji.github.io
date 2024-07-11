@@ -19,7 +19,7 @@ draft: false
 
 现在这些国家的居民不用亲临香港，用香港汇丰理財HSBC HK App应用，就可以轻松在线开戶。只要你是居住在香港並持有香港身份證（永久或非永久性居民）、年齡介乎18至64歲，而且現在並未於滙豐持有任何理財／投資戶口或滙豐信用卡，即可用手機開立戶口。
 
-# 在线开户要求：
+# 在线开户要求
 
 如要以流動理財開立戶口，您必須符合以下情形：
 
@@ -76,5 +76,5 @@ draft: false
 
 |  | 滙豐One戶口 | 滙豐卓越理財戶口 |
 | --- | --- | --- |
-| 全面理財總值https://www.hsbc.com.hk/zh-hk/ways-to-bank/mobile-apps/banking/account-opening/#3要求 | 無最低要求 | 港幣1,000,000元 |
-| 低額結存服務費https://www.hsbc.com.hk/zh-hk/ways-to-bank/mobile-apps/banking/account-opening/#4 | 無 | 每月港幣380元 |
+| 全面理財總值<https://www.hsbc.com.hk/zh-hk/ways-to-bank/mobile-apps/banking/account-opening/#3要求> | 無最低要求 | 港幣1,000,000元 |
+| 低額結存服務費<https://www.hsbc.com.hk/zh-hk/ways-to-bank/mobile-apps/banking/account-opening/#4> | 無 | 每月港幣380元 |
