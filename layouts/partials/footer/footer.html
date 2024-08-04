@@ -14,7 +14,7 @@
         {{ end }}
     </section>
     <section class="powerby">
-        {{- $Generator := `<a href="https://fl.laosji.net/" target="_blank" rel="noopener">Laosji福利</a>` -}}
+        {{- $Generator := `<a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>` -}}
         {{- $Theme := printf `<b><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener" data-version="%s">陕ICP备18020703号</a></b>` $ThemeVersion -}}
         {{- $DesignedBy := `<a href="https://laosji.net" target="_blank" rel="noopener">Laosji数字居民</a>` -}}
         {{ T "footer.builtWith" (dict "Generator" $Generator) | safeHTML }} <br />
