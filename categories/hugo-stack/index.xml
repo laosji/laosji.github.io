@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo Stack on laosji</title><link>https://laosji.net/categories/hugo-stack/</link><description>Recent content in Hugo Stack on laosji</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 04 Aug 2024 03:22:08 +0000</lastBuildDate><atom:link href="https://laosji.net/categories/hugo-stack/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo Stack如何添加备案号？</title><link>https://laosji.net/p/hugo-stack%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E5%A4%87%E6%A1%88%E5%8F%B7/</link><pubDate>Sun, 04 Aug 2024 03:22:08 +0000</pubDate><guid>https://laosji.net/p/hugo-stack%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E5%A4%87%E6%A1%88%E5%8F%B7/</guid><description>&lt;img src="https://laosji.net/p/hugo-stack%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E5%A4%87%E6%A1%88%E5%8F%B7/icp-ip.jpg" alt="Featured image of post Hugo Stack如何添加备案号？" />&lt;p>最近由于需要上线小程序，不得不把域名在腾讯云做备案，备案之后按照管局要求，需要在网站中添加备案号，并连接至管局官网。下面是添加备案号的步骤：&lt;/p>
+&lt;h1 id="修改footerhtml文件">修改footer.html文件
+&lt;/h1>&lt;p>在文件目录中找到“layouts/partials/footer/footer.html&amp;quot;文件，添加如下代码，复制粘贴进去就可以了。如果没有footer.html文件，首先要新建”footer.html“文件，注意文件夹不要放错。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">{{- $ThemeVersion := &amp;#34;1.1.0&amp;#34; -}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;footer class=&amp;#34;site-footer&amp;#34;&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;section class=&amp;#34;copyright&amp;#34;&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;amp;copy;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ if and (.Site.Params.footer.since) (ne .Site.Params.footer.since (int (now.Format &amp;#34;2006&amp;#34;))) }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ .Site.Params.footer.since }} -
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ end }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ now.Format &amp;#34;2006&amp;#34; }} {{ .Site.Title }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ with .Site.Params.footer.customText }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;br/&amp;gt; {{ . | safeHTML }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ end }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;/section&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;section class=&amp;#34;powerby&amp;#34;&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{- $Generator := `&amp;lt;a href=&amp;#34;https://gohugo.io/&amp;#34; target=&amp;#34;_blank&amp;#34; rel=&amp;#34;noopener&amp;#34;&amp;gt;Hugo&amp;lt;/a&amp;gt;` -}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{- $Theme := printf `&amp;lt;b&amp;gt;&amp;lt;a href=&amp;#34;https://beian.miit.gov.cn/&amp;#34; target=&amp;#34;_blank&amp;#34; rel=&amp;#34;noopener&amp;#34; data-version=&amp;#34;%s&amp;#34;&amp;gt;陕ICP备*****03号&amp;lt;/a&amp;gt;&amp;lt;/b&amp;gt;` $ThemeVersion -}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{- $DesignedBy := `&amp;lt;a href=&amp;#34;https://jimmycai.com&amp;#34; target=&amp;#34;_blank&amp;#34; rel=&amp;#34;noopener&amp;#34;&amp;gt;Jimmy&amp;lt;/a&amp;gt;` -}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ T &amp;#34;footer.builtWith&amp;#34; (dict &amp;#34;Generator&amp;#34; $Generator) | safeHTML }} &amp;lt;br /&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ T &amp;#34;footer.designedBy&amp;#34; (dict &amp;#34;Theme&amp;#34; $Theme &amp;#34;DesignedBy&amp;#34; $DesignedBy) | safeHTML }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;/section&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;/footer&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h1 id="修改备案号">修改备案号
+&lt;/h1>&lt;p>将这段代码放进footer.html文件后，修改你的备案号就可以显示了。&lt;/p>
+&lt;p>&lt;img src="https://laosji.net/p/hugo-stack%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E5%A4%87%E6%A1%88%E5%8F%B7/beianhao.jpg"
+width="3280"
+height="368"
+srcset="https://laosji.net/p/hugo-stack%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E5%A4%87%E6%A1%88%E5%8F%B7/beianhao_hu17941386356307374192.jpg 480w, https://laosji.net/p/hugo-stack%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E5%A4%87%E6%A1%88%E5%8F%B7/beianhao_hu18388892795632312881.jpg 1024w"
+loading="lazy"
+alt="备案号"
+class="gallery-image"
+data-flex-grow="891"
+data-flex-basis="2139px"
+>&lt;/p></description></item></channel></rss>
