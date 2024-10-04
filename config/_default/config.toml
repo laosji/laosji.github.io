@@ -18,3 +18,9 @@ disqusShortname = "laosji"
 # config.toml
 [[module.imports]]
 path = "github.com/CaiJimmy/hugo-theme-stack/v3"
+
+[minify]
+  minifyOutput = true  # 启用 HTML/CSS/JS 压缩
+
+[asset]
+  fingerprinting = true
