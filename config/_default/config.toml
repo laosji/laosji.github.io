@@ -24,8 +24,3 @@ path = "github.com/CaiJimmy/hugo-theme-stack/v3"
 
 [asset]
   fingerprinting = true
-
-sitemap:
-  changefreq: weekly
-  filename: sitemap.xml
-  priority: 0.5
