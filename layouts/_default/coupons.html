@@ -1,0 +1,28 @@
+{{ define "main" }}
+<div class="coupons-page">
+  <h1>{{ .Title }}</h1>
+  <p>{{ .Description }}</p>
+
+  {{ .Content }}
+
+  {{ range .Params.coupons }}
+  <div class="coupon-card">
+    <img src="{{ .thumbnail }}" alt="{{ .name }}" class="coupon-thumbnail">
+    <div class="coupon-info">
+      <h3 class="coupon-name">{{ .name }}</h3>
+      <span class="discount-amount">{{ .amount }}</span>
+      <div class="coupon-rules">
+        {{ .rules | markdownify }}
+      </div>
+      <div class="coupon-meta">
+        <span>有效期至：{{ .validDate }}</span>
+        {{ if .code }}
+        <span>优惠码：<code class="coupon-code">{{ .code }}</code></span>
+        {{ end }}
+      </div>
+      <a href="{{ .link }}" class="coupon-btn" target="_blank">立即领取</a>
+    </div>
+  </div>
+  {{ end }}
+</div>
+{{ end }}

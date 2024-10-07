@@ -1,0 +1,57 @@
+[[coupons]]
+name = "老虎证券开户领取总价值高达2200港币+180天30次免佣卡"
+amount = "2200HKD"
+rules = """
+- 首次存入資金 HK$10,000 並維持45日，可激活總價值 HK$300 股票代金券。
+- 首次入金后7日内累計淨入金達 HK$50,000 並維持45日，可激活總價值 HK$600 股票代金券。
+- 首次入金后7日内累計淨入金達 HK$100,000 並維持45日，可激活總價值 HK$1,200 股票代金券。
+- 首次入金達 HK$10,000 或其他等值貨幣及以上可享：
+  - HK$300 股票代金券
+  - 180天30次通用免佣卡
+- 交易獎賞：60天内完成5筆買入交易，激活 HK$700 股票代金券
+"""
+validDate = "2024-10-31"
+link = "https://tigr.link/7gIFaD"
+code = "LAOSJI"
+thumbnail = "/images/tiger10.jpg"
+
+[[coupons]]
+name = "长桥证券-终生免佣"
+amount = "488HKD"
+rules = """
+- 香港长桥活动
+💵首次净入资1万HKD 
+福利1️⃣：港股终身免佣
+福利2️⃣：美股终身免佣
+优质渠道客户加码88港币（需要联系我或者客户经理获取）
+
+💵首次净入资2万HKD 再得
+福利3️⃣：400港币股票现金卡
+福利4️⃣：5USD期权现金卡
+"""
+validDate = "2024-12-31"
+link = "https://app.longbridgehk.com/ac/oa?account_channel=lb&channel=HB100034&invite-code=48T09P"
+code = "48T09P"
+thumbnail = "/images/longbridge.jpg"
+
+[[coupons]]
+name = "华盛通10月新人奖励最高1300HKD"
+amount = "1300HKD"
+rules = """
+- ❤️ 【华盛10月新人奖励】： 
+总额1100奖励等你来拿 
+首次入金达1w港币（或1300USD） 
+1⃣：HK$400交易现金券
+2⃣：US$25交易现金券 
+3⃣：港股90天免佣卡 ，美股90天免佣卡，180天期货免佣卡
+4⃣：HK$300新股认购优惠券 
+5⃣：1股OXY价值51美元（首入金金额留存30天） 
+6⃣：两人同行开户，额外送HK$200交易现金券 
+  - 通过OCBC新加坡卡存入到账1万港币或者以上的话，可以补贴200港币现金券，这样就相当于无损入金了
+老用户开户未入金，首次入金前在App我的-填写邀请码处输入 E1NC，亦可拿到奖励。
+"""
+validDate = "2024-12-31"
+link = "https://www.hstbroker.com/kh/apply/online?_scnl=E1NC"
+code = "E1NC"
+thumbnail = "/images/huast.jpg"
+
