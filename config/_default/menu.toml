@@ -18,7 +18,7 @@ newtab = true
 [[main]]
 identifier = "nav"
 name = "领福利"
-url = "https://fuli.laosji.net"
+url = "https://fl.laosji.net"
 [main.params]
 icon = "fuli"
 newtab = true

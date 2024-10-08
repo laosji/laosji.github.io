@@ -1,0 +1,26 @@
+{
+  "name": "laosji.github.io",
+  "version": "1.0.0",
+  "description": "laosji's blog",
+  "main": "index.js",
+  "dependencies": {
+    "tinacms": "^2.2.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laosji/laosji.github.io.git"
+  },
+  "keywords": [
+    "laosji"
+  ],
+  "author": "laosji",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laosji/laosji.github.io/issues"
+  },
+  "homepage": "https://github.com/laosji/laosji.github.io#readme"
+}
