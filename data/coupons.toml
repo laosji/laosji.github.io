@@ -29,7 +29,7 @@ rules = """
 福利3️⃣：400港币股票现金卡
 福利4️⃣：5USD期权现金卡
 """
-validDate = "2024-12-31"
+validDate = "2024-10-31"
 link = "https://app.longbridgehk.com/ac/oa?account_channel=lb&channel=HB100034&invite-code=48T09P"
 code = "48T09P"
 thumbnail = "/images/longbridge.jpg"
@@ -50,7 +50,7 @@ rules = """
   - 通过OCBC新加坡卡存入到账1万港币或者以上的话，可以补贴200港币现金券，这样就相当于无损入金了
 老用户开户未入金，首次入金前在App我的-填写邀请码处输入 E1NC，亦可拿到奖励。
 """
-validDate = "2024-12-31"
+validDate = "2024-10-31"
 link = "https://www.hstbroker.com/kh/apply/online?_scnl=E1NC"
 code = "E1NC"
 thumbnail = "/images/huast.jpg"

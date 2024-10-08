@@ -35,7 +35,7 @@ coupons:
     validDate: "2024-12-31"
     link: "https://app.longbridgehk.com/ac/oa?account_channel=lb&channel=HB100034&invite-code=48T09P"
     code: "48T09P"
-    thumbnail: "/images/longbridge10.jpg"
+    thumbnail: "/img/longbridge10.jpg"
     
   - name: "华盛通10月新人奖励最高1300HKD"
     amount: "1300HKD"
@@ -54,7 +54,7 @@ coupons:
     validDate: "2024-12-31"
     link: "https://www.hstbroker.com/kh/apply/online?_scnl=E1NC"
     code: "E1NC"
-    thumbnail: "/images/huast10.jpg"
+    thumbnail: "/img/huast10.jpg"
 ---
 
 ## 优惠券使用说明
