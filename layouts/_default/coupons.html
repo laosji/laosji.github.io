@@ -7,9 +7,11 @@
 
   {{ range .Params.coupons }}
   <div class="coupon-card">
-    <img src="{{ .thumbnail }}" alt="{{ .name }}" class="coupon-thumbnail">
+    <div class="coupon-header">
+      <img src="{{ .thumbnail }}" alt="{{ .name }}" class="coupon-thumbnail">
+    </div>
     <div class="coupon-info">
-      <h3 class="coupon-name">{{ .name }}</h3>
+      <h2 class="coupon-name">{{ .name }}</h2> <!-- 将 H2 放在图片下方 -->
       <span class="discount-amount">{{ .amount }}</span>
       <div class="coupon-rules">
         {{ .rules | markdownify }}

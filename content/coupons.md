@@ -18,7 +18,7 @@ coupons:
     validDate: "2024-10-31"
     link: "https://tigr.link/7gIFaD"
     code: "LAOSJI"
-    thumbnail: "/img/tiger10.jpg"
+    thumbnail: "/images/tiger10.jpg"
     
   - name: "长桥证券-终生免佣"
     amount: "488HKD"
@@ -35,7 +35,7 @@ coupons:
     validDate: "2024-12-31"
     link: "https://app.longbridgehk.com/ac/oa?account_channel=lb&channel=HB100034&invite-code=48T09P"
     code: "48T09P"
-    thumbnail: "/img/longbridge10.jpg"
+    thumbnail: "/images/longbridge10.jpg"
     
   - name: "华盛通10月新人奖励最高1300HKD"
     amount: "1300HKD"
@@ -54,7 +54,7 @@ coupons:
     validDate: "2024-12-31"
     link: "https://www.hstbroker.com/kh/apply/online?_scnl=E1NC"
     code: "E1NC"
-    thumbnail: "/img/huast10.jpg"
+    thumbnail: "/images/huast10.jpg"
 ---
 
 ## 优惠券使用说明
