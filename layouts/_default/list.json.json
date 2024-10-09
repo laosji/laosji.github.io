@@ -1,0 +1,12 @@
+{
+    "data": [
+      {{ range $index, $e := .Pages }}
+      {{ if $index }}, {{ end }}
+      {
+        "title": "{{ .Title }}",
+        "permalink": "{{ .Permalink }}",
+        "summary": "{{ .Summary }}"
+      }
+      {{ end }}
+    ]
+  }
