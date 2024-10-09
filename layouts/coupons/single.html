@@ -11,7 +11,7 @@
             {{ end }}
             <div class="coupon-content">
                 <div class="coupon-info">
-                    <h2>{{ .name }}</h2>
+                    <h1>{{ .name }}</h1>
                     {{ if .amount }}<div class="info-item"><span class="label">优惠金额:</span><span class="value amount">{{ .amount }}</span></div>{{ end }}
                     {{ if .rules }}<div class="info-item"><span class="label">使用规则:</span><span class="value">{{ .rules }}</span></div>{{ end }}
                     {{ if .validDate }}<div class="info-item"><span class="label">有效期至:</span><span class="value">{{ .validDate }}</span></div>{{ end }}

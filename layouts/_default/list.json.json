@@ -1,12 +1,15 @@
 {
-    "data": [
-      {{ range $index, $e := .Pages }}
-      {{ if $index }}, {{ end }}
+  "title": "我的优惠券",
+  "summary": "<h2 id=\"优惠券使用说明\">优惠券使用说明</h2>",
+  "coupons": [
       {
-        "title": "{{ .Title }}",
-        "permalink": "{{ .Permalink }}",
-        "summary": "{{ .Summary }}"
+          "name": "优惠券1",
+          "thumbnail": "https://example.com/image1.jpg",
+          "amount": "10元",
+          "rules": "使用规则1",
+          "validDate": "2024-12-31",
+          "code": "CODE123",
+          "link": "https://example.com/coupon1"
       }
-      {{ end }}
-    ]
-  }
+  ]
+}
