@@ -18,7 +18,7 @@ coupons:
     validDate: "2024-10-31"
     link: "https://tigr.link/7gIFaD"
     code: "LAOSJI"
-    thumbnail: "/images/tiger10.jpg"
+    thumbnail: "/img/tiger10.jpg"
     
   - name: "长桥证券-终生免佣"
     amount: "488HKD"
