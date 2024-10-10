@@ -4,6 +4,31 @@
     {{ $filtered := ($pages | intersect $notHidden) }}
     {{ $pag := .Paginate ($filtered) }}
 
+    {{ $featuredPosts := where $filtered "Params.featured" true | first 3 }}
+    {{ if $featuredPosts }}
+    <section class="featured-posts-banner">
+        <div class="container">
+            <div class="featured-grid">
+                {{ range $featuredPosts }}
+                <article class="featured-post">
+                    <div class="featured-image">
+                        {{ if .Params.image }}
+                        <img src="{{ .Params.image }}" alt="{{ .Title }}">
+                        {{ else }}
+                        <img src="/default-feature-image.jpg" alt="Default Image">
+                        {{ end }}
+                    </div>
+                    <div class="featured-content">
+                        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                    </div>
+                    <div class="featured-overlay"></div>
+                </article>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+    {{ end }}
+
     <section class="article-list">
         {{ range $index, $element := $pag.Pages }}
             {{ partial "article-list/default" . }}

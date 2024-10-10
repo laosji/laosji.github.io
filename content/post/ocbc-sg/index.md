@@ -12,6 +12,7 @@ license:
 hidden: false
 comments: true
 draft: false
+featured: true
 ---
 
 大家好，我是段总，你身边的无国界生活方式设计师。大家有没有发现，今天我有了一个新身份，这将是我以后将全身心投入去为大家做的事，希望我可以帮助到你。

@@ -8,6 +8,7 @@ license:
 hidden: false
 comments: true
 draft: false
+featured: true
 ---
 
 # 背景介绍
