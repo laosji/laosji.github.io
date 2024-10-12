@@ -44,9 +44,126 @@ content_directory = "content/coupons"
 template = "layouts/coupons/single.html"
 data_file = "data/coupons.toml"
 
+# 主要设置
 [params]
 mainSections = ["post"]
 rssFullContent = true
+
+# WeChat QR 码设置
+[params.wechatQR]
+title = "扫码关注我的微信"
+image = "assets/img/qrcode.jpg"
+
+# 首页顶部卡片设置
+[[params.categoryCards]]
+name = "Moomoo SG"
+favicon = "https://passport.moomoo.com/favicon1.ico"
+link = "https://j.moomoo.com/017wOA"
+
+[[params.categoryCards]]
+name = "盈立证券新加坡"
+favicon = "https://www.usmartglobal.com/favicon.ico"
+link = "https://m.usmartsg.com/promo/overseas/sg-register.html?langType=1&HCode=nyaljb&HBox=1#/marketing-register"
+
+[[params.categoryCards]]
+name = "新加坡长桥证券"
+favicon = "https://pub.lbkrs.com/files/202205/xAwaQmCk1cD1AUsm/favicon.png"
+link = "https://tinyurl.com/2tc6y9jr?channel=HB100034&invite-code=48T09P"
+
+[[params.categoryCards]]
+name = "IBKR盈透证券"
+favicon = "https://www.interactivebrokers.com/images/2015/template/home-screen-icon-192x192.png"
+link = "https://www.interactivebrokers.com/referral/chao135"
+
+[[params.categoryCards]]
+name = "美国第一证券"
+favicon = "https://www.firstrade.com/favicon-32x32.png"
+link = "https://affiliate.firstrade.com/affiliate/idevaffiliate.php?id=1679"
+
+[[params.categoryCards]]
+name = "嘉信理财Charles SCHWAB"
+favicon = "https://www.schwab.com/themes/custom/sch_retail/favicon.ico"
+link = "https://www.schwab.com/client-referral?refrid=REFERCHPQ83NZ"
+
+[[params.categoryCards]]
+name = "Trading212"
+favicon = "https://www.trading212.com/favicon.png"
+link = "https://www.trading212.com/invite/19BaD17WnV"
+
+[[params.categoryCards]]
+name = "Wise"
+favicon = "https://wise.com/public-resources/assets/icons/wise-personal/favicon.png"
+link = "https://wise.com/invite/ihps/duanc11?utm_source=ios-pill-hp-sms&utm_medium=invite&utm_campaign=&utm_content=&referralCode=duanc11"
+
+[[params.categoryCards]]
+name = "Revolut"
+favicon = "https://assets.revolut.com/assets/favicons/favicon-32x32.png"
+link = "https://assets.revolut.com/assets/favicons/favicon-32x32.png"
+
+[[params.categoryCards]]
+name = "iFAST"
+favicon = "https://www.ifastgb.com/favicon.ico"
+link = "https://www.ifastgb.com/en/tellafriend/chaod1702"
+
+[[params.categoryCards]]
+name = "Sendwave"
+favicon = "https://www.sendwave.com/web-cms-sw-assets/next-assets/icons/icon-32x32.png"
+link = "https://try.sendwave.com/kjap/jo70t8br"
+
+[[params.categoryCards]]
+name = "ZA BANK"
+favicon = "https://cdn.za.group/if/za-group-portal-web/assets/images/share-logo.png"
+link = "https://mp.weixin.qq.com/s/Sp03PeHj-tF3lSAhx-fGAw"
+
+[[params.categoryCards]]
+name = "华侨银行OCBC"
+favicon = "https://www.ocbc.com/iwov-resources/sg/ocbc/personal/favicon/favicon-32x32.png"
+link = "https://mp.weixin.qq.com/s/YgT5PNiV0gKHHjtkAjUvQQ"
+
+[[params.categoryCards]]
+name = "瑞士杜高贝斯银行"
+favicon = "https://www.dukascopy.com/media/static/favicons/Regular/favicon_32x32.ico"
+link = "https://www.dukascopy.bank/swiss/open-mca-account/?ref=XFB-RE6&lang=en"
+
+[[params.categoryCards]]
+name = "Giffgaff"
+favicon = "https://www.giffgaff.com/apple-touch-icon.png"
+link = "http://www.giffgaff.com/orders/affiliate/pmdua778_1721188536165。"
+
+[[params.categoryCards]]
+name = "Vodafone"
+favicon = "https://www.vodafone.co.uk/cs/groups/configfiles/documents/document/favicon.ico"
+link = "https://mp.weixin.qq.com/s/UoBgwm9ZAywaxa16RP0HoA"
+
+[[params.categoryCards]]
+name = "esim.me"
+favicon = "https://esim.me/image/catalog/Logo_eSIM.me/Logo_eSIM.me.svg"
+link = "https://esim.me/esim-me-card-for-android?tracking=LOvPBAHblGZAHDQ4auAO8sFoxkwW9szUwLFGSS9ndb0FgPApVNdciue1leNk5w0i"
+
+[[params.categoryCards]]
+name = "UKpost Box"
+favicon = "https://gateway.ipostalmail.net/oauth2.0/img/favicons/favicon.ico?v=3G2hzuE54JvG_WH-Z2qWQ_JpAjKxwACC-uGmqp9FpTU"
+link = "https://client.ipostalmail.net/Signup?Referrer=REF138644"
+
+[[params.categoryCards]]
+name = "Tiptrans"
+favicon = "https://www.tiptrans.com/images/favicon.ico"
+link = "https://www.tiptrans.com/?ref=131031"
+
+[[params.categoryCards]]
+name = "熊猫速汇"
+favicon = "https://pandaremit.kcbebank.com.cn/h5activity/favicon.ico"
+link = "https://pandaremit.kcbebank.com.cn/h5activity/jcRemit?invtCode=11221680&targetLocation=ip"
+
+[[params.categoryCards]]
+name = "Just My Socks"
+favicon = "Just My Socks"
+link = "https://justmysocks.net/members/aff.php?aff=32305"
+
+[[params.categoryCards]]
+name = "V2Free✈️机场"
+favicon = "https://w1.v2free.cc/images/authlogo.jpg"
+link = "https://w1.v2free.cc/auth/register?code=5Cs1"
 
 [params.sidebar]
 emoji = "🍥"

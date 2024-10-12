@@ -311,3 +311,146 @@
       aspect-ratio: 16 / 9;
   }
 }
+
+// 顶部按钮卡片
+.category-cards.full-width {
+  width: 100%;
+  max-width: 100%;
+  padding: 2rem 0;
+  background-color: #f8f9fa;
+  overflow: hidden;
+}
+
+.slider-container {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 40px 20px; /* Added padding to the bottom */
+}
+
+.category-slider {
+  display: flex;
+  transition: transform 0.3s ease;
+  padding-bottom: 15px; /* Added padding to ensure shadow visibility */
+}
+
+.slider-page {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  flex: 0 0 calc(100% + 11.11%);  /* This makes it show 8.5 cards per row */
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 0.75rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: #333;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.category-icon {
+  margin-bottom: 0.5rem;
+}
+
+.category-favicon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.category-name {
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.slider-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.slider-nav:hover {
+  background-color: rgba(255, 255, 255, 1);
+  color: #000;
+}
+
+.slider-nav.prev {
+  left: 10px;
+}
+
+.slider-nav.next {
+  right: 10px;
+}
+
+.slider-nav svg {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 1200px) {
+  .slider-page {
+      grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-page {
+      grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-page {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* WeChat QR Code Styles */
+.menu-item-wechat {
+  text-align: center;
+  padding: 1rem 0;
+  border-top: 1px solid var(--body-text-color);
+}
+
+.wechat-title {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: var(--body-text-color);
+}
+
+.wechat-qr {
+  max-width: 150px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}

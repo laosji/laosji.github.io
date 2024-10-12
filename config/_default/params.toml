@@ -1,5 +1,3 @@
-# config/_default/params.toml
-
 [sidebar]
 compact = false
 emoji = "🍥"
