@@ -54,7 +54,7 @@ coupons:
     validDate: "2024-12-31"
     link: "https://www.hstbroker.com/kh/apply/online?_scnl=E1NC"
     code: "E1NC"
-    thumbnail: "public/images/huast10.jpg"
+    thumbnail: "static/images/huast10.jpg"
 ---
 
 ## 优惠券使用说明
