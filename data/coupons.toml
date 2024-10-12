@@ -32,7 +32,7 @@ rules = """
 validDate = "2024-10-31"
 link = "https://app.longbridgehk.com/ac/oa?account_channel=lb&channel=HB100034&invite-code=48T09P"
 code = "48T09P"
-thumbnail = public/images/longbridge10.jpg"
+thumbnail = "public/images/longbridge10.jpg"
 
 [[coupons]]
 name = "华盛通10月新人奖励最高1300HKD"
