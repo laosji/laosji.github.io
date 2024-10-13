@@ -434,23 +434,62 @@
   }
 }
 
-/* WeChat QR Code Styles */
-.menu-item-wechat {
-  text-align: center;
-  padding: 1rem 0;
-  border-top: 1px solid var(--body-text-color);
+// footer
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  font-family: 'Arial', sans-serif;
 }
 
-.wechat-title {
-  display: block;
+.footer-left {
+  text-align: left;
+  flex: 1;
+}
+
+.footer-right {
+  flex: 0 0 auto;
+  margin-left: 2rem;
+}
+
+.copyright, .powerby {
   font-size: 0.9rem;
+  color: #6c757d;
   margin-bottom: 0.5rem;
-  color: var(--body-text-color);
 }
 
 .wechat-qr {
-  max-width: 150px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.wechat-qr img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.wechat-qr p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #495057;
+  text-align: center;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .site-footer {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .footer-right {
+      margin-left: 0;
+      margin-top: 1rem;
+  }
 }

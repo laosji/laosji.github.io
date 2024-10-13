@@ -1,88 +1,82 @@
 {{ define "main" }}
-    <!-- Main content container -->
-    <div class="container">
-        {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
-        {{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }}
-        {{ $filtered := ($pages | intersect $notHidden) }}
-        {{ $pag := .Paginate ($filtered) }}
+    {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+    {{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }}
+    {{ $filtered := ($pages | intersect $notHidden) }}
+    {{ $pag := .Paginate ($filtered) }}
 
-        <!-- Featured Posts Section -->
-        {{ $featuredPosts := where $filtered "Params.featured" true | first 3 }}
-        {{ if $featuredPosts }}
-        <section class="featured-posts-banner">
-            <div class="container">
-                <div class="featured-grid">
-                    {{ range $featuredPosts }}
-                    <article class="featured-post">
-                        <div class="featured-image">
-                            {{ if .Params.image }}
-                            <img src="{{ .Params.image }}" alt="{{ .Title }}">
-                            {{ else }}
-                            <img src="/default-feature-image.jpg" alt="Default Image">
-                            {{ end }}
-                        </div>
-                        <div class="featured-content">
-                            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-                        </div>
-                        <div class="featured-overlay"></div>
-                    </article>
-                    {{ end }}
-                </div>
-            </div>
-        </section>
-        {{ end }}
-
-        <!-- Category Cards Section - Full Width -->
-    {{ if .Site.Params.categoryCards }}
-    <section class="category-cards full-width">
-        <div class="slider-container">
-            <div class="category-slider">
-                {{ range $index, $element := .Site.Params.categoryCards }}
-                    {{ if modBool $index 17 }}
-                        <div class="slider-page">
-                    {{ end }}
-                    <a href="{{ .link }}" class="category-card" target="_blank" rel="noopener noreferrer">
-                        <div class="category-icon">
-                            <img src="{{ .favicon }}" alt="{{ .name }} icon" class="category-favicon">
-                        </div>
-                        <div class="category-name">{{ .name }}</div>
-                    </a>
-                    {{ if or (eq (mod (add $index 1) 17) 0) (eq (add $index 1) (len $.Site.Params.categoryCards)) }}
-                        </div>
-                    {{ end }}
+    <!-- Featured Posts Section -->
+    {{ $featuredPosts := where $filtered "Params.featured" true | first 3 }}
+    {{ if $featuredPosts }}
+    <section class="featured-posts-banner">
+        <div class="container">
+            <div class="featured-grid">
+                {{ range $featuredPosts }}
+                <article class="featured-post">
+                    <div class="featured-image">
+                        {{ if .Params.image }}
+                        <img src="{{ .Params.image }}" alt="{{ .Title }}">
+                        {{ else }}
+                        <img src="/default-feature-image.jpg" alt="Default Image">
+                        {{ end }}
+                    </div>
+                    <div class="featured-content">
+                        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                    </div>
+                    <div class="featured-overlay"></div>
+                </article>
                 {{ end }}
             </div>
-            <button class="slider-nav prev" aria-label="Previous">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M15 6l-6 6l6 6"></path>
-                </svg>
-            </button>
-            <button class="slider-nav next" aria-label="Next">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M9 6l6 6l-6 6"></path>
-                </svg>
-            </button>
         </div>
     </section>
     {{ end }}
 
-        <!-- Article List Section -->
-        <section class="article-list">
-            {{ range $index, $element := $pag.Pages }}
-                {{ partial "article-list/default" . }}
-            {{ end }}
+    <!-- Category Cards Section -->
+    {{ if .Site.Params.categoryCards }}
+    <div class="category-cards-wrapper">
+        <section class="category-cards full-width">
+            <div class="slider-container">
+                <div class="category-slider">
+                    {{ range $index, $element := .Site.Params.categoryCards }}
+                        {{ if modBool $index 17 }}
+                            <div class="slider-page">
+                        {{ end }}
+                        <a href="{{ .link }}" class="category-card" target="_blank" rel="noopener noreferrer">
+                            <div class="category-icon">
+                                <img src="{{ .favicon }}" alt="{{ .name }} icon" class="category-favicon">
+                            </div>
+                            <div class="category-name">{{ .name }}</div>
+                        </a>
+                        {{ if or (eq (mod (add $index 1) 17) 0) (eq (add $index 1) (len $.Site.Params.categoryCards)) }}
+                            </div>
+                        {{ end }}
+                    {{ end }}
+                </div>
+                <button class="slider-nav prev" aria-label="Previous">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M15 6l-6 6l6 6"></path>
+                    </svg>
+                </button>
+                <button class="slider-nav next" aria-label="Next">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M9 6l6 6l-6 6"></path>
+                    </svg>
+                </button>
+            </div>
         </section>
-
-        <!-- Pagination -->
-        {{- partial "pagination.html" . -}}
     </div>
+    {{ end }}
 
+    <!-- Article List Section -->
+    <section class="article-list">
+        {{ range $index, $element := $pag.Pages }}
+            {{ partial "article-list/default" . }}
+        {{ end }}
+    </section>
+
+    {{- partial "pagination.html" . -}}
     {{- partial "footer/footer" . -}}
-
-    <!-- JavaScript at the bottom for performance -->
-    <script src="{{ "js/category-slider.js" | relURL }}"></script>
 {{ end }}
 
 {{ define "right-sidebar" }}

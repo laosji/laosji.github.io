@@ -74,14 +74,6 @@
             </a>
         </li>
         {{ end }}
-
-         <!-- 在菜单底部添加WeChat二维码部分 -->
-         {{ if .Site.Params.wechatQR }}
-         <li class="menu-item-wechat">
-             <span class="wechat-title">{{ .Site.Params.wechatQR.title | default "WeChat" }}</span>
-             <img src="{{ .Site.Params.wechatQR.image }}" alt="WeChat QR Code" class="wechat-qr" loading="lazy">
-         </li>
-         {{ end }}
          
         <li class="menu-bottom-section">
             <ol class="menu">

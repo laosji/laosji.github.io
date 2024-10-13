@@ -1,21 +1,35 @@
-{{- $ThemeVersion := "1.1.0" -}}
 <footer class="site-footer">
-    <section class="copyright">
-        &copy; 
-        {{ if and (.Site.Params.footer.since) (ne .Site.Params.footer.since (int (now.Format "2006"))) }}
-            {{ .Site.Params.footer.since }} - 
-        {{ end }}
-        {{ now.Format "2006" }} {{ .Site.Title }}
-
-        {{ with .Site.Params.footer.customText }}
-            <br/> {{ . | safeHTML }}
-        {{ end }}
-    </section>
-    <section class="powerby">
-        {{- $Generator := `<a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>` -}}
-        {{- $Theme := printf `<b><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener" data-version="%s">陕ICP备18020703号</a></b>` $ThemeVersion -}}
-        {{- $DesignedBy := `<a href="https://laosji.net" target="_blank" rel="noopener">Laosji</a>` -}}
-        {{ T "footer.builtWith" (dict "Generator" $Generator) | safeHTML }} <br />
-        {{ T "footer.designedBy" (dict "Theme" $Theme "DesignedBy" $DesignedBy) | safeHTML }}
-    </section>
+    <div class="footer-left">
+        <section class="copyright">
+            &copy; 
+            {{ if and (.Site.Params.footer.since) (ne .Site.Params.footer.since (int (now.Format "2006"))) }}
+                {{ .Site.Params.footer.since }} -
+            {{ end }}
+            {{ now.Format "2006" }} {{ .Site.Title }}
+            {{ with .Site.Params.footer.customText }}
+                <br/> {{ . | safeHTML }}
+            {{ end }}
+        </section>
+        
+        <section class="powerby">
+            {{- $Generator := `<a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>` -}}
+            {{- $Theme := `<b><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">陕ICP备18020703号</a></b>` -}}
+            {{- $DesignedBy := `<a href="https://laosji.net" target="_blank" rel="noopener">Laosji</a>` -}}
+            {{ T "footer.builtWith" (dict "Generator" $Generator) | safeHTML }} <br />
+            {{ T "footer.designedBy" (dict "Theme" $Theme "DesignedBy" $DesignedBy) | safeHTML }}
+        </section>
+    </div>
+    
+    <div class="footer-right">
+        <section class="wechat-qr">
+            {{ $qrImage := resources.Get "img/qrcode.jpg" }}
+            {{ if $qrImage }}
+                {{ $qrImage := $qrImage.Fit "120x120" }}
+                <img src="{{ $qrImage.RelPermalink }}" alt="WeChat QR Code" width="120" height="120">
+            {{ else }}
+                <p>QR Code image not found</p>
+            {{ end }}
+            <p>扫码关注我的微信公众号</p>
+        </section>
+    </div>
 </footer>

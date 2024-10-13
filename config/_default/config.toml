@@ -48,11 +48,7 @@ data_file = "data/coupons.toml"
 [params]
 mainSections = ["post"]
 rssFullContent = true
-
-# WeChat QR 码设置
-[params.wechatQR]
-title = "扫码关注我的微信"
-image = "assets/img/qrcode.jpg"
+wechatQRCode = "img/qrcode.jpg"
 
 # 首页顶部卡片设置
 [[params.categoryCards]]
@@ -228,3 +224,8 @@ unsafe = true
 
 [pagination]
 pagesInArchive = 5
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
