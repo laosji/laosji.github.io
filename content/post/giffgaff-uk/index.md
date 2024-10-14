@@ -2,7 +2,7 @@
 title: "英国giffgaff手机卡eSIM切换教程"
 description: 收到后按照的教程进行激活和充值即可使用，套餐选择pay as you go，即可享受0月租，保号只需要在180天内余额变动一次，发一条短信即可保号，一次充值可用十几年以上。
 date: 2024-10-13T13:44:12Z
-image: https://prod-files-secure.s3.us-west-2.amazonaws.com/895044c1-354e-49fb-b52f-6b8c06c8981b/a4492a27-1b10-402c-a5dd-60e3054d1980/image.png
+image: giffgaff.jpg
 math: 
 license: 
 hidden: false
