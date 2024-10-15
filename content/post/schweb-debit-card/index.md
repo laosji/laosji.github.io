@@ -40,16 +40,16 @@ draft: false
 
 1. 首先开通嘉信理财证券账户，开户全套中国资料是没有问题的，在国内就能开。[之前写过攻略，大家可以参考](https://mp.weixin.qq.com/s?__biz=MjM5MTM0NTgxNQ==&mid=2648636151&idx=1&sn=2e1a7f7e33eb6f61273e83797bd3da42&chksm=be9ca70f89eb2e194a4e2fa6f23aa2da75f368c5ff98ed89ae940bed32e9b3a4cd8dab677fd2&scene=21#wechat_redirect)。申请链接：<https://www.schwab.com/client-referral?refrid=REFERCHPQ83NZ，这个链接可以拿到奖励，存入2.5万美金可以拿到100美金奖励，建议大家可以先拿奖励，然后再申请借记卡。>
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/895044c1-354e-49fb-b52f-6b8c06c8981b/99122398-77b2-4310-97c8-05630a1a819f/image.png)
 
 1. 登录嘉信理财网页版，右上角找到客服，选择借记卡和支票，填好表提交后联系客服告诉他你需要申请一张借记卡。然后填表，填好提交后。打电话找人工客服，国内可打免费400电话：4001206217，找中文客服。根据经验，如果你资产没达标，那就是没废话直接秒拒，如果资产达标，会和经理申请balabala，后续就等下卡吧。如果资产达标2.5万美金以上，还以“国内不能办”秒拒的，你就说找他们主管或者重新打换个客服。记得在申请之前一定要让自己先成为有价值的用户，否则别浪费时间和感情了。
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/895044c1-354e-49fb-b52f-6b8c06c8981b/0890946e-f31a-4ca9-b03b-693e086ddd39/image.png)
+![提交申请](schwebhome.jpg)
 
- **审核通过快递到国内地址**
+
+ # 审核通过快递到国内地址
 
 快递回国，费用15美金。
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/895044c1-354e-49fb-b52f-6b8c06c8981b/007a4e3a-530b-4554-8142-0102fd193800/image.png)
+![快递费](expressfee.jpg)
 
 这张卡虽然是VISA卡，但扣的是你嘉信理财账户里的钱，本质上是借记卡。下卡后你的账户里可以不用一直保持2.5万美金，至少放1000维持账户不关即可，嘉信的风控相比银行来说小很多，有的时候跟客服商量商量都好说。另外，据说英国地址可以1美元就下卡，大家可以用ifast和wise英区的账单做地址证明，进行开户，如果只是为了拿卡的话，长期用还是建议真实地址比较可靠。
