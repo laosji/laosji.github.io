@@ -38,7 +38,7 @@ draft: false
 
 # 申请步骤
 
-1. 首先开通嘉信理财证券账户，开户全套中国资料是没有问题的，在国内就能开。[之前写过攻略，大家可以参考](https://mp.weixin.qq.com/s?__biz=MjM5MTM0NTgxNQ==&mid=2648636151&idx=1&sn=2e1a7f7e33eb6f61273e83797bd3da42&chksm=be9ca70f89eb2e194a4e2fa6f23aa2da75f368c5ff98ed89ae940bed32e9b3a4cd8dab677fd2&scene=21#wechat_redirect)。申请链接：https://www.schwab.com/client-referral?refrid=REFERCHPQ83NZ，这个链接可以拿到奖励，存入2.5万美金可以拿到100美金奖励，建议大家可以先拿奖励，然后再申请借记卡。
+1. 首先开通嘉信理财证券账户，开户全套中国资料是没有问题的，在国内就能开。[之前写过攻略，大家可以参考](https://mp.weixin.qq.com/s?__biz=MjM5MTM0NTgxNQ==&mid=2648636151&idx=1&sn=2e1a7f7e33eb6f61273e83797bd3da42&chksm=be9ca70f89eb2e194a4e2fa6f23aa2da75f368c5ff98ed89ae940bed32e9b3a4cd8dab677fd2&scene=21#wechat_redirect)。申请链接：<https://www.schwab.com/client-referral?refrid=REFERCHPQ83NZ，这个链接可以拿到奖励，存入2.5万美金可以拿到100美金奖励，建议大家可以先拿奖励，然后再申请借记卡。>
 
 ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/895044c1-354e-49fb-b52f-6b8c06c8981b/99122398-77b2-4310-97c8-05630a1a819f/image.png)
 
@@ -46,8 +46,7 @@ draft: false
 
 ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/895044c1-354e-49fb-b52f-6b8c06c8981b/0890946e-f31a-4ca9-b03b-693e086ddd39/image.png)
 
-
-1. **审核通过快递到国内地址**
+ **审核通过快递到国内地址**
 
 快递回国，费用15美金。
 
