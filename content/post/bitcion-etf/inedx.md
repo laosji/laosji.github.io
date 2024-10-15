@@ -2,7 +2,7 @@
 title: "比特币ETF在哪买？"
 description: 与普通ETF不同，比特币ETF仅专注于加密货币，为投资者提供了便捷的投资产品来跟踪和了解比特币的价格走势。现货比特币ETF不是持有混合资产，而是旨在反映比特币本身的价格。
 date: 2024-10-14T11:21:56Z
-image: bitcionetf.jpg
+image: etf.webp
 math: 
 license: 
 hidden: false
