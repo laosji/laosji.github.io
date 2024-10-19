@@ -2,7 +2,7 @@
 title: "降息！高能玩法：不入股市不买房，这些银行的高息定存别再错过！"
 description: 动动手就能让金钱为你工作，躺赢高息利率。
 date: 2024-10-19T01:42:20Z
-image: (image-2.png)
+image: image-2.png
 math: 
 license: 
 hidden: false
