@@ -72,12 +72,12 @@ coupons:
     code: "100283"
     thumbnail: "/images/zhuorui.jpg"
   
-  - name: "立桥证券开户【最高可得3股理想美股股票】" 
-    amount:"888HKD"
+  - name: "立桥证券开户【最高可得3股理想美股股票】"
+    amount: "888 HKD"
     rules: |
-    - 2股【理想汽車】美股(代號NASDAQ: LI)
-    - 好友同行加碼额外1股理想汽车股票
-    - 永久$0平台費永久$0佣金(港期買賣)
+      - 2股【理想汽车】美股(代号NASDAQ: LI)
+      - 好友同行加码额外1股理想汽车股票
+      - 永久$0平台费，永久$0佣金(港期买卖)
     validDate: "2024-10-31"
     link: "https://h.wlsec.com:6003/webstatic/sign/index.html#/register?channelId=EO0SJua%2FGSP9adQxdXBBdQ%3D%3D&customerSourceId=4xBYZ66VGEkCBgE6uGyiXg%3D%3D&aeCode=HHwfH8dTlcImS%2BveqlB41g%3D%3D&lang=zh_HK"
     thumbnail: "/images/liqiao.jpg"
