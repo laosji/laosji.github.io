@@ -1,75 +1,160 @@
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('DOM fully loaded and parsed');
+window.addEventListener('load', function() {
+    initCategorySlider();
+});
 
+function initCategorySlider() {
     const slider = document.querySelector('.category-slider');
     const prevBtn = document.querySelector('.slider-nav.prev');
     const nextBtn = document.querySelector('.slider-nav.next');
     const pages = document.querySelectorAll('.slider-page');
-
-    console.log('Slider:', slider);
-    console.log('Prev button:', prevBtn);
-    console.log('Next button:', nextBtn);
-    console.log('Pages:', pages);
+    const container = document.querySelector('.slider-container');
+    const CARDS_PER_PAGE = 17; // 每页固定显示17个卡片
 
     if (!slider || !prevBtn || !nextBtn || pages.length === 0) {
-        console.error('One or more essential elements are missing');
+        console.error('Slider elements not found');
         return;
     }
 
     let currentPage = 0;
+    let startX;
+    let isDragging = false;
+    let currentTranslate = 0;
 
-    function updateSlider() {
-        console.log('Updating slider, current page:', currentPage);
-        const offset = currentPage * 88.89;  // 88.89% is the visible part of each page (100 / 9 * 8)
-        slider.style.transform = `translateX(-${offset}%)`;
-        updateButtonVisibility();
+    // 获取页面宽度
+    function getPageWidth() {
+        return container ? container.offsetWidth : 0;
     }
 
-    function updateButtonVisibility() {
-        prevBtn.style.display = currentPage === 0 ? 'none' : 'flex';
-        nextBtn.style.display = currentPage === pages.length - 1 ? 'none' : 'flex';
-        console.log('Button visibility updated');
+    // 更新滑块位置
+    function updateSliderPosition(animate = true) {
+        if (!animate) {
+            slider.style.transition = 'none';
+        } else {
+            slider.style.transition = 'transform 0.3s ease-in-out';
+        }
+
+        const offset = currentPage * getPageWidth();
+        slider.style.transform = `translateX(-${offset}px)`;
+
+        if (!animate) {
+            requestAnimationFrame(() => {
+                slider.style.transition = 'transform 0.3s ease-in-out';
+            });
+        }
+
+        updateNavigationState();
     }
 
-    function goToNextPage() {
-        console.log('Next button clicked');
-        if (currentPage < pages.length - 1) {
+    // 更新导航按钮状态
+    function updateNavigationState() {
+        const isFirstPage = currentPage === 0;
+        const isLastPage = currentPage === pages.length - 1;
+
+        prevBtn.disabled = isFirstPage;
+        nextBtn.disabled = isLastPage;
+        
+        prevBtn.style.opacity = isFirstPage ? '0.5' : '1';
+        nextBtn.style.opacity = isLastPage ? '0.5' : '1';
+    }
+
+    // 处理滑动逻辑
+    function goToPage(direction) {
+        if (direction === 'next' && currentPage < pages.length - 1) {
             currentPage++;
-            updateSlider();
-        }
-    }
-
-    function goToPrevPage() {
-        console.log('Prev button clicked');
-        if (currentPage > 0) {
+        } else if (direction === 'prev' && currentPage > 0) {
             currentPage--;
-            updateSlider();
+        }
+        updateSliderPosition();
+    }
+
+    // 触摸事件处理
+    function touchStart(event) {
+        startX = event.touches[0].clientX;
+        isDragging = true;
+        currentTranslate = -currentPage * getPageWidth();
+        slider.style.transition = 'none';
+    }
+
+    function touchMove(event) {
+        if (!isDragging) return;
+
+        const currentX = event.touches[0].clientX;
+        const diff = currentX - startX;
+        const newTranslate = currentTranslate + diff;
+        
+        // 添加边界阻力
+        const maxTranslate = 0;
+        const minTranslate = -(pages.length - 1) * getPageWidth();
+        
+        if (newTranslate > maxTranslate) {
+            slider.style.transform = `translateX(${newTranslate * 0.3}px)`;
+        } else if (newTranslate < minTranslate) {
+            const overScroll = minTranslate - newTranslate;
+            slider.style.transform = `translateX(${(minTranslate - overScroll * 0.3)}px)`;
+        } else {
+            slider.style.transform = `translateX(${newTranslate}px)`;
         }
     }
 
-    nextBtn.addEventListener('click', goToNextPage);
-    prevBtn.addEventListener('click', goToPrevPage);
+    function touchEnd(event) {
+        if (!isDragging) return;
+        
+        isDragging = false;
+        slider.style.transition = 'transform 0.3s ease-in-out';
+        
+        const currentX = event.changedTouches[0].clientX;
+        const diff = currentX - startX;
+        const threshold = getPageWidth() * 0.2; // 20% threshold
+        
+        if (Math.abs(diff) > threshold) {
+            if (diff > 0 && currentPage > 0) {
+                currentPage--;
+            } else if (diff < 0 && currentPage < pages.length - 1) {
+                currentPage++;
+            }
+        }
+        
+        updateSliderPosition();
+    }
 
-    console.log('Event listeners added to buttons');
+    // 添加事件监听器
+    prevBtn.addEventListener('click', () => goToPage('prev'));
+    nextBtn.addEventListener('click', () => goToPage('next'));
+    
+    // 触摸事件
+    slider.addEventListener('touchstart', touchStart);
+    slider.addEventListener('touchmove', touchMove);
+    slider.addEventListener('touchend', touchEnd);
+    
+    // 窗口大小改变时重新计算
+    const handleResize = debounce(() => {
+        updateSliderPosition(false);
+    }, 100);
+    
+    window.addEventListener('resize', handleResize);
 
-    // Optional: Add touch swipe functionality for mobile devices
-    let touchStartX = 0;
-    let touchEndX = 0;
-
-    slider.addEventListener('touchstart', e => {
-        touchStartX = e.changedTouches[0].screenX;
-    });
-
-    slider.addEventListener('touchend', e => {
-        touchEndX = e.changedTouches[0].screenX;
-        if (touchStartX - touchEndX > 50) {
-            goToNextPage();
-        } else if (touchEndX - touchStartX > 50) {
-            goToPrevPage();
+    // 添加键盘导航
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') {
+            goToPage('prev');
+        } else if (e.key === 'ArrowRight') {
+            goToPage('next');
         }
     });
 
-    // Initialize button visibility
-    updateButtonVisibility();
-    console.log('Initial setup complete');
-});
+    // 初始化
+    updateSliderPosition(false);
+}
+
+// 防抖函数
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
