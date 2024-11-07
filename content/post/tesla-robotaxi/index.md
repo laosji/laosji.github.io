@@ -8,6 +8,11 @@ license:
 hidden: false
 comments: true
 draft: false
+categories:
+    - 科技
+tags:
+    - 特斯拉
+    - 电动汽车
 ---
 
 

@@ -8,6 +8,10 @@ license:
 hidden: false
 comments: true
 draft: false
+categories:
+    - 自由职业
+tags:
+    - 公众号
 ---
 
 
