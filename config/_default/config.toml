@@ -177,11 +177,12 @@ readingTime = true
 
 [params.article.license]
 enabled = true
-default = "Licensed under CC BY-NC-SA 4.0"
+default = "Licensed under <a href=\"https://creativecommons.org/licenses/by-nc-nd/4.0/\" target=\"_blank\">CC BY-NC-ND 4.0</a>"
 
 [params.footer]
 since = 2020
-customText = ""
+customText = "Content licensed under <a href=\"https://creativecommons.org/licenses/by-nc-nd/4.0/\" target=\"_blank\">CC BY-NC-ND 4.0</a>"
+
 
 [params.widgets]
 homepage = [
