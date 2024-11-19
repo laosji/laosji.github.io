@@ -49,6 +49,7 @@ data_file = "data/coupons.toml"
 mainSections = ["post"]
 rssFullContent = true
 wechatQRCode = "img/qrcode.jpg"
+favicon = "/favicon.png"
 
 # 首页顶部卡片设置
 [[params.categoryCards]]
