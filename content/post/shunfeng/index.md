@@ -4,6 +4,13 @@ description:
 date: 2024-11-20T06:54:46Z
 image: image.png
 math: 
+categories:
+    - 港美股
+    - 理财
+    - 炒股
+tags:
+    - 顺丰控股
+    - 港股打新
 license: 
 hidden: false
 comments: true
