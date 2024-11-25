@@ -4,6 +4,10 @@ description:
 date: 2024-11-05T02:26:44Z
 image: chuangshiji1.png
 math: 
+categories:
+    - 理财
+tags:
+    - 房价
 license: 
 hidden: false
 comments: true

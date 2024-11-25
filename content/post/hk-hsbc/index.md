@@ -4,6 +4,11 @@ description:
 date: 2024-10-20T12:06:33Z
 image: hsbc-one.jpg
 math: 
+categories:
+    - 离岸账户
+    - 银行开户
+tags:
+    - 汇丰银行
 license: 
 hidden: false
 comments: true
