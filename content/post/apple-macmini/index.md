@@ -4,6 +4,11 @@ description:
 date: 2024-11-03T04:02:10Z
 image: 2d_bottom__fbzecpbfajm2_xlarge_2x.jpg
 math: 
+categories:
+    - 科技
+tags:
+    - 苹果
+    - Mac mini M4
 license: 
 hidden: false
 comments: true
