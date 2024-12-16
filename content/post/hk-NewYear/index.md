@@ -35,25 +35,25 @@ draft: false
 ![alt text](image.png)
 
 - [**香港国际机场旅客咨询中心**](https://www.discoverhongkong.com/tc/plan/traveller-info/visitor-centres.html)
-    
+
     （2024年12月14日至2024年12月31日）
-    
+
 - [**九龙旅客咨询中心**](https://www.discoverhongkong.com/tc/plan/traveller-info/visitor-centres.html)
-    
+
     （2024年12月14日至2024年12月31日）
-    
+
 - [**香港西九龙站旅客咨询中心**](https://www.discoverhongkong.com/tc/plan/traveller-info/visitor-centres.html)
-    
+
     （2024年12月14日至2024年12月31日）
-    
+
 - **圣诞小镇（九龙西九文化区海滨西草坪）**
-    - 2024年12月14、15及19至23日下午5:00至晚上11:00
-    - 2024年12月24至25日下午5:00至晚上8:00及晚上8:30至凌晨1:00
-    - 2024年12月26日下午5:00至晚上8:00及晚上8:30至11:00
-    - 2024年12月27日下午5:00至晚上11:00
-    - 2024年12月28日下午5:00至晚上8:00及晚上8:30至11:00
-    - 2024年12月29至30日下午5:00至晚上11:00
-    - 2024年12月31日下午5:00至晚上7:00
+2024年12月14、15及19至23日下午5:00至晚上11:00
+2024年12月24至25日下午5:00至晚上8:00及晚上8:30至凌晨1:00
+2024年12月26日下午5:00至晚上8:00及晚上8:30至11:00
+2024年12月27日下午5:00至晚上11:00
+2024年12月28日下午5:00至晚上8:00及晚上8:30至11:00
+2024年12月29至30日下午5:00至晚上11:00
+2024年12月31日下午5:00至晚上7:00
     ![alt text](GdDATk6akAALzBK.jpeg) ![alt text](GdDATk7agAATri_.jpeg) ![alt text](GdyVXucaoAA161F.jpeg)
 
 # 2.维多利亚港跨年倒计时
@@ -61,4 +61,4 @@ draft: false
 跨年夜，维多利亚港的夜空将变成光与影的画卷，交织出璀璨夺目的烟花音乐汇演。这场长达12分钟的汇演，透过烟花特效演绎大自然的不同形态，贯穿汇演主题「幸福乐章」，传递对美好生活的祝愿。烟花汇演将有四大特效惊艳登场，其中包括香港首次采用的特效，为维港天际线添上色彩，与全世界共同迎接2025年的新篇章！
 ![alt text](image.png)
 
-{{< button url="https://mp.weixin.qq.com/s/-yWblz1C4oAqAcZYlRJERA" text="去公众号查看" target="_blank" >}}
+{{< button url="<https://mp.weixin.qq.com/s/-yWblz1C4oAqAcZYlRJERA>A>A>" text="去公众号查看" target="_blank" >}}
