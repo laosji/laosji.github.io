@@ -25,7 +25,7 @@ draft: false
 IRS官方给出的定义式：
 
 > IRS向个人核发个人报税识别号码的目的是帮助他们遵从美国税法的规定，同时使没有资格获得社会安全号码者的报税表和缴纳的税金能够获得有效率的处理与记录。核发这些号码不受移民身份影响，因为无论是税法定义居民或非税法定义居民，都需根据《国税法规》要求在美国报税。个人报税识别号码不得用于申报联邦税外的其他用途。
-> 
+>
 
 ## 注意ITIN **不会：**
 
@@ -45,8 +45,8 @@ ITIN的有效期是3年或者5年。持有人必须要在3年或者5年有过报
 
 2、**联系IRS认可的CAA，**远程认证。不需要寄护照，价格RMB2K以内，时间也比较短，[**ITIN](https://itangtalk.com/what-is-itin/)整体办理时间需要两到三个月，**无需自己填写税表。
 
-IRS 也就是美国国税局也是会授权全美大大小小的代理机构的，被认证的 ITIN 代理人也叫 Certified Acceptance Agent，简称 CAA。**CAA代理申请[ITIN](https://itangtalk.com/what-is-itin/)只需要提供两个资料：护照扫描件，[ITIN](https://itangtalk.com/what-is-itin/)申请表（中文版）。我自己也找自己合作的CAA申请，自己弄真的太费劲了。**找CAA无需邮寄资料，提供电子版，会计师会在美国那边打印出来，并邮寄到IRS美国国税局。我们合作认证的CAA可以在美国IRS官网查询到，https://www.irs.gov/individuals/international-taxpayers/acceptance-agents-china。
+IRS 也就是美国国税局也是会授权全美大大小小的代理机构的，被认证的 ITIN 代理人也叫 Certified Acceptance Agent，简称 CAA。**CAA代理申请[ITIN](https://itangtalk.com/what-is-itin/)只需要提供两个资料：护照扫描件，[ITIN](https://itangtalk.com/what-is-itin/)申请表（中文版）。我自己也找自己合作的CAA申请，自己弄真的太费劲了。**找CAA无需邮寄资料，提供电子版，会计师会在美国那边打印出来，并邮寄到IRS美国国税局。我们合作认证的CAA可以在美国IRS官网查询到，<https://www.irs.gov/individuals/international-taxpayers/acceptance-agents-china。>。>
 
 如果你不想折腾，最简单的方式就是第2种，找支持远程视频认证的代理。价格基本是在1k5左右。在Fiver上也有这个服务价格250美元左右。如果你希望自己折腾那么，你需要去**美国大使馆（北京）/美国领事馆（广州、上海、沈阳、武汉）做护照公证**（你不想寄丢护照的情况下）。
 
-{{< button url="https://mp.weixin.qq.com/s/7KL-0E67c-JN5kbDj2jUnw" text="去公众号查看原文" target="_blank" >}
+{{< button url="<https://mp.weixin.qq.com/s/7KL-0E67c-JN5kbDj2jUnw>w>" text="去公众号查看原文" target="_blank" >}}
