@@ -3,6 +3,11 @@ title: "新专栏「美股成长日记」第一篇：美联储降息，股市为
 description: 
 date: 2024-12-19T09:32:09Z
 image: image.png
+categories:
+    - 美股成长日记
+tags:
+    - 专栏
+    - 美股
 math: 
 license: 
 hidden: false
