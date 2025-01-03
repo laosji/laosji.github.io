@@ -61,4 +61,4 @@ draft: false
 跨年夜，维多利亚港的夜空将变成光与影的画卷，交织出璀璨夺目的烟花音乐汇演。这场长达12分钟的汇演，透过烟花特效演绎大自然的不同形态，贯穿汇演主题「幸福乐章」，传递对美好生活的祝愿。烟花汇演将有四大特效惊艳登场，其中包括香港首次采用的特效，为维港天际线添上色彩，与全世界共同迎接2025年的新篇章！
 ![alt text](image.png)
 
-{{< button url="<https://mp.weixin.qq.com/s/-yWblz1C4oAqAcZYlRJERA>A>A>" text="去公众号查看" target="_blank" >}}
+{{< button url="<https://mp.weixin.qq.com/s/-yWblz1C4oAqAcZYlRJERA>" text="去公众号查看" target="_blank" >}}
