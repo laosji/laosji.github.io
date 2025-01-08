@@ -3,6 +3,11 @@ title: "2025香港金管局最新「存款保障计划」第二阶段正式落�
 description: 
 date: 2025-01-06T13:38:56Z
 image: image-1.png
+categories:
+    - 香港
+tags:
+    - 银行
+    - 存款保障
 math: 
 license: 
 hidden: false
