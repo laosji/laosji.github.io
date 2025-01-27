@@ -4,6 +4,10 @@ description:
 date: 2024-04-25T03:32:22Z
 image: https://i.imgur.com/8SfV8vu.jpeg
 math: 
+categories:
+    - 开发
+tags:
+    - 小程序
 license: 
 hidden: false
 comments: true

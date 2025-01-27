@@ -4,6 +4,11 @@ description: 收到后按照的教程进行激活和充值即可使用，套餐�
 date: 2024-10-13T13:44:12Z
 image: giffgaff.jpg
 math: 
+categories:
+    - 手机卡
+tags:
+    - giffgaff
+    - 英国
 license: 
 hidden: false
 comments: true

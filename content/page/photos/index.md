@@ -11,6 +11,16 @@ menu:
 ---
 
 
+> --- Tesla Robotaxi ---
+
+![We,Robot](werobot.jpg)![Robotaxi](Robotaxi1.jpg)![](Robotaxi2.jpg)![](cybercab1.jpeg)
+
+![Cybercab](Robotaxi3.jpg)![](cybercab2.jpeg)![](cybercab3.jpeg)![](cybercab4.jpeg)![](cybercab5.jpeg)
+
+![](robovan6.jpeg)![](robovan4.jpeg)![](robovan7.jpg)
+
+![Robovan](robovan1.jpeg)![](robovan2.jpeg)![](robovan3.jpeg)![](robovan5.jpeg)
+
 > --- 日产发布Hyper Force概念跑车：纯电GT-R来了 ---
 
 在2023东京车展上，日产发布了全新的电动超跑概念车Hyper Force，就设计而言，该车可以视为是纯电版GT-R。GT-R可以说是日产家的图腾，经久不衰，在世界范围内都有大批量的粉丝，那么这款纯电跑车能否接过交接棒？

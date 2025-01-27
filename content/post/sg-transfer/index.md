@@ -3,7 +3,7 @@ title: "汇款到新加坡：这样操作免手续费！0门槛在家注册一�
 description: 汇款到新加坡：这样操作免手续费！0门槛在家注册一个新加坡银行账户，境外收付款太方便了。
 date: 2024-07-07T03:39:02Z
 image: transfer-panda.jpg
-ategories:
+categories:
     - 新加坡
 tags:
     - 华侨银行

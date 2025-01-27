@@ -3,7 +3,7 @@ title: "我从英国转运回来的沃达丰（Vodafone）手机卡申请及激�
 description: 上次从英国转运了wise和几张手机卡，一直没时间激活，今天终于找时间激活了一下。看了下2张EE卡号码不是很好，Vodafone这个号码也没好到哪里去，但是和我国内的号码数字很多是相同的，所以我就选择了Vodafone，这个信号确实蛮好的。今天和大家分享一下Vodafone英国手机卡的免费申请以及激活方式。
 date: 2024-07-06T02:34:52Z
 image: vodafone.jpg
-ategories:
+categories:
     - 手机卡
 tags:
     - 沃达丰
