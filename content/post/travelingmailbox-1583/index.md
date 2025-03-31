@@ -7,7 +7,7 @@ categories:
 tags:
     - 美国地址
     - USPS1583地址认证
-image: image-6.png
+image: box.png
 math: 
 license: 
 hidden: false
