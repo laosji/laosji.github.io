@@ -5,30 +5,39 @@
     {{ $pag := .Paginate ($filtered) }}
 
     <!-- Featured Posts Section -->
-    {{ $featuredPosts := where $filtered "Params.featured" true | first 3 }}
-    {{ if $featuredPosts }}
-    <section class="featured-posts-banner">
-        <div class="container">
-            <div class="featured-grid">
-                {{ range $featuredPosts }}
-                <article class="featured-post">
-                    <div class="featured-image">
-                        {{ if .Params.image }}
-                        <img src="{{ .Params.image }}" alt="{{ .Title }}">
-                        {{ else }}
-                        <img src="/default-feature-image.jpg" alt="Default Image">
-                        {{ end }}
-                    </div>
-                    <div class="featured-content">
-                        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-                    </div>
-                    <div class="featured-overlay"></div>
-                </article>
-                {{ end }}
-            </div>
+{{ $featuredPosts := where $filtered "Params.featured" true | first 3 }}
+{{ if $featuredPosts }}
+<section class="featured-posts-banner">
+    <div class="container">
+        <div class="featured-grid">
+            {{ range $featuredPosts }}
+            <article class="featured-post">
+                <div class="featured-image">
+                    {{ if .Params.image }}
+                    <!-- 使用指定的封面图 -->
+                    <img src="{{ .Params.image }}" alt="{{ .Title }}">
+                    {{ else }}
+                    <!-- 从内容中提取第一张图片，如果没有则显示色块 -->
+                    {{ $firstImage := findRE "<img src=\"([^\"]+)\"" .Content 1 }}
+                    {{ if $firstImage }}
+                        {{ $imageSrc := replaceRE "<img src=\"([^\"]+)\".*" "$1" (index $firstImage 0) }}
+                        <img src="{{ $imageSrc }}" alt="{{ .Title }}">
+                    {{ else }}
+                        <!-- 显示带有随机生成颜色的色块 -->
+                        <div class="color-block" style="background-color: {{ delimit (slice "#" (substr (md5 .Title) 0 6)) "" }}; width: 100%; height: 100%;"></div>
+                    {{ end }}
+                    {{ end }}
+                </div>
+                <div class="featured-content">
+                    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                </div>
+                <div class="featured-overlay"></div>
+            </article>
+            {{ end }}
         </div>
-    </section>
-    {{ end }}
+    </div>
+</section>
+{{ end }}
 
     <!-- Category Cards Section -->
     {{ if .Site.Params.categoryCards }}
