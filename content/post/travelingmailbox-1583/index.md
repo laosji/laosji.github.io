@@ -7,7 +7,7 @@ categories:
 tags:
     - 美国地址
     - USPS1583地址认证
-image: box.png
+image: https://laosji.net/content/post/travelingmailbox-1583/box.png
 math: 
 license: 
 hidden: false

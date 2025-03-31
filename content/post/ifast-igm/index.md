@@ -2,12 +2,13 @@
 title: "iFast旗下iGM「奕丰环球市场」内地开户攻略：顾问认证，全程在线开户"
 description: 
 date: 2025-01-16T06:07:41Z
-image: 001.jpeg
+image: https://laosji.net/content/post/ifast-igm/001.jpeg
 math: 
 license: 
 hidden: false
 comments: true
 draft: false
+featured: true
 ---
 
 
