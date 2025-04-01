@@ -1,12 +1,12 @@
 ---
-title: "华通证券（W Broker）竟然可以入U提法币，大陆护照注册还可以交易数字货币！"
+title: "wealth Broker竟然可以入U提法币，0门槛注册交易港美股、数字货币！"
 description: 
 date: 2025-03-31T03:44:19Z
 image: https://laosji.net/content/post/wbroker/001.jpeg
 categories:
     - 港美股
 tags:
-    - 华通证券（Wealth Broker）
+    - Wealth Broker
 math: 
 license: 
 hidden: false
