@@ -55,4 +55,4 @@ draft: false
 
 ![alt text](image-7.png)![alt text](image-8.png)
 
-<a href="https://mp.weixin.qq.com/s/2mNZXuRMRKVTPpmi69B7jQ" target="_blank" rel="noopener">公众号阅读</a>
+{{< wechat-button link="https://mp.weixin.qq.com/s/2mNZXuRMRKVTPpmi69B7jQ" text="去公众号阅读" bgcolor="#1e90ff" color="#ffffff" >}}
