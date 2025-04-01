@@ -176,6 +176,10 @@ math = false
 toc = true
 readingTime = true
 
+[params.article.image]
+enabled = true
+style = "normal"  # 可选值: normal, cover, full
+
 [params.article.license]
 enabled = true
 default = "Licensed under <a href=\"https://creativecommons.org/licenses/by-nc-nd/4.0/\" target=\"_blank\">CC BY-NC-ND 4.0</a>"

@@ -3,7 +3,7 @@
 title: "全美国中国人最容易申请的银行卡「华美银行」：远程申请无需额外资料2周下户，第一张真正属于你的美卡！"
 description: 
 date: 2024-11-19T09:59:40Z
-image: eastwestbank.png
+image: https://laosji.net/content/post/eastwestbank/eastwest.png
 math: 
 categories:
     - 离岸账户
