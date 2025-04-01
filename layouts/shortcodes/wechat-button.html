@@ -1,0 +1,20 @@
+{{ $link := .Get "link" | default "https://mp.weixin.qq.com/YOUR_DEFAULT_LINK" }}
+{{ $text := .Get "text" | default "在公众号阅读" }}
+{{ $bgcolor := .Get "bgcolor" | default "#07C160" }}
+{{ $color := .Get "color" | default "white" }}
+
+<div class="wechat-article-button" style="margin: 1.5rem 0; text-align: center;">
+  <a href="{{ $link }}" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; background-color: {{ $bgcolor }}; color: {{ $color }}; border-radius: 4px; text-decoration: none; font-weight: bold; transition: background-color 0.3s;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="{{ $color }}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;">
+      <path d="M9 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+      <path d="M15 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+      <path d="M6 20.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+      <path d="M18 20.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+      <path d="M3 7.8c0-1 .8-1.8 1.8-1.8H9"></path>
+      <path d="M21 12.2c0 1-.8 1.8-1.8 1.8H15"></path>
+      <path d="M3 12.2c0 1 .8 1.8 1.8 1.8H9"></path>
+      <path d="M21 7.8c0-1-.8-1.8-1.8-1.8H15"></path>
+    </svg>
+    {{ $text }}
+  </a>
+</div>
