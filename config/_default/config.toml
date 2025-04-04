@@ -203,6 +203,8 @@ page = [
     { type = "toc" }
 ]
 
+ignoreLogs = ['warning-goldmark-raw-html']
+
 [menu]
 main = [
     { identifier = "home", name = "Home", url = "/", weight = -100 },
