@@ -193,15 +193,6 @@ page = [
     { type = "toc" }
 ]
 
-# ✅ 忽略 Hugo 原始 HTML 警告日志（可选）
-ignoreLogs = ['warning-goldmark-raw-html']
-
-# ✅ 启用 Hugo Goldmark 原始 HTML 渲染功能
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
-
 [markup.highlight]
 noClasses = false
 
