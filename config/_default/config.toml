@@ -4,22 +4,15 @@ languageCode = "zh-cn"
 title = "laosji"
 
 # Theme i18n support
-# Available values: en, fr, id, ja, ko, pt-br, zh-cn, zh-tw, es, de, nl, it, th, el, uk, ar
 defaultContentLanguage = "zh-cn"
-
-# Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
-# This will make .Summary and .WordCount behave correctly for CJK languages.
 hasCJKLanguage = true
-
-# Change it to your Disqus shortname before using
 disqusShortname = "laosji"
 
-# config.toml
 [[module.imports]]
 path = "github.com/CaiJimmy/hugo-theme-stack/v3"
 
 [minify]
-minifyOutput = true  # 启用 HTML/CSS/JS 压缩
+minifyOutput = true
 
 [asset]
 fingerprinting = true
@@ -44,14 +37,12 @@ content_directory = "content/coupons"
 template = "layouts/coupons/single.html"
 data_file = "data/coupons.toml"
 
-# 主要设置
 [params]
 mainSections = ["post"]
 rssFullContent = true
 wechatQRCode = "img/qrcode.jpg"
 favicon = "/favicon.png"
 
-# 首页顶部卡片设置
 [[params.categoryCards]]
 name = "Moomoo SG"
 favicon = "https://passport.moomoo.com/favicon1.ico"
@@ -178,7 +169,7 @@ readingTime = true
 
 [params.article.image]
 enabled = true
-style = "normal"  # 可选值: normal, cover, full
+style = "normal"
 
 [params.article.license]
 enabled = true
@@ -187,7 +178,6 @@ default = "Licensed under <a href=\"https://creativecommons.org/licenses/by-nc-n
 [params.footer]
 since = 2020
 customText = "Content licensed under <a href=\"https://creativecommons.org/licenses/by-nc-nd/4.0/\" target=\"_blank\">CC BY-NC-ND 4.0</a>"
-
 
 [params.widgets]
 homepage = [
@@ -203,32 +193,17 @@ page = [
     { type = "toc" }
 ]
 
+# ✅ 忽略 Hugo 原始 HTML 警告日志（可选）
 ignoreLogs = ['warning-goldmark-raw-html']
 
-[menu]
-main = [
-    { identifier = "home", name = "Home", url = "/", weight = -100 },
-    { identifier = "about", name = "About", url = "/about", weight = -90 },
-    { identifier = "archives", name = "Archives", url = "/archives", weight = -70 },
-    { identifier = "search", name = "Search", url = "/search", weight = -60 }
-]
-
-[related]
-includeNewer = true
-threshold = 60
-toLower = false
-[[related.indices]]
-name = "tags"
-weight = 100
-[[related.indices]]
-name = "categories"
-weight = 200
+# ✅ 启用 Hugo Goldmark 原始 HTML 渲染功能
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [markup.highlight]
 noClasses = false
-
-[markup.goldmark.renderer]
-unsafe = true
 
 [pagination]
 pagesInArchive = 5
