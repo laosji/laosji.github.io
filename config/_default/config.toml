@@ -207,8 +207,3 @@ noClasses = false
 
 [pagination]
 pagesInArchive = 5
-
-[module]
-  [[module.mounts]]
-    source = "assets"
-    target = "assets"
