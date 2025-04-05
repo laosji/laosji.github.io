@@ -42,37 +42,43 @@ featured: true
 - visa/mater card，或者PayPal等，可以支付美金的银行账户。
 好了，准备好这些我们就可以开始了。
 我在开始之前，找了很多朋友咨询以及自己对比了很多家提供美国的地址的都平台，毕竟一年要二百美金，还是要找一个靠谱的平台，看到网上很多人介绍Anytime Mailbox，研究了一下发现Anytime Mailbox这个平台类似淘宝，只不过卖的商品是美国地址，有很多商家来提供，这就会导致地址质量很难保证。最后选择了美国当地人也会用的Travelingmailbox，这个在reddit上也有很多推荐，而且用Travelingmailbox最大的好处是“不用找第三方公证，平台提供免费公证服务，注册好地址之后，只需要预约视频认证就可以了”。
-「Travelingmailbox注册地址」：https://travelingmailbox.com/?ref=3435 
+「Travelingmailbox注册地址」：<https://travelingmailbox.com/?ref=3435> 
 年付可以节省2个月的费用，也就是说付10个月的费用，可以用一年，送的这两个月用来申请ITIN差不多够了。选择了Travelingmailbox这个平台之后，我们先不着急付款，先来找找有没有符合自己要求的地址，我们尽量要找个人地址，商业地址的话申请信用卡和银行卡不一定行。另外，看你是用来购物还是申请信用卡，海淘购物的话找免税州，比如：阿拉斯加、特拉华州、俄勒冈州等。申请信用卡的话可以找大城市地址比如纽约、华盛顿等。
 现在打开Travelingmailbox官网，来找个地址，然后查查这个地址是不是个人地址。
 
 ## 查地址
-在这里查：https://www.smarty.com/products/single-address，当地址CMRA为N的时候就表示可以被银行接受。选好地址之后，就开始注册吧。
+
+在这里查：<https://www.smarty.com/products/single-address，当地址CMRA为N的时候就表示可以被银行接受。选好地址之后，就开始注册吧。>
 ![alt text](image-4.png)
 
 ## 注册步骤
-打开这个注册链接：https://travelingmailbox.com/?ref=3435 ，我找到地址之后，选择了Basic Plan，怕被用滥所以我就不公布我选择的地址了。
+
+打开这个注册链接：<https://travelingmailbox.com/?ref=3435> ，我找到地址之后，选择了Basic Plan，怕被用滥所以我就不公布我选择的地址了。
 ![alt text](image-3.png)
 
-## 点击Get Started，开始注册。
+## 点击Get Started，开始注册
+
 选择地址‍‍在这里找到自己查好的地址，并点击“Subscribe Now”，继续注册。‍‍‍
 选择套餐‍‍为了让大家看得明白，我用Google翻译了一下，我选的这个地址要19.95/月，结算周期我直接选了一年，可以免费2个月。一共需要支付199美元，检查一下 没问题。
 ![alt text](image-2.png)
 
-## 点击立即订阅，去付款吧。
+## 点击立即订阅，去付款吧
+
 支付这个页面需要我们输入注册信息，姓名注意，要按照美国的习惯。first name写名字的拼音，last name写姓的拼音。我之前申请美国汇丰按照我们中文的顺序，客户经理就告诉我是不行的。
 ‍‍支付方式的话让大家准备的万事达或Master card可以拿出来了，我用汇丰Red来支付的，非常快就完成了。本来想用PayPal，结果一看PayPal账户只有1百多美金不够199，先让PayPal账户继续躺着吧。![alt text](image-1.png)‍‍‍‍‍‍‍‍
 
 ‍‍‍‍‍‍‍‍注册完成后收到了4封邮件，其中有一封非常重要，需要我们点击链接激活账户。
 
 ## 提交1583表格‍
+
 登录成功之后，就会有一个提示，开始填写USPS 1583表格，我们认证完成之后才可以正式使用这个地址。接下来就要用到我们的护照和国家驾照翻译件了。这里填的地址信息要和国际驾照上面的地址一致。
 注册页面底部的Yes和No，不要点错了。‍‍‍‍‍‍‍‍‍‍
 ![USPS 1583 from](image.png)
 
 ## 视频认证
+
 提交之后，我们就可以取预约视频认证了。
-直接点网站右下角的在线客服，这个在线客服做的不错，用起来很方便，注册完成后会提示你有哪些待办事项需要完成。我们点击在线客服的图标，然后就会显示很多选项，我们点一下“USPS 1583 Video Verification”，由于时差关系，系统自动回复了不在工作时间，等他们上班再联系吧。到这里我们就就有一个美国地址了，你会了吧。想要和我一起玩美卡的比如Apple card、 C1 、大通chase、Bank of American、Citi Bank、American express等等，快来注册吧。‍‍‍‍‍‍‍‍‍‍‍‍‍https://travelingmailbox.com/?ref=3435
+直接点网站右下角的在线客服，这个在线客服做的不错，用起来很方便，注册完成后会提示你有哪些待办事项需要完成。我们点击在线客服的图标，然后就会显示很多选项，我们点一下“USPS 1583 Video Verification”，由于时差关系，系统自动回复了不在工作时间，等他们上班再联系吧。到这里我们就就有一个美国地址了，你会了吧。想要和我一起玩美卡的比如Apple card、 C1 、大通chase、Bank of American、Citi Bank、American express等等，快来注册吧。‍‍‍‍‍‍‍‍‍‍‍‍‍<https://travelingmailbox.com/?ref=3435>
 
 国家驾照翻译件在租租车上付邮费就能办。‍‍‍‍‍‍‍‍‍‍美国ITIN
 
