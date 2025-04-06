@@ -2,7 +2,7 @@
 title: "免费注册了一个0月租的美国手机号「Helium Mobile」支持Wi-Fi Calling可免费收发短信，接打电话！"
 description: 
 date: 2025-04-06T07:51:40Z
-image: image-1.png
+image: image.png
 categories:
     - 手机卡
 tags:
