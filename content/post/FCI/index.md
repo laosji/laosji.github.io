@@ -27,6 +27,7 @@ draft: false
 ![星展银行](image.png)
 
 ## 渣打银行
+
 在看这个美金的，0%-5.8%，我去年做的是7%，标的是美股，在元旦前后提前敲出，拿到7%。今年美股由于特没谱新政的影响，目前很多机构已经下调了美股的回报，我年初买的时候是6%，现在已经降到5.8%了。以美元结算的结构性存款，挂钩的标的也大多都是美股，比如英伟达、微软、Meta、台积电、亚马逊、Apple等等，每个产品都有不同的标的，可以选择自己看好的板块，我选择的就是科技。
 
 ![alt text](image-3.png)![alt text](image-4.png)
@@ -35,6 +36,7 @@ draft: false
 ![alt text](image-5.png)
 
 ## 东亚银行
+
 下面来看看东亚的，东亚的产品特点就是简单直给，汇添盈人民币直接给到2.45%，我做了好几期了。
 ![alt text](image-6.png)
 
@@ -52,7 +54,6 @@ draft: false
 
 和其他银行不一样的是，星展的门槛比较高，属于高端玩家的游戏。有需要详细了解的可以加我微信。
 
-
 结构性存款是一种结合存款和金融衍生品的理财产品。部分资金享受存款的固定收益，另一部分挂钩金融市场（如股票指数、汇率、黄金价格），收益会随之浮动。比较适合愿意承担一定收益波动、希望在保本基础上争取更高回报的人。
 
-{{< wechat-button link="https://mp.weixin.qq.com/s/fPYMdnYP7kLEFbqrUAZbsw" text="去公众号阅读" bgcolor="#1e90ff" color="#ffffff" >}}
+{{< wechat-button link="<https://mp.weixin.qq.com/s/fPYMdnYP7kLEFbqrUAZbsw>" text="去公众号阅读" bgcolor="#1e90ff" color="#ffffff" >}}

@@ -59,4 +59,4 @@ draft: false
 
 ![兑换](image-2.png)
 
-{{< wechat-button link="https://mp.weixin.qq.com/s/eAtiIBoHQ6qJ_M13hAESwA" text="去公众号阅读" bgcolor="#1e90ff" color="#ffffff" >}}
+{{< wechat-button link="<https://mp.weixin.qq.com/s/eAtiIBoHQ6qJ_M13hAESwA>" text="去公众号阅读" bgcolor="#1e90ff" color="#ffffff" >}}
