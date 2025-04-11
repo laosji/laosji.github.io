@@ -8,7 +8,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "netlify dev"
   },
   "repository": {
     "type": "git",
@@ -23,10 +24,4 @@
     "url": "https://github.com/laosji/laosji.github.io/issues"
   },
   "homepage": "https://github.com/laosji/laosji.github.io#readme"
-}
-
-{
-  "scripts": {
-    "dev": "netlify dev"
-  }
 }
