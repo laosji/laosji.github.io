@@ -1,0 +1,50 @@
+{{ define "main" }}
+<div class="thanks-container">
+  <div class="thanks-card">
+    <div class="thanks-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+      </svg>
+    </div>
+    <h1 class="thanks-title">{{ .Title }}</h1>
+    <div class="thanks-content">
+      {{ .Content }}
+    </div>
+  </div>
+</div>
+
+<style>
+  .thanks-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding: 2rem;
+  }
+  
+  .thanks-card {
+    background-color: var(--card-background);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 2rem;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .thanks-icon {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .thanks-title {
+    margin-bottom: 1rem;
+  }
+  
+  .thanks-content {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+</style>
+{{ end }}

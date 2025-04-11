@@ -1,0 +1,208 @@
+<div class="donation-container">
+    <button id="donate-button" class="donation-button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+      </svg>
+      支持博主
+    </button>
+  </div>
+  
+  <style>
+    .donation-container {
+      margin: 2rem 0;
+      text-align: center;
+    }
+    
+    .donation-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      background-color: var(--primary-color);
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .donation-button:hover {
+      background-color: var(--primary-hover-color);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+  </style>
+
+
+<div id="donation-modal" class="donation-modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h3>选择打赏金额</h3>
+      <div class="amount-options">
+        <button class="amount-option" data-amount="6">¥6</button>
+        <button class="amount-option" data-amount="16">¥16</button>
+        <button class="amount-option" data-amount="66">¥66</button>
+        <button class="amount-option" data-amount="166">¥166</button>
+      </div>
+      <div class="custom-amount">
+        <input type="number" id="custom-amount" placeholder="自定义金额" min="1">
+        <button id="custom-amount-btn">确定</button>
+      </div>
+    </div>
+  </div>
+  
+  <style>
+    .donation-modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.5);
+    }
+    
+    .modal-content {
+      position: relative;
+      background-color: var(--card-background);
+      margin: 15% auto;
+      padding: 2rem;
+      border-radius: 8px;
+      max-width: 500px;
+      animation: modalFadeIn 0.3s;
+    }
+    
+    @keyframes modalFadeIn {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    
+    .close-modal {
+      position: absolute;
+      right: 1rem;
+      top: 0.5rem;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+    
+    .amount-options {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    
+    .amount-option {
+      padding: 0.75rem;
+      border: 2px solid var(--border-color);
+      background: transparent;
+      border-radius: 4px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    
+    .amount-option:hover, .amount-option.selected {
+      border-color: var(--primary-color);
+      background-color: rgba(var(--primary-color-rgb), 0.1);
+    }
+    
+    .custom-amount {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+    
+    .custom-amount input {
+      flex: 1;
+      padding: 0.75rem;
+      border: 2px solid var(--border-color);
+      border-radius: 4px;
+      background-color: var(--card-background);
+      color: var(--body-text-color);
+    }
+    
+    .custom-amount button {
+      padding: 0.75rem 1.5rem;
+      background-color: var(--primary-color);
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+
+document.addEventListener('DOMContentLoaded', function() {
+    const donateButton = document.getElementById('donate-button');
+    const modal = document.getElementById('donation-modal');
+    const closeModal = document.querySelector('.close-modal');
+    const amountOptions = document.querySelectorAll('.amount-option');
+    const customAmountBtn = document.getElementById('custom-amount-btn');
+    let selectedAmount = 0;
+    
+    if (donateButton && modal) {
+      // 打开模态框
+      donateButton.addEventListener('click', function() {
+        modal.style.display = 'block';
+      });
+      
+      // 关闭模态框
+      closeModal.addEventListener('click', function() {
+        modal.style.display = 'none';
+      });
+      
+      // 点击模态框外部关闭
+      window.addEventListener('click', function(event) {
+        if (event.target == modal) {
+          modal.style.display = 'none';
+        }
+      });
+      
+      // 选择金额
+      amountOptions.forEach(option => {
+        option.addEventListener('click', function() {
+          selectedAmount = Number(this.dataset.amount);
+          amountOptions.forEach(opt => opt.classList.remove('selected'));
+          this.classList.add('selected');
+          
+          processPayment(selectedAmount);
+        });
+      });
+      
+      // 自定义金额
+      customAmountBtn.addEventListener('click', function() {
+        const customAmount = document.getElementById('custom-amount').value;
+        if (customAmount && Number(customAmount) > 0) {
+          selectedAmount = Number(customAmount);
+          processPayment(selectedAmount);
+        }
+      });
+    }
+    
+    function processPayment(amount) {
+      const articleTitle = document.querySelector('.article-title').textContent;
+      const articleUrl = window.location.href;
+      
+      fetch('/.netlify/functions/create-checkout', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ 
+          amount: amount * 100, // 转换为分
+          articleTitle: articleTitle,
+          articleUrl: articleUrl,
+        }),
+      })
+      .then(response => response.json())
+      .then(session => {
+        const stripe = Stripe('pk_test_YOUR_PUBLISHABLE_KEY');
+        return stripe.redirectToCheckout({ sessionId: session.id });
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+    }
+  });
