@@ -1,10 +1,13 @@
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 exports.handler = async (event) => {
+  if (event.httpMethod !== 'POST') {
+    return { statusCode: 405, body: 'Method Not Allowed' };
+  }
+  
   try {
     const { amount, articleTitle, articleUrl } = JSON.parse(event.body);
     
-    // 创建支付意图
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
       line_items: [
@@ -13,7 +16,7 @@ exports.handler = async (event) => {
             currency: 'cny',
             product_data: {
               name: `打赏: ${articleTitle}`,
-              description: `感谢您对文章的支持`,
+              description: '感谢您对文章的支持',
             },
             unit_amount: amount,
           },
@@ -31,6 +34,9 @@ exports.handler = async (event) => {
 
     return {
       statusCode: 200,
+      headers: {
+        'Content-Type': 'application/json',
+      },
       body: JSON.stringify({ id: session.id }),
     };
   } catch (error) {

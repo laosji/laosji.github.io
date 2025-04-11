@@ -24,3 +24,9 @@
   },
   "homepage": "https://github.com/laosji/laosji.github.io#readme"
 }
+
+{
+  "scripts": {
+    "dev": "netlify dev"
+  }
+}
