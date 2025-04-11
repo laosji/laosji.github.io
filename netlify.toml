@@ -1,8 +1,30 @@
 [build]
   publish = "public"
   functions = "netlify/functions"
+  command = "hugo --gc --minify"
+
+[build.environment]
+  HUGO_VERSION = "0.145.0"  # 替换为您实际使用的 Hugo 版本
 
 [[redirects]]
-  from = "/.netlify/functions/*"
+  from = "/api/*"
   to = "/.netlify/functions/:splat"
   status = 200
+
+# 性能优化设置
+[build.processing]
+  skip_processing = false
+
+[build.processing.css]
+  bundle = true
+  minify = true
+
+[build.processing.js]
+  bundle = true
+  minify = true
+
+[build.processing.html]
+  pretty_urls = true
+
+[build.processing.images]
+  compress = true
