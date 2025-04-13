@@ -11,6 +11,7 @@ tags:
     - 星展银行
     - 东亚银行
 math: 
+wechatLink: "https://mp.weixin.qq.com/s/fPYMdnYP7kLEFbqrUAZbsw"
 license: 
 hidden: false
 comments: true
@@ -55,5 +56,3 @@ draft: false
 和其他银行不一样的是，星展的门槛比较高，属于高端玩家的游戏。有需要详细了解的可以加我微信。
 
 结构性存款是一种结合存款和金融衍生品的理财产品。部分资金享受存款的固定收益，另一部分挂钩金融市场（如股票指数、汇率、黄金价格），收益会随之浮动。比较适合愿意承担一定收益波动、希望在保本基础上争取更高回报的人。
-
-{{< wechat-button link="<https://mp.weixin.qq.com/s/fPYMdnYP7kLEFbqrUAZbsw>" text="去公众号阅读" bgcolor="#1e90ff" color="#ffffff" >}}

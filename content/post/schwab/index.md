@@ -9,6 +9,7 @@ tags:
     - 华美银行
     - 美国银行
 math: 
+wechatLink: "https://mp.weixin.qq.com/s/i3unwGJxiji-4CkOQ5wxsA"
 license: 
 hidden: false
 comments: true
@@ -42,6 +43,3 @@ NO，不行，选了国籍是China之后，直接提示申请国际账户。
 去年租的美国地址发现被识别为P.O. Box地址，注册stripe和银行卡都不行，最后只好改了地址，好在使用的服务商可以全额退款，然后给我推荐了residence地址，最后成功搞定。目前在用的两家服务商分别是travelingmailbox和usglobalmail都还挺靠谱的，不满意全额退款给我了。前几天换了新地址，今天一大早又做了UPS地址认证，上次用了5分钟，这次用了半分钟，太效率了。
 
 好了，就这样吧。有任何问题，欢迎大家在评论区一起交流。
-
-
-{{< wechat-button link="https://mp.weixin.qq.com/s/i3unwGJxiji-4CkOQ5wxsA" text="去公众号阅读" bgcolor="#1e90ff" color="#ffffff" >}}
