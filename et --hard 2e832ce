@@ -1,0 +1,290 @@
+[33m73a08e4[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m config
+[33m05f3c41[m OK
+[33m38fa1d6[m config
+[33m2fa5dab[m hugo --minify
+[33mc8356e3[m post
+[33mecf95e7[m config
+[33m7b87a96[m ok
+[33mca8041c[m toml
+[33me59e2a0[m ok
+[33mf97629d[m OK
+[33m609160b[m ok
+[33m9762596[m post
+[33m1497f45[m OK
+[33m145a3f3[m ok
+[33md08bda7[m post
+[33m47ddd18[m Add Stripe payment integration
+[33mc8999f5[m Fix package.json syntax
+[33m3be7dec[m Update checkout function, package.json, and config files
+[33m2e832ce[m Fix: re-add Hugo Stack theme submodule
+[33m3db54db[m Fix submodule: update stack theme to latest working commit
+[33mc0655e1[m update stripe payment
+[33mc8873d2[m post
+[33m7ec9a55[m schwab
+[33m774e6aa[m stock
+[33m7ca4879[m post
+[33m9f433c9[m image
+[33m5e2ed6a[m post
+[33m8f14a1d[m helium mobile
+[33m85f7eb0[m i
+[33m2bd8272[m pic
+[33m52583fb[m ok
+[33m3c60f5b[m on
+[33m9061e6b[m ok
+[33m7c42e43[m timeout
+[33mecb705c[m config
+[33me744eb9[m git push origin master
+[33m170e538[m git push origin master
+[33mfbf9bad[m[33m ([m[1;32mgh-pages[m[33m)[m Merge remote-tracking branch 'origin/master' into gh-pages
+[33mb15af82[m v2
+[33m7680c40[m chore: update actions/cache to v4 and remove deprecated env
+[33m5a2018b[m markdown
+[33m1d8d8f9[m deploy
+[33ma2a4c8c[m post
+[33m5231882[m trigger redeploy
+[33m17e0e93[m update
+[33mc0b6304[m 触发重新部署
+[33m579020a[m 添加新文章：Wealth Broker介绍
+[33m4c8274d[m Force deploy
+[33m43f4bc5[m Update theme submodule
+[33m111d0a1[m post emperor
+[33m6702f1d[m 触发重新构建
+[33m1536756[m 触发重新构建
+[33mf9047ae[m Update CNAME
+[33m6c5220d[m Merge branch 'gh-pages' of https://github.com/laosji/laosji.github.io into gh-pages
+[33m7bfb83e[m Initial commit
+[33m8142d12[m 更新博客
+[33m758285e[m 更新博客内容
+[33m0f1a996[m post
+[33mfe06749[m 添加特色文章区域和样式
+[33me3ba842[m Create CNAME
+[33m19f0fd6[m Delete CNAME
+[33mcbc1be5[m post
+[33maacb27e[m post
+[33m5252644[m Manually deploy Hugo site
+[33m1910b51[m 触发重新构建
+[33m6d31948[m post
+[33m7038638[m 触发重新构建
+[33m2f4cc21[m post
+[33m1afaa82[m update
+[33mbc329bd[m w
+[33ma3f3465[m Update CNAME
+[33m23b03fb[m Initial commit
+[33md7e1a35[m 更新博客
+[33mbaafabb[m 更新博客内容
+[33m9d3555b[m post
+[33m5277558[m 添加特色文章区域和样式
+[33ma4525c5[m Merge branch 'gh-pages' of https://github.com/laosji/laosji.github.io into gh-pages
+[33m240a06c[m post
+[33m8ecf1c9[m post
+[33m2ffff6b[m Create CNAME
+[33med145c8[m Delete CNAME
+[33m763784f[m Manually deploy Hugo site
+[33mf6332fd[m 触发重新构建
+[33m2702abb[m Update CNAME
+[33m16539f8[m Create CNAME
+[33m04d21fb[m 修复主题子模块问题
+[33m08ca3f4[m post
+[33m37d3338[m 更新主题子模块到最新版本
+[33m1e104e5[m 触发重新构建
+[33mafa3356[m post
+[33m16b1465[m update
+[33m110da11[m w
+[33mc3c21e5[m Update CNAME
+[33m3137417[m Create CNAME
+[33mfe2872d[m img
+[33m527d454[m Merge branch 'my-hugo-blog'
+[33m99f6616[m update
+[33m5f98a5f[m Merge branch 'master' of https://github.com/laosji/laosji.github.io
+[33m7a85da2[m post
+[33mffb37e7[m CI: Update theme
+[33m1f64006[m moonshot
+[33mbc0185e[m update
+[33mfe349e4[m post
+[33m96c61d4[m ifast
+[33m67559ce[m update
+[33m7a7d62a[m ifast
+[33mb28fd8e[m post-deposit
+[33m99ecd21[m post
+[33m3a7ea88[m featured: true
+[33m9bba36a[m usps1583
+[33mc04981e[m travelingmailbox
+[33m64cdd34[m post
+[33mfc4a4dc[m post
+[33m76458a4[m post
+[33mbcade05[m post
+[33m6cfb6b3[m new post
+[33m0efce47[m new post
+[33mbde9ec1[m post update
+[33m6e05eae[m post
+[33m40f3b8b[m post
+[33m4f8de83[m bybit
+[33mcd1fa35[m post
+[33mf44612c[m post
+[33ma8db485[m post
+[33m7af385b[m post
+[33m150e85c[m qr
+[33mee64e7a[m welab
+[33m9e8d8a0[m invite
+[33m37f0637[m post
+[33mdce8c2e[m shunfeng
+[33ma517ec7[m eastwestbank
+[33m4011417[m Merge branch 'master' of https://github.com/laosji/laosji.github.io
+[33m36bdefb[m favicon
+[33m17cbef6[m Add files via upload
+[33m0a43119[m post
+[33m2c94c54[m ibkr
+[33maa2867a[m Charles Schwab
+[33mb807934[m bea
+[33md417eef[m ocbc
+[33m7f55e60[m post
+[33m2e499c4[m tag
+[33m358cd94[m icbc
+[33m4fb7bf1[m index
+[33mece963d[m pic
+[33m95682c0[m house price
+[33m33d0bdb[m Mac mini
+[33mf86ea95[m iOS18.1
+[33m19cf79f[m post
+[33m56d26a3[m js
+[33ma85feed[m post
+[33m8232790[m post
+[33m8341ddf[m post
+[33mf9d78b1[m post
+[33m898eba8[m post
+[33m4b24b75[m post
+[33m0cd0588[m Merge branch 'master' of https://github.com/laosji/laosji.github.io
+[33mf867112[m post
+[33m4a78fd8[m CI: Update theme
+[33m3580c88[m Merge branch 'master' of https://github.com/laosji/laosji.github.io
+[33ma89e741[m post
+[33m1762167[m CI: Update theme
+[33m6b37171[m image
+[33m31eb5c5[m image
+[33mabb7139[m image
+[33m9bea9d6[m post
+[33m20e3163[m postliqiao
+[33mb3db1a8[m img
+[33mec19230[m footer- coupon
+[33m171a8d2[m dbspost
+[33m234a448[m post
+[33mdc5d563[m photos
+[33m071a443[m adsence
+[33mb38b11e[m  Googlead
+[33m590089f[m pic
+[33m8c12218[m post
+[33mec27546[m post
+[33mb0590e9[m pic
+[33mbcc3816[m post
+[33md6e7c6a[m post
+[33m55e01fc[m post
+[33maeaa3af[m post
+[33mb06bdab[m footer
+[33m04ad813[m images
+[33m654b196[m Add image and update site
+[33mc42de6a[m images
+[33m9f72ee1[m image
+[33mcc20ac2[m Add WeChat QR code image
+[33mbab1c8c[m Publish new article
+[33md42c219[m newpost
+[33m35ce130[m Deploy Hugo site
+[33m77406f6[m image
+[33m71699f5[m 图片添加
+[33m82fdbe1[m 优化
+[33me1d6c2d[m 优惠券page显示优化
+[33m4bd53e4[m images
+[33m9ea302a[m img
+[33m4133f99[m img
+[33mc311b62[m img
+[33mfe7fd17[m Added and initialized Hugo theme Stack as submodule
+[33m798a24e[m img
+[33md7432c4[m img
+[33m47b520b[m 优惠券
+[33mc83cb9c[m 还原
+[33mcb4434c[m seo
+[33m5ae905a[m Add baseof.html and single.html layout for blog posts
+[33mebf7228[m config
+[33mca3af7c[m CI: Update theme
+[33md8d89cb[m post
+[33m56d94fc[m copy
+[33mc630d9d[m profile
+[33medfdf51[m footer
+[33m749542a[m 404
+[33mbaff449[m update
+[33mb0cddbc[m update
+[33mc9f67b3[m beian
+[33mef342ec[m custometext
+[33m5a99248[m  layouts
+[33m8916336[m footer
+[33mb4ae3c2[m footer
+[33mabf6b43[m update
+[33m7c0aec0[m post
+[33mfddb893[m post
+[33m043fed1[m update
+[33mbf2eec6[m post
+[33mc9ddbc5[m  post
+[33m189508c[m post
+[33mf57beb6[m pic
+[33m5855599[m post
+[33m2b8304f[m post
+[33m8ede901[m post
+[33m42bbd67[m post
+[33m9bd8803[m post
+[33mcab9ebf[m update
+[33m36392cd[m pic
+[33m641b6e2[m update
+[33m18bfc79[m post
+[33m21a2e47[m nav
+[33maf9528c[m pic
+[33m4c76254[m menu
+[33m3842ea7[m menu
+[33m10ab8e2[m post
+[33m8235de3[m post
+[33ma0fa4ac[m new post
+[33mec0aac3[m add tg
+[33m54582c1[m add tg
+[33m37d215b[m post ocbc
+[33m16851f5[m update
+[33m40f0dee[m new post
+[33m5060db1[m CI: Update theme
+[33ma56c697[m post
+[33mef98447[m new post
+[33m1989e6f[m CI: Update theme
+[33m3b880cf[m CI: Update theme
+[33m49810a5[m CI: Update theme
+[33m605a169[m CI: Update theme
+[33m4b08c46[m CI: Update theme
+[33mb6cf37a[m CI: Update theme
+[33md8b98c3[m post
+[33m5b035e7[m post
+[33m77c27b8[m post
+[33ma5db438[m delete post
+[33mc06cdff[m post
+[33m13f274c[m picture
+[33m81cca0d[m post
+[33m4b2260d[m new post
+[33m80c836d[m new post
+[33m8d8f908[m new post
+[33m5759eb0[m update
+[33me2355e2[m update
+[33mc9b80a0[m update
+[33m91e964d[m post
+[33mfcbc075[m post
+[33m1f94523[m new post
+[33m31a964e[m new post
+[33m2b432ea[m new photos
+[33m2f1722b[m photos
+[33m393e61e[m photos
+[33mfb574d0[m update
+[33m31ebfca[m updeta
+[33mf588b3a[m add  links
+[33m897e7af[m Merge branch 'master' of https://github.com/laosji/laosji.github.io
+[33mfc8c03d[m add link
+[33mbd90f33[m CI: Update theme
+[33m801b965[m favicon
+[33m82bb328[m post
+[33m994bfaf[m post
+[33m02fa279[m post
+[33m67e01e9[m link update
+[33mf1d63f3[m post
+[33m144d7e5[m im
