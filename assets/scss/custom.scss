@@ -522,3 +522,18 @@
     }
   }
 }
+
+
+.donation-button .button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #635bff;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.donation-button .button:hover {
+  background-color: #4a44e2;
+}

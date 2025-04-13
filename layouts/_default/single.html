@@ -1,0 +1,9 @@
+{{ define "main" }}
+  {{ partial "single/heading.html" . }}
+  {{ partial "single/content.html" . }}
+
+  <!-- 调用打赏按钮部分 -->
+  {{ partial "donate-button.html" . }}
+
+  {{ partial "single/footer.html" . }}
+{{ end }}
