@@ -1,115 +1,120 @@
 <!-- Stripe 打赏和微信阅读原文功能 -->
 <div class="article-donation">
-    <!-- Stripe 打赏按钮 -->
-    <div class="donation-section">
-        <h4>支持作者</h4>
-        <button id="donate-button" class="donate-button">通过 Stripe 打赏</button>
-    </div>
-    
-    <!-- 微信阅读原文 -->
-    <div class="wechat-section">
-        <h4>在微信中阅读</h4>
-        {{ if .Params.wechatLink }}
-            <button id="wechat-button" class="wechat-button">打开公众号阅读</button>
-            <p class="wechat-tip">去微信公众号阅读</p>
-        {{ else }}
-            <p class="wechat-notice">暂无微信公众号链接</p>
-        {{ end }}
-    </div>
+  <!-- Stripe 打赏按钮 -->
+  <div class="donation-section">
+    <h4>支持作者</h4>
+    <button id="donate-button" class="donate-button">
+      <svg class="button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+      </svg>
+      通过 Stripe 打赏
+    </button>
+  </div>
+  <!-- 微信阅读原文 -->
+  <div class="wechat-section">
+    <h4>在微信中阅读</h4>
+    {{ if .Params.wechatLink }}
+    <button id="wechat-button" class="wechat-button" data-wechat-link="{{ .Params.wechatLink }}">
+      <svg class="button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.5 3 3 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path>
+      </svg>
+      打开公众号阅读
+    </button>
+    <p class="wechat-tip">去微信公众号阅读</p>
+    {{ else }}
+    <p class="wechat-notice">暂无微信公众号链接</p>
+    {{ end }}
+  </div>
 </div>
-
 <style>
-    .article-donation {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        padding: 1.5rem;
-        border-top: 1px solid var(--card-separator-color);
-        border-bottom: 1px solid var(--card-separator-color);
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        max-width: var(--article-width);
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .donation-section, .wechat-section {
-        padding: 1.5rem;
-        margin: 0.5rem;
-        border-radius: 8px;
-        background: var(--card-background);
-        box-shadow: var(--shadow-l1);
-        flex: 1;
-        min-width: 250px;
-        text-align: center;
-    }
-    
-    .donate-button, .wechat-button {
-        padding: 10px 20px;
-        border-radius: 4px;
-        cursor: pointer;
-        font-weight: bold;
-        transition: background-color 0.3s, transform 0.2s;
-        border: none;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-    
-    .donate-button {
-        background-color: #635bff; /* Stripe color */
-        color: white;
-    }
-    
-    .wechat-button {
-        background-color: #07C160; /* WeChat green */
-        color: white;
-    }
-    
-    .donate-button:hover, .wechat-button:hover {
-        opacity: 0.9;
-        transform: translateY(-2px);
-    }
-    
-    .donate-button:active, .wechat-button:active {
-        transform: translateY(0);
-    }
-    
-    .wechat-tip, .wechat-notice {
-        font-size: 0.9rem;
-        color: var(--card-text-color-secondary);
-        margin-top: 0.5rem;
-    }
-    
-    .wechat-notice {
-        font-style: italic;
-    }
-    
-    @media (max-width: 650px) {
-        .article-donation {
-            flex-direction: column;
-        }
-    }
+.article-donation {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-top: 1px solid var(--card-separator-color);
+  border-bottom: 1px solid var(--card-separator-color);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: var(--article-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+.donation-section, .wechat-section {
+  padding: 1.5rem;
+  margin: 0.5rem;
+  border-radius: 8px;
+  background: var(--card-background);
+  box-shadow: var(--shadow-l1);
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+.donate-button, .wechat-button {
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+  border: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.donate-button {
+  background-color: #635bff; /* Stripe color */
+  color: white;
+}
+.wechat-button {
+  background-color: #07C160; /* WeChat green */
+  color: white;
+}
+.donate-button:hover, .wechat-button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+.donate-button:active, .wechat-button:active {
+  transform: translateY(0);
+}
+.wechat-tip, .wechat-notice {
+  font-size: 0.9rem;
+  color: var(--card-text-color-secondary);
+  margin-top: 0.5rem;
+}
+.wechat-notice {
+  font-style: italic;
+}
+.button-icon {
+  margin-right: 8px;
+}
+@media (max-width: 650px) {
+  .article-donation {
+    flex-direction: column;
+  }
+}
 </style>
-
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // 1. Stripe 打赏功能
-        const donateButton = document.getElementById('donate-button');
-        donateButton.addEventListener('click', function() {
-            // 替换为你的 Stripe 结账 URL
-            window.open('https://buy.stripe.com/bIYcP68ohdba4s8aEE', '_blank');
-        });
-        
-        // 2. 微信公众号文章链接
-        const wechatButton = document.getElementById('wechat-button');
-        if (wechatButton) {
-            wechatButton.addEventListener('click', function() {
-                // 从页面 frontmatter 中获取微信链接
-                const wechatLink = {{ .Params.wechatLink | jsonify }};
-                if (wechatLink) {
-                    window.open(wechatLink, '_blank');
-                }
-            });
-        }
+document.addEventListener('DOMContentLoaded', function() {
+  // 1. Stripe 打赏功能
+  const donateButton = document.getElementById('donate-button');
+  if (donateButton) {
+    donateButton.addEventListener('click', function() {
+      // 替换为你的 Stripe 结账 URL
+      window.open('https://buy.stripe.com/bIYcP68ohdba4s8aEE', '_blank');
     });
+  }
+  
+  // 2. 微信公众号文章链接
+  const wechatButton = document.getElementById('wechat-button');
+  if (wechatButton) {
+    wechatButton.addEventListener('click', function() {
+      const wechatLink = this.getAttribute('data-wechat-link');
+      if (wechatLink) {
+        window.open(wechatLink, '_blank');
+      }
+    });
+  }
+});
 </script>
