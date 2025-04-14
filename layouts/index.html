@@ -5,57 +5,58 @@
     {{ $pag := .Paginate ($filtered) }}
 
     <!-- Featured Posts Section -->
-{{ $featuredPosts := where $filtered "Params.featured" true | first 3 }}
-{{ if $featuredPosts }}
-<section class="featured-posts-banner">
-    <div class="container">
-        <div class="featured-grid">
-            {{ range $featuredPosts }}
-            <article class="featured-post">
-                <div class="featured-image">
-                    {{ if .Params.image }}
-                    <!-- 使用指定的封面图 -->
-                    <img src="{{ .Params.image }}" alt="{{ .Title }}">
-                    {{ else }}
-                    <!-- 从内容中提取第一张图片，如果没有则显示色块 -->
-                    {{ $firstImage := findRE "<img src=\"([^\"]+)\"" .Content 1 }}
-                    {{ if $firstImage }}
-                        {{ $imageSrc := replaceRE "<img src=\"([^\"]+)\".*" "$1" (index $firstImage 0) }}
-                        <img src="{{ $imageSrc }}" alt="{{ .Title }}">
-                    {{ else }}
-                        <!-- 显示带有随机生成颜色的色块 -->
-                        <div class="color-block" style="background-color: {{ delimit (slice "#" (substr (md5 .Title) 0 6)) "" }}; width: 100%; height: 100%;"></div>
-                    {{ end }}
-                    {{ end }}
-                </div>
-                <div class="featured-content">
-                    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-                </div>
-                <div class="featured-overlay"></div>
-            </article>
-            {{ end }}
-        </div>
-    </div>
-</section>
-{{ end }}
-
-   <!-- 简化后的合作伙伴广告展示区部分，移除了slider-container -->
-{{ if .Site.Params.categoryCards }}
-<div class="category-cards-wrapper">
-    <section class="category-cards full-width">
-        <div class="category-slider">
-            {{ range .Site.Params.categoryCards }}
-            <a href="{{ .link }}" class="category-card" target="_blank" rel="noopener noreferrer">
-                <div class="category-icon">
-                    <img src="{{ .favicon }}" alt="{{ .name }} icon" class="category-favicon">
-                </div>
-                <div class="category-name">{{ .name }}</div>
-            </a>
-            {{ end }}
+    {{ $featuredPosts := where $filtered "Params.featured" true | first 3 }}
+    {{ if $featuredPosts }}
+    <section class="featured-posts-banner">
+        <div class="container">
+            <div class="featured-grid">
+                {{ range $featuredPosts }}
+                <article class="featured-post">
+                    <div class="featured-image">
+                        {{ if .Params.image }}
+                        <!-- 使用指定的封面图 -->
+                        <img src="{{ .Params.image }}" alt="{{ .Title }}">
+                        {{ else }}
+                        <!-- 从内容中提取第一张图片，如果没有则显示色块 -->
+                        {{ $firstImage := findRE "<img src=\"([^\"]+)\"" .Content 1 }}
+                        {{ if $firstImage }}
+                            {{ $imageSrc := replaceRE "<img src=\"([^\"]+)\".*" "$1" (index $firstImage 0) }}
+                            <img src="{{ $imageSrc }}" alt="{{ .Title }}">
+                        {{ else }}
+                            <!-- 显示带有随机生成颜色的色块 -->
+                            {{ $colorHash := substr (md5 .Title) 0 6 }}
+                            <div class="color-block" data-color="#{{ $colorHash }}"></div>
+                        {{ end }}
+                        {{ end }}
+                    </div>
+                    <div class="featured-content">
+                        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                    </div>
+                    <div class="featured-overlay"></div>
+                </article>
+                {{ end }}
+            </div>
         </div>
     </section>
-</div>
-{{ end }}
+    {{ end }}
+
+    <!-- 简化后的合作伙伴广告展示区部分 -->
+    {{ if .Site.Params.categoryCards }}
+    <div class="category-cards-wrapper">
+        <section class="category-cards full-width">
+            <div class="category-slider">
+                {{ range .Site.Params.categoryCards }}
+                <a href="{{ .link }}" class="category-card" target="_blank" rel="noopener noreferrer">
+                    <div class="category-icon">
+                        <img src="{{ .favicon }}" alt="{{ .name }} icon" class="category-favicon">
+                    </div>
+                    <div class="category-name">{{ .name }}</div>
+                </a>
+                {{ end }}
+            </div>
+        </section>
+    </div>
+    {{ end }}
 
     <!-- Article List Section -->
     <section class="article-list">
@@ -66,6 +67,21 @@
 
     {{- partial "pagination.html" . -}}
     {{- partial "footer/footer" . -}}
+
+    <!-- Custom Script to Apply Color to Color Block Elements -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const colorBlocks = document.querySelectorAll('.color-block');
+            colorBlocks.forEach(function(block) {
+                const color = block.getAttribute('data-color');
+                if (color) {
+                    block.style.backgroundColor = color;
+                    block.style.width = '100%';
+                    block.style.height = '100%';
+                }
+            });
+        });
+    </script>
 {{ end }}
 
 {{ define "right-sidebar" }}
