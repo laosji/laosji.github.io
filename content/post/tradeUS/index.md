@@ -9,6 +9,7 @@ categories:
     - 金融
 tags:
     - 美股
+wechatLink: "https://mp.weixin.qq.com/s/ECRNScwEK7ItraKPuvYCiw"
 license: 
 hidden: false
 comments: true
@@ -26,5 +27,3 @@ draft: false
 > “投资市场波动幅度越大，市场朝单一方向运动的时间越长”。
 
 现在市场波动幅度这么大，肯定是朝下行的单一方向运动了，很多投资者都选择了退出市场，割肉避险。是不是巴菲特所说的贪婪时刻呢？我觉得应该还不到时候，虽然我已经被市场先生牵着鼻子走了，但是我一定会等待到最后的价值回归时刻。
-
-{{< wechat-button link="<https://mp.weixin.qq.com/s/ECRNScwEK7ItraKPuvYCiw>" text="去公众号阅读" bgcolor="#1e90ff" color="#ffffff" >}}
