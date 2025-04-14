@@ -39,43 +39,23 @@
 </section>
 {{ end }}
 
-    <!-- Category Cards Section -->
-    {{ if .Site.Params.categoryCards }}
-    <div class="category-cards-wrapper">
-        <section class="category-cards full-width">
-            <div class="slider-container">
-                <div class="category-slider">
-                    {{ range $index, $element := .Site.Params.categoryCards }}
-                        {{ if modBool $index 17 }}
-                            <div class="slider-page">
-                        {{ end }}
-                        <a href="{{ .link }}" class="category-card" target="_blank" rel="noopener noreferrer">
-                            <div class="category-icon">
-                                <img src="{{ .favicon }}" alt="{{ .name }} icon" class="category-favicon">
-                            </div>
-                            <div class="category-name">{{ .name }}</div>
-                        </a>
-                        {{ if or (eq (mod (add $index 1) 17) 0) (eq (add $index 1) (len $.Site.Params.categoryCards)) }}
-                            </div>
-                        {{ end }}
-                    {{ end }}
+   <!-- 简化后的合作伙伴广告展示区部分，移除了slider-container -->
+{{ if .Site.Params.categoryCards }}
+<div class="category-cards-wrapper">
+    <section class="category-cards full-width">
+        <div class="category-slider">
+            {{ range .Site.Params.categoryCards }}
+            <a href="{{ .link }}" class="category-card" target="_blank" rel="noopener noreferrer">
+                <div class="category-icon">
+                    <img src="{{ .favicon }}" alt="{{ .name }} icon" class="category-favicon">
                 </div>
-                <button class="slider-nav prev" aria-label="Previous">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M15 6l-6 6l6 6"></path>
-                    </svg>
-                </button>
-                <button class="slider-nav next" aria-label="Next">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M9 6l6 6l-6 6"></path>
-                    </svg>
-                </button>
-            </div>
-        </section>
-    </div>
-    {{ end }}
+                <div class="category-name">{{ .name }}</div>
+            </a>
+            {{ end }}
+        </div>
+    </section>
+</div>
+{{ end }}
 
     <!-- Article List Section -->
     <section class="article-list">

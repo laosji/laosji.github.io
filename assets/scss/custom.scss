@@ -312,54 +312,31 @@
   }
 }
 
-.color-block {
-  width: 100%;
-  height: 100%;
-  min-height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-// 顶部按钮卡片
+/* 优化合作伙伴卡片样式 */
 .category-cards.full-width {
   width: 100%;
   max-width: 100%;
-  padding: 2rem 0;
+  padding: 2rem;
   background-color: #f8f9fa;
   overflow: hidden;
 }
 
-.slider-container {
-  position: relative;
-  max-width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 0 40px 20px; /* Added padding to the bottom */
-}
-
-.category-slider {
-  display: flex;
-  transition: transform 0.3s ease;
-  padding-bottom: 15px; /* Added padding to ensure shadow visibility */
-}
-
-.slider-page {
+/* 使用网格布局直接展示所有卡片 */
+.category-cards-wrapper .category-slider {
   display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 1rem;
-  flex: 0 0 calc(100% + 11.11%);  /* This makes it show 8.5 cards per row */
 }
 
+/* 调整卡片样式，使图标和文字在一行 */
 .category-card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: #ffffff;
   border-radius: 12px;
-  padding: 0.75rem;
+  padding: 0.75rem 1rem;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-decoration: none;
@@ -372,77 +349,55 @@
 }
 
 .category-icon {
-  margin-bottom: 0.5rem;
+  margin-right: 0.75rem;
+  flex-shrink: 0;
 }
 
 .category-favicon {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   object-fit: contain;
 }
 
 .category-name {
-  font-size: 0.8rem;
-  text-align: center;
+  font-size: 0.9rem;
   font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.slider-nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #333;
-  border: none;
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  font-size: 24px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 10;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.slider-nav:hover {
-  background-color: rgba(255, 255, 255, 1);
-  color: #000;
-}
-
-.slider-nav.prev {
-  left: 10px;
-}
-
-.slider-nav.next {
-  right: 10px;
-}
-
-.slider-nav svg {
-  width: 24px;
-  height: 24px;
-}
-
+/* 响应式布局调整 */
 @media (max-width: 1200px) {
-  .slider-page {
-      grid-template-columns: repeat(6, 1fr);
+  .category-cards-wrapper .category-slider {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   }
 }
 
 @media (max-width: 768px) {
-  .slider-page {
-      grid-template-columns: repeat(4, 1fr);
+  .category-cards-wrapper .category-slider {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+  
+  .category-card {
+    padding: 0.6rem 0.8rem;
+  }
+  
+  .category-favicon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .category-name {
+    font-size: 0.8rem;
   }
 }
 
 @media (max-width: 480px) {
-  .slider-page {
-      grid-template-columns: repeat(2, 1fr);
+  .category-cards-wrapper .category-slider {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   }
 }
-
 // footer
 .site-footer {
   display: flex;
@@ -523,17 +478,3 @@
   }
 }
 
-
-.donation-button .button {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background-color: #635bff;
-  color: white;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-.donation-button .button:hover {
-  background-color: #4a44e2;
-}
