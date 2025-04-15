@@ -4,41 +4,45 @@
     {{ $filtered := ($pages | intersect $notHidden) }}
     {{ $pag := .Paginate ($filtered) }}
 
-    <!-- Featured Posts Section -->
-    {{ $featuredPosts := where $filtered "Params.featured" true | first 3 }}
-    {{ if $featuredPosts }}
-    <section class="featured-posts-banner">
-        <div class="container">
-            <div class="featured-grid">
-                {{ range $featuredPosts }}
-                <article class="featured-post">
-                    <div class="featured-image">
-                        {{ if .Params.image }}
-                        <!-- 使用指定的封面图 -->
-                        <img src="{{ .Params.image }}" alt="{{ .Title }}">
-                        {{ else }}
-                        <!-- 从内容中提取第一张图片，如果没有则显示色块 -->
-                        {{ $firstImage := findRE "<img src=\"([^\"]+)\"" .Content 1 }}
-                        {{ if $firstImage }}
-                            {{ $imageSrc := replaceRE "<img src=\"([^\"]+)\".*" "$1" (index $firstImage 0) }}
-                            <img src="{{ $imageSrc }}" alt="{{ .Title }}">
-                        {{ else }}
-                            <!-- 显示带有随机生成颜色的色块 -->
-                            {{ $colorHash := substr (md5 .Title) 0 6 }}
-                            <div class="color-block" data-color="#{{ $colorHash }}"></div>
-                        {{ end }}
-                        {{ end }}
-                    </div>
-                    <div class="featured-content">
-                        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-                    </div>
-                    <div class="featured-overlay"></div>
-                </article>
-                {{ end }}
-            </div>
+   <!-- Featured Posts Section -->
+{{ $featuredPosts := where $filtered "Params.featured" true | first 3 }}
+{{ if $featuredPosts }}
+<section class="featured-posts-banner">
+    <div class="container">
+        <div class="featured-grid">
+            {{ range $featuredPosts }}
+            <article class="featured-post">
+                <div class="featured-image">
+                    {{ if .Params.image }}
+                    <!-- 直接使用Stack主题推荐的图片处理方式 -->
+                    {{ $imgSrc := .Params.image }}
+                    {{ if not (hasPrefix $imgSrc "http") }}
+                        {{ $imgSrc = (path.Join .RelPermalink .Params.image) }}
+                    {{ end }}
+                    <img src="{{ $imgSrc }}" alt="{{ .Title }}">
+                    {{ else }}
+                    <!-- 从内容中提取第一张图片，如果没有则显示色块 -->
+                    {{ $firstImage := findRE "<img src=\"([^\"]+)\"" .Content 1 }}
+                    {{ if $firstImage }}
+                        {{ $imageSrc := replaceRE "<img src=\"([^\"]+)\".*" "$1" (index $firstImage 0) }}
+                        <img src="{{ $imageSrc }}" alt="{{ .Title }}">
+                    {{ else }}
+                        <!-- 显示带有随机生成颜色的色块 -->
+                        {{ $colorHash := substr (md5 .Title) 0 6 }}
+                        <div class="color-block" data-color="#{{ $colorHash }}"></div>
+                    {{ end }}
+                    {{ end }}
+                </div>
+                <div class="featured-content">
+                    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                </div>
+                <div class="featured-overlay"></div>
+            </article>
+            {{ end }}
         </div>
-    </section>
-    {{ end }}
+    </div>
+</section>
+{{ end }}
 
     <!-- 简化后的合作伙伴广告展示区部分 -->
     {{ if .Site.Params.categoryCards }}

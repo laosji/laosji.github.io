@@ -49,6 +49,21 @@ favicon = "https://passport.moomoo.com/favicon1.ico"
 link = "https://j.moomoo.com/017wOA"
 
 [[params.categoryCards]]
+name = "富途牛牛"
+favicon = "https://static.futunn.com/futuhk_common/images/favicon.ico"
+link = "https://t.me/laosjigifts"
+
+[[params.categoryCards]]
+name = "老虎证券"
+favicon = "https://www.itiger.com/favicon.ico"
+link = "https://tigr.link/7gIFaD"
+
+[[params.categoryCards]]
+name = "长桥证券"
+favicon = "https://pub.lbkrs.com/files/202107/35tULHe3n4Pp4EtA/logo.png"
+link = "https://app.longbridgehk.com/ac/oa?account_channel=lb&channel=HB100034&invite-code=48T09P"
+
+[[params.categoryCards]]
 name = "盈立证券新加坡"
 favicon = "https://www.usmartglobal.com/favicon.ico"
 link = "https://m.usmartsg.com/promo/overseas/sg-register.html?langType=1&HCode=nyaljb&HBox=1#/marketing-register"
@@ -71,7 +86,7 @@ link = "https://affiliate.firstrade.com/affiliate/idevaffiliate.php?id=1679"
 [[params.categoryCards]]
 name = "嘉信理财Charles SCHWAB"
 favicon = "https://www.schwab.com/themes/custom/sch_retail/favicon.ico"
-link = "https://www.schwab.com/client-referral?refrid=REFERCHPQ83NZ"
+link = "https://www.schwab.com/client-referral?refrid=REFERE497UTZF"
 
 [[params.categoryCards]]
 name = "Trading212"
@@ -127,11 +142,6 @@ link = "https://mp.weixin.qq.com/s/UoBgwm9ZAywaxa16RP0HoA"
 name = "esim.me"
 favicon = "https://esim.me/image/catalog/Logo_eSIM.me/Logo_eSIM.me.svg"
 link = "https://esim.me/esim-me-card-for-android?tracking=LOvPBAHblGZAHDQ4auAO8sFoxkwW9szUwLFGSS9ndb0FgPApVNdciue1leNk5w0i"
-
-[[params.categoryCards]]
-name = "UKpost Box"
-favicon = "https://gateway.ipostalmail.net/oauth2.0/img/favicons/favicon.ico?v=3G2hzuE54JvG_WH-Z2qWQ_JpAjKxwACC-uGmqp9FpTU"
-link = "https://client.ipostalmail.net/Signup?Referrer=REF138644"
 
 [[params.categoryCards]]
 name = "Tiptrans"
