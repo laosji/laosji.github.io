@@ -1,71 +1,115 @@
 {{ define "main" }}
 <div class="page-coupons container">
-    <header class="page-header">
-        <h1 class="page-title">{{ .Title }}</h1>
+  <header class="page-header">
+    <h1 class="page-title">{{ .Title }}</h1>
+    {{ if .Content }}
+    <div class="page-content">
+      {{ .Content }}
+    </div>
+    {{ end }}
+  </header>
+
+  <!-- 分类筛选功能 -->
+  <div class="coupon-categories">
+    <div class="category-filters">
+      <button class="category-button active" data-category="all">全部</button>
+      <button class="category-button" data-category="bank">银行</button>
+      <button class="category-button" data-category="securities">证券</button>
+      <button class="category-button" data-category="shopping">购物</button>
+      <button class="category-button" data-category="food">餐饮</button>
+      <button class="category-button" data-category="other">其他</button>
+    </div>
+  </div>
+
+  <div class="coupon-list">
+    {{ $paginator := .Paginate (where .Site.RegularPages "Section" "coupons") }}
+    {{ if $paginator.Pages }}
+      {{ range $paginator.Pages }}
+      <!-- 使用页面资源获取图片 -->
+      {{ $directory := path.Dir .File.Path }}
+      {{ $image := .Params.thumbnail | default .Params.image }}
+      {{ $thumbnailPath := print "/" $directory "/" $image }}
+      
+      <div class="coupon-item" data-category="{{ .Params.category | default "other" }}">
+        <div class="coupon-inner">
+          <div class="coupon-thumbnail">
+            <img src="{{ $thumbnailPath | relURL }}" alt="{{ .Title }}" />
+          </div>
+          <div class="coupon-content">
+            <h3 class="coupon-name">{{ .Title }}</h3>
+            <div class="coupon-amount">{{ .Params.amount }}</div>
+            <div class="coupon-rules">{{ .Params.rules }}</div>
+            <div class="coupon-validity">{{ if .Params.validity }}有效期至: {{ .Params.validity }}{{ end }}</div>
+            <a href="{{ .RelPermalink }}" class="coupon-link">
+              立即领取 <span class="icon">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    {{ else }}
+    <div class="no-coupons-message">
+      <p>没有找到优惠券。请确保在 content/coupons/ 目录下有 markdown 文件。</p>
+      <!-- 从数据文件显示优惠券 -->
+      {{ $coupons := .Site.Data.coupons.coupons }}
+      {{ if $coupons }}
+      <div class="data-coupon-list">
+        <h2>从数据文件显示的优惠券：</h2>
+        {{ range $coupons }}
+        <!-- 数据文件中优惠券图片路径构建 -->
+        {{ $thumbnailPath := print "/coupons/" .id "/image.png" }}
         
-        {{ if .Content }}
-        <div class="page-content">
-            {{ .Content }}
+        <div class="coupon-item" data-category="{{ .category | default "other" }}">
+          <div class="coupon-inner">
+            <div class="coupon-thumbnail">
+              <img src="{{ $thumbnailPath | relURL }}" alt="{{ .name }}" />
+            </div>
+            <div class="coupon-content">
+              <h3 class="coupon-name">{{ .name }}</h3>
+              <div class="coupon-amount">{{ .amount }}</div>
+              <div class="coupon-rules">{{ .rules }}</div>
+              <div class="coupon-validity">{{ if .validity }}有效期至: {{ .validity }}{{ end }}</div>
+              <a href="{{ $.Site.BaseURL }}coupons/{{ .id }}/" class="coupon-link">
+                查看详情 <span class="icon">→</span>
+              </a>
+            </div>
+          </div>
         </div>
         {{ end }}
-    </header>
-    
-    <div class="coupon-list">
-        {{ $paginator := .Paginate (where .Site.RegularPages "Section" "coupons") }}
-        {{ if $paginator.Pages }}
-            {{ range $paginator.Pages }}
-            <div class="coupon-item">
-                <div class="coupon-inner">
-                    <div class="coupon-thumbnail">
-                        <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" />
-                    </div>
-                    <div class="coupon-content">
-                        <h3 class="coupon-name">{{ .Title }}</h3>
-                        <div class="coupon-amount">{{ .Params.amount }}</div>
-                        <div class="coupon-rules">{{ .Params.rules }}</div>
-                        <!-- 使用 .RelPermalink 确保正确生成嵌套路径 -->
-                        <a href="{{ .RelPermalink }}" class="coupon-link">
-                            查看详情 <span class="icon">→</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            {{ end }}
-        {{ else }}
-            <div class="no-coupons-message">
-                <p>没有找到优惠券。请确保在 content/coupons/ 目录下有 markdown 文件。</p>
-                
-                <!-- 从数据文件显示优惠券，修复嵌套路径 -->
-                {{ $coupons := .Site.Data.coupons.coupons }}
-                {{ if $coupons }}
-                    <div class="data-coupon-list">
-                        <h2>从数据文件显示的优惠券：</h2>
-                        {{ range $coupons }}
-                        <div class="coupon-item">
-                            <div class="coupon-inner">
-                                <div class="coupon-thumbnail">
-                                    <img src="{{ .thumbnail }}" alt="{{ .name }}" />
-                                </div>
-                                <div class="coupon-content">
-                                    <h3 class="coupon-name">{{ .name }}</h3>
-                                    <div class="coupon-amount">{{ .amount }}</div>
-                                    <div class="coupon-rules">{{ .rules }}</div>
-                                    <!-- 根据嵌套路径修改链接结构 -->
-                                    <a href="{{ $.Site.BaseURL }}coupons/{{ .id }}/{{ .id }}/" class="coupon-link">
-                                        查看详情 <span class="icon">→</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        {{ end }}
-                    </div>
-                {{ end }}
-            </div>
-        {{ end }}
+      </div>
+      {{ end }}
     </div>
-    
-    <div class="pagination-wrapper">
-        {{ template "_internal/pagination.html" . }}
-    </div>
+    {{ end }}
+  </div>
+  <div class="pagination-wrapper">
+    {{ template "_internal/pagination.html" . }}
+  </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // 分类筛选功能
+  const categoryButtons = document.querySelectorAll('.category-button');
+  const couponItems = document.querySelectorAll('.coupon-item');
+  
+  categoryButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const category = this.getAttribute('data-category');
+      
+      // 切换按钮状态
+      categoryButtons.forEach(btn => btn.classList.remove('active'));
+      this.classList.add('active');
+      
+      // 筛选优惠券
+      couponItems.forEach(item => {
+        if (category === 'all' || item.getAttribute('data-category') === category) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+});
+</script>
 {{ end }}

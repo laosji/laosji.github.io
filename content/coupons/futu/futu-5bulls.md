@@ -3,10 +3,11 @@ title: "富途牛牛开户奖励"
 date: 2025-04-15
 draft: false
 thumbnail: "image.png"
+image: image.png
 amount: "港股打新资格+30天免佣金"
 rules: "新用户开户即可获得"
 validity: "2025-12-31"
-code: "LAOSJI"
+code: "AZ48SM"
 link: "https://www.futunn.com"
 ---
 
