@@ -42,6 +42,8 @@ mainSections = ["post"]
 rssFullContent = true
 wechatQRCode = "img/qrcode.jpg"
 favicon = "/favicon.png"
+telegramLink = "https://t.me/+LD_hF5Oy8jJhYjM9"
+telegramQR = "/images/t_me-laosjigifts.jpg"  # 放在static目录下的Telegram二维码图片
 
 [[params.categoryCards]]
 name = "Moomoo SG"
@@ -212,5 +214,5 @@ pagesInArchive = 5
 timeout = "60s"
 build = { noJSConfigInAssets = true }
 
-[markup]
-  goldmark = { renderer = "unsafe" }
+[markup.goldmark.renderer]
+unsafe = true

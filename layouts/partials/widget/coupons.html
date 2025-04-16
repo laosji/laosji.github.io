@@ -3,25 +3,25 @@
         {{ partial "helper/icon" "discount" }}
     </div>
     <h2 class="widget-title section-title">港美股开户奖励</h2>
-
     <div class="widget-archive--list">
         {{ $coupons := .Context.Site.Data.coupons.coupons }}
         {{ range (first 3 $coupons) }}
-            <div class="archives-year">
-                <div class="coupon-item">
-                    <div class="coupon-thumbnail">
-                        <img src="{{ .thumbnail }}" alt="{{ .name }}" />
-                    </div>
-                    <div class="coupon-content">
-                        <div class="coupon-name">{{ .name }}</div>
-                        <div class="coupon-amount">{{ .amount }}</div>
-                        <div class="coupon-rules">{{ .rules }}</div>
-                        <a href="{{ .link }}" class="coupon-link" target="_blank" rel="nofollow">
-                            立即领取
-                        </a>
-                    </div>
+        <div class="archives-year">
+            <div class="coupon-item">
+                <div class="coupon-thumbnail">
+                    <img src="{{ .thumbnail }}" alt="{{ .name }}" />
+                </div>
+                <div class="coupon-content">
+                    <div class="coupon-name">{{ .name }}</div>
+                    <div class="coupon-amount">{{ .amount }}</div>
+                    <div class="coupon-rules">{{ .rules }}</div>
+                    <!-- 修改链接格式以匹配嵌套结构 -->
+                    <a href="/coupons/{{ index (split .id "-") 0 }}/{{ .id }}/" class="coupon-link">
+                        查看详情
+                    </a>
                 </div>
             </div>
+        </div>
         {{ end }}
         <div class="archives-year">
             <a href="/coupons" class="more-link">查看更多优惠券 »</a>

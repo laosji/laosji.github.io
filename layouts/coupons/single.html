@@ -1,70 +1,198 @@
+{{ define "head" }}
+<meta property="og:type" content="article" />
+<meta property="og:title" content="{{ .Title }}" />
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:image" content="{{ .Params.thumbnail | absURL }}" />
+<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" />
+{{ end }}
+
 {{ define "main" }}
-<div class="page-coupons">
-    <h1>{{ .Title }}</h1>
-    {{ if .Params.coupons }}
-        {{ range .Params.coupons }}
-        <div class="coupon-detail">
-            {{ if .thumbnail }}
-                <div class="coupon-image-container">
-                    <img src="{{ .thumbnail }}" alt="{{ .name }}" class="coupon-image" onclick="openImageModal(this.src)">
+<!-- Define the thumbnailPath variable at the beginning -->
+{{ $thumbnailPath := "" }}
+{{ if .Params.thumbnail }}
+    {{ $thumbnailPath = .Params.thumbnail }}
+    {{ if not (hasPrefix $thumbnailPath "/") }}
+        {{ $thumbnailPath = path.Join .File.Dir $thumbnailPath | relURL }}
+    {{ end }}
+{{ else }}
+    {{ $thumbnailPath = printf "/images/coupons/%s.jpg" .File.ContentBaseName | relURL }}
+{{ end }}
+
+<!-- 修改 single.html 中的封面图部分 -->
+<div class="coupon-hero-image">
+    <div class="hero-background" style="background-image: url('{{ $thumbnailPath }}');"></div>
+    <img src="{{ $thumbnailPath }}" alt="{{ .Title }}">
+</div>
+
+<article class="post-single">
+    <div class="container article-container">
+        <aside class="article-sidebar">
+            <!-- 文章目录 -->
+            <div class="toc-container">
+                <div class="toc-title">目录</div>
+                {{ .TableOfContents }}
+            </div>
+            
+            <!-- Telegram 入群信息 -->
+            <div class="telegram-container">
+                <h3>加入我们的Telegram群</h3>
+                <p>获取最新优惠券和促销信息</p>
+                <a href="{{ .Site.Params.telegramLink | default '#' }}" class="telegram-btn" target="_blank">
+                    <i class="icon telegram-icon"></i>加入Telegram群组
+                </a>
+                {{ if .Site.Params.telegramQR }}
+                <div class="telegram-qr">
+                    <img src="{{ .Site.Params.telegramQR | relURL }}" alt="Telegram二维码">
                 </div>
-            {{ end }}
-            <div class="coupon-content">
-                <div class="coupon-info">
-                    <h1>{{ .name }}</h1>
-                    {{ if .amount }}<div class="info-item"><span class="label">优惠金额:</span><span class="value amount">{{ .amount }}</span></div>{{ end }}
-                    {{ if .rules }}<div class="info-item"><span class="label">使用规则:</span><span class="value">{{ .rules }}</span></div>{{ end }}
-                    {{ if .validDate }}<div class="info-item"><span class="label">有效期至:</span><span class="value">{{ .validDate }}</span></div>{{ end }}
+                {{ end }}
+            </div>
+        </aside>
+        
+        <div class="article-main">
+            <header class="post-header">
+                <h1 class="post-title">{{ .Title }}</h1>
+                <div class="post-meta">
+                    <span class="post-date">
+                        <time>{{ .Date.Format "2006-01-02" }}</time>
+                    </span>
+                    <span class="post-tags">
+                        <a href="/coupons/" class="post-tag">优惠券</a>
+                    </span>
                 </div>
-                <div class="coupon-actions">
-                    {{ if .code }}
-                    <div class="code-wrapper">
-                        <span class="label">推荐码:</span>
-                        <input type="text" readonly value="{{ .code }}" class="couponCode" id="couponCode-{{ .code }}">
-                        <button class="copy-btn" onclick="copyCode('{{ .code }}', this)">复制</button>
+            </header>
+            
+            <div class="post-content">
+                <!-- 优惠券信息卡片 (精简版) -->
+                <div class="coupon-summary">
+                    <div class="coupon-quick-info">
+                        <div class="info-item">
+                            <span class="label">优惠金额:</span>
+                            <span class="value amount">{{ .Params.amount }}</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">使用规则:</span>
+                            <span class="value">{{ .Params.rules }}</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">有效期:</span>
+                            <span class="value">{{ .Params.validity }}</span>
+                        </div>
                     </div>
-                    {{ end }}
-                    {{ if .link }}<a href="{{ .link }}" class="get-coupon-btn" target="_blank" rel="nofollow">立即领取优惠券</a>{{ end }}
+                </div>
+                
+                <!-- 优惠券详细内容 -->
+                <div class="article-content">
+                    {{ .Content }}
+                </div>
+                
+                <!-- 领取方式 -->
+                <div class="coupon-claim-section">
+                    <h2>如何领取</h2>
+                    <p>您可以通过以下方式获取此优惠：</p>
+                    
+                    <div class="coupon-actions">
+                        {{ if .Params.code }}
+                        <div class="code-wrapper">
+                            <input type="text" class="couponCode" id="couponCode" value="{{ .Params.code }}" readonly>
+                            <button class="copy-btn" onclick="copyCode()">复制优惠码</button>
+                        </div>
+                        {{ end }}
+                        
+                        {{ if .Params.claim_link }}
+                        <a href="{{ .Params.claim_link }}" class="get-coupon-btn" target="_blank" rel="nofollow">
+                            {{ if .Params.claim_text }}{{ .Params.claim_text }}{{ else }}立即领取优惠{{ end }}
+                        </a>
+                        {{ else if .Params.link }}
+                        <a href="{{ .Params.link }}" class="get-coupon-btn" target="_blank" rel="nofollow">
+                            立即领取优惠
+                        </a>
+                        {{ end }}
+                    </div>
+                </div>
+                
+                <!-- 相关优惠券 -->
+                <div class="related-coupons">
+                    <h2>相关优惠券</h2>
+                    <div class="related-coupons-list">
+                        {{ $currentID := .File.ContentBaseName }}
+                        {{ $relatedCoupons := where .Site.RegularPages "Section" "coupons" }}
+                        {{ $relatedCoupons = where $relatedCoupons "File.ContentBaseName" "ne" $currentID }}
+                        {{ range first 3 $relatedCoupons }}
+                        <div class="related-coupon-item">
+                            <div class="related-coupon-thumbnail">
+                                {{ $relatedThumbnailPath := .Params.thumbnail }}
+                                {{ if not (hasPrefix $relatedThumbnailPath "/") }}
+                                    {{ $relatedThumbnailPath = path.Join .File.Dir $relatedThumbnailPath | relURL }}
+                                {{ end }}
+                                <img src="{{ $relatedThumbnailPath }}" alt="{{ .Title }}">
+                            </div>
+                            <div class="related-coupon-content">
+                                <div class="related-coupon-name">{{ .Title }}</div>
+                                <div class="related-coupon-amount">{{ .Params.amount }}</div>
+                                <!-- 确保使用正确的链接 -->
+                                <a href="{{ .RelPermalink }}" class="related-coupon-link">查看详情</a>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
                 </div>
             </div>
         </div>
-        {{ end }}
-    {{ else }}
-        <p>暂无优惠券信息。</p>
-    {{ end }}
-</div>
-
-<dialog id="imageModal" class="image-modal">
-    <img id="modalImage" src="" alt="Coupon Image">
-    <button onclick="closeImageModal()">关闭</button>
-</dialog>
+    </div>
+    
+    <!-- 图片模态框 -->
+    <dialog class="image-modal" id="imageModal">
+        <img src="{{ $thumbnailPath }}" alt="{{ .Title }}">
+        <button onclick="closeImageModal()">关闭</button>
+    </dialog>
+</article>
 
 <script>
-function copyCode(code, button) {
-    var codeInput = document.getElementById('couponCode-' + code);
-    codeInput.select();
-    codeInput.setSelectionRange(0, 99999); // For mobile devices
-
-    navigator.clipboard.writeText(codeInput.value).then(() => {
-        button.textContent = '已复制';
-        setTimeout(() => {
-            button.textContent = '复制';
-        }, 2000);
-    }).catch(err => {
-        console.error('复制失败: ', err);
-    });
+function copyCode() {
+    var copyText = document.getElementById("couponCode");
+    copyText.select();
+    document.execCommand("copy");
+    alert("优惠码已复制: " + copyText.value);
 }
 
-function openImageModal(src) {
-    var modal = document.getElementById('imageModal');
-    var modalImg = document.getElementById('modalImage');
-    modalImg.src = src;
-    modal.showModal();
+function openImageModal() {
+    document.getElementById("imageModal").showModal();
 }
 
 function closeImageModal() {
-    var modal = document.getElementById('imageModal');
-    modal.close();
+    document.getElementById("imageModal").close();
 }
 </script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const heroContainer = document.querySelector('.coupon-hero-image');
+    if (heroContainer) {
+        const img = heroContainer.querySelector('img');
+        if (img) {
+            // 图片加载完成后设置背景
+            img.onload = function() {
+                heroContainer.classList.add('coupon-hero-image-with-bg');
+                // 直接在样式中注入背景图片URL
+                const style = document.createElement('style');
+                style.textContent = `.coupon-hero-image-with-bg::before { background-image: url(${img.src}); }`;
+                document.head.appendChild(style);
+            };
+            
+            // 如果图片已经加载完成
+            if (img.complete) {
+                heroContainer.classList.add('coupon-hero-image-with-bg');
+                const style = document.createElement('style');
+                style.textContent = `.coupon-hero-image-with-bg::before { background-image: url(${img.src}); }`;
+                document.head.appendChild(style);
+            }
+        }
+    }
+});
+</script>
+{{ end }}
+
+{{ define "footer" }}
+    {{ partial "footer.html" . }}
 {{ end }}
