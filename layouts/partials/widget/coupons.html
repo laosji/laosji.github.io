@@ -3,143 +3,146 @@
     {{ partial "helper/icon" "discount" }}
   </div>
   <h2 class="widget-title section-title">港美股开户奖励</h2>
-  
   <div class="widget-archive--list scrollable-coupons">
     {{ $coupons := where .Context.Site.RegularPages "Section" "coupons" }}
     {{ $sortedCoupons := $coupons }}
-    
     {{ if gt (len $coupons) 0 }}
       {{ range first 6 $sortedCoupons }}
-      <div class="archives-year">
-        <div class="coupon-item">
-          <div class="coupon-thumbnail">
-            {{ $image := "" }}
-            {{ with .Resources.GetMatch "image.png" }}
-              {{ $image = . }}
-            {{ else }}
-              {{ with .Resources.GetMatch "*.png" }}
-                {{ $image = . }}
+        <div class="archives-year">
+          <div class="coupon-item">
+            <div class="coupon-thumbnail">
+              {{ $image := "" }}
+              {{ $resourcePage := . }}
+              
+              <!-- 扩展图片匹配模式，支持更多格式 -->
+              {{ with $resourcePage.Resources.GetMatch "image.png" }}{{ $image = . }}
+              {{ else }}{{ with $resourcePage.Resources.GetMatch "image.jpg" }}{{ $image = . }}
+              {{ else }}{{ with $resourcePage.Resources.GetMatch "image.jpeg" }}{{ $image = . }}
+              {{ else }}{{ with $resourcePage.Resources.GetMatch "image.webp" }}{{ $image = . }}
+              {{ else }}{{ with $resourcePage.Resources.GetMatch "*.png" }}{{ $image = . }}
+              {{ else }}{{ with $resourcePage.Resources.GetMatch "*.jpg" }}{{ $image = . }}
+              {{ else }}{{ with $resourcePage.Resources.GetMatch "*.jpeg" }}{{ $image = . }}
+              {{ end }}{{ end }}{{ end }}{{ end }}{{ end }}{{ end }}{{ end }}
+              
+              <!-- 使用清晰的条件结构输出图片 -->
+              {{ if $image }}
+                <img src="{{ $image.RelPermalink }}" alt="{{ .Title }}" />
+              {{ else if .Params.thumbnail }}
+                <img src="{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}" />
+              {{ else }}
+                <img src="/images/default.png" alt="{{ .Title }}" />
               {{ end }}
-            {{ end }}
-            <img src="{{ if $image }}{{ $image.RelPermalink }}{{ else if .Params.thumbnail }}{{ .Params.thumbnail | relURL }}{{ else }}/images/default.png{{ end }}" alt="{{ .Title }}" />
-          </div>
-          <div class="coupon-content">
-            <div class="coupon-name">{{ .Title }}</div>
-            {{ if .Params.amount }}<div class="coupon-amount">{{ .Params.amount }}</div>{{ end }}
-            {{ if .Params.rules }}<div class="coupon-rules">{{ .Params.rules }}</div>{{ end }}
-            <a href="{{ .RelPermalink }}" class="coupon-link">查看详情</a>
+            </div>
+            <div class="coupon-content">
+              <div class="coupon-name">{{ .Title }}</div>
+              {{ if .Params.amount }}<div class="coupon-amount">{{ .Params.amount }}</div>{{ end }}
+              {{ if .Params.rules }}<div class="coupon-rules">{{ .Params.rules }}</div>{{ end }}
+              <a href="{{ .Permalink }}" class="coupon-link">查看详情</a>
+            </div>
           </div>
         </div>
-      </div>
       {{ end }}
     {{ else }}
       <div class="archives-year">
         <p>暂无优惠活动</p>
       </div>
     {{ end }}
-
     <div class="archives-year view-more">
       <a href="/coupons" class="more-link">查看更多优惠券 »</a>
     </div>
   </div>
 </section>
-
 <style>
 /* 滚动式优惠券列表样式 */
 .scrollable-coupons {
-    max-height: 400px;
-    overflow-y: auto;
-    padding-right: 5px;
-    scrollbar-width: thin;
-    scrollbar-color: #d1d1d1 transparent;
-    position: relative;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 5px;
+  scrollbar-width: thin;
+  scrollbar-color: #d1d1d1 transparent;
+  position: relative;
 }
-
 .scrollable-coupons::-webkit-scrollbar {
-    width: 6px;
+  width: 6px;
 }
 .scrollable-coupons::-webkit-scrollbar-track {
-    background: transparent;
+  background: transparent;
 }
 .scrollable-coupons::-webkit-scrollbar-thumb {
-    background-color: #d1d1d1;
-    border-radius: 10px;
+  background-color: #d1d1d1;
+  border-radius: 10px;
 }
 .scrollable-coupons::-webkit-scrollbar-thumb:hover {
-    background-color: #a8a8a8;
+  background-color: #a8a8a8;
 }
-
 .scrollable-coupons .archives-year {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
-
 .scrollable-coupons .coupon-item {
-    display: flex;
-    gap: 12px;
-    transition: transform 0.2s ease;
+  display: flex;
+  gap: 12px;
+  transition: transform 0.2s ease;
 }
 .scrollable-coupons .coupon-item:hover {
-    transform: translateY(-3px);
+  transform: translateY(-3px);
 }
 .scrollable-coupons .coupon-thumbnail img {
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
-    border-radius: 8px;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 .scrollable-coupons .coupon-content {
-    flex: 1;
+  flex: 1;
 }
 .scrollable-coupons .coupon-name {
-    font-weight: bold;
+  font-weight: bold;
 }
 .scrollable-coupons .coupon-amount {
-    color: #007bff;
-    font-size: 14px;
+  color: #007bff;
+  font-size: 14px;
 }
 .scrollable-coupons .coupon-rules {
-    font-size: 12px;
-    color: #666;
-    margin-top: 4px;
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
 }
 .scrollable-coupons .coupon-link {
-    font-size: 13px;
-    display: inline-block;
-    margin-top: 6px;
-    color: #007bff;
-    text-decoration: underline;
+  font-size: 13px;
+  display: inline-block;
+  margin-top: 6px;
+  color: #007bff;
+  text-decoration: underline;
 }
-
 /* "查看更多"按钮样式 */
 .scrollable-coupons .view-more {
-    position: sticky;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%, rgba(255,255,255,1) 40%);
-    padding: 15px 0 10px;
-    margin-top: -5px;
-    text-align: center;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    z-index: 5;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%, rgba(255,255,255,1) 40%);
+  padding: 15px 0 10px;
+  margin-top: -5px;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 5;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
-
 .scrollable-coupons .view-more .more-link {
-    display: inline-block;
-    padding: 6px 15px;
-    background-color: #f8f8f8;
-    border: 1px solid #e0e0e0;
-    border-radius: 20px;
-    font-weight: 500;
-    transition: all 0.2s ease;
+  display: inline-block;
+  padding: 6px 15px;
+  background-color: #f8f8f8;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: all 0.2s ease;
 }
 .scrollable-coupons .view-more .more-link:hover {
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-color: #007bff;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-color: #007bff;
 }
 </style>
