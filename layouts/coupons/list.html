@@ -28,39 +28,42 @@
       <div class="coupon-items-wrapper">
         {{ range $paginator.Pages }}
           <div class="coupon-item" data-category="{{ .Params.category | default "other" }}">
-            <div class="coupon-inner">
-              <div class="coupon-thumbnail">
-                {{ $image := "" }}
-                {{ with .Resources.GetMatch "image.png" }}
-                  {{ $image = . }}
-                {{ else }}
-                  {{ with .Resources.GetMatch "image-1.png" }}
+            <!-- 将整个卡片包裹在链接中 -->
+            <a href="{{ .RelPermalink }}" class="coupon-card-link">
+              <div class="coupon-inner">
+                <div class="coupon-thumbnail">
+                  {{ $image := "" }}
+                  {{ with .Resources.GetMatch "image.png" }}
                     {{ $image = . }}
                   {{ else }}
-                    {{ with .Resources.GetMatch "*.png" }}
+                    {{ with .Resources.GetMatch "image-1.png" }}
                       {{ $image = . }}
+                    {{ else }}
+                      {{ with .Resources.GetMatch "*.png" }}
+                        {{ $image = . }}
+                      {{ end }}
                     {{ end }}
                   {{ end }}
-                {{ end }}
-                
-                {{ if $image }}
-                  <img src="{{ $image.RelPermalink }}" alt="{{ $.Title }}">
-                {{ else if .Params.thumbnail }}
-                  <img src="{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}">
-                {{ else }}
-                  <img src="/images/default.png" alt="默认缩略图">
-                {{ end }}
-              </div>
-              <div class="coupon-content">
-                <h3 class="coupon-name">{{ .Title }}</h3>
-                <div class="coupon-amount">{{ .Params.amount }}</div>
-                <div class="coupon-rules">{{ .Params.rules }}</div>
-                <div class="coupon-validity">
-                  {{ if .Params.validity }}有效期至: {{ .Params.validity }}{{ end }}
+                  
+                  {{ if $image }}
+                    <img src="{{ $image.RelPermalink }}" alt="{{ $.Title }}">
+                  {{ else if .Params.thumbnail }}
+                    <img src="{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}">
+                  {{ else }}
+                    <img src="/images/default.png" alt="默认缩略图">
+                  {{ end }}
                 </div>
-                <a href="{{ .RelPermalink }}" class="coupon-link">立即领取 <span class="icon">→</span></a>
+                <div class="coupon-content">
+                  <h3 class="coupon-name">{{ .Title }}</h3>
+                  <div class="coupon-amount">{{ .Params.amount }}</div>
+                  <div class="coupon-rules">{{ .Params.rules }}</div>
+                  <div class="coupon-validity">
+                    {{ if .Params.validity }}有效期至: {{ .Params.validity }}{{ end }}
+                  </div>
+                  <span class="coupon-link">立即领取 <span class="icon">→</span></span>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         {{ end }}
       </div>
@@ -123,6 +126,26 @@ document.addEventListener('DOMContentLoaded', function () {
     width: 100%; /* 1 列 */
   }
 }
+
+/* 卡片链接样式 */
+.coupon-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+.coupon-card-link:hover {
+  text-decoration: none;
+}
+.coupon-card-link:hover .coupon-inner {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+/* 平滑过渡效果 */
+.coupon-inner {
+  transition: all 0.3s ease;
+}
+
 .coupon-thumbnail img {
   width: 100%;
   height: 180px;
@@ -130,6 +153,13 @@ document.addEventListener('DOMContentLoaded', function () {
 }
 .coupon-content {
   padding: 1rem;
+}
+/* 按钮样式 */
+.coupon-link {
+  display: inline-block;
+  margin-top: 6px;
+  color: #007bff;
+  font-weight: 500;
 }
 </style>
 {{ end }}
