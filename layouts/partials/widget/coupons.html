@@ -3,9 +3,9 @@
         {{ partial "helper/icon" "discount" }}
     </div>
     <h2 class="widget-title section-title">港美股开户奖励</h2>
-    <div class="widget-archive--list">
+    <div class="widget-archive--list scrollable-coupons">
         {{ $coupons := .Context.Site.Data.coupons.coupons }}
-        {{ range (first 3 $coupons) }}
+        {{ range (first 6 $coupons) }}
         <div class="archives-year">
             <div class="coupon-item">
                 <div class="coupon-thumbnail">
@@ -23,8 +23,85 @@
             </div>
         </div>
         {{ end }}
-        <div class="archives-year">
+        <div class="archives-year view-more">
             <a href="/coupons" class="more-link">查看更多优惠券 »</a>
         </div>
     </div>
 </section>
+
+<style>
+/* 滚动式优惠券列表样式 */
+.scrollable-coupons {
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 5px;
+    scrollbar-width: thin;
+    scrollbar-color: #d1d1d1 transparent;
+    position: relative; /* 确保相对定位以支持底部绝对定位元素 */
+}
+
+/* 自定义滚动条样式 */
+.scrollable-coupons::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scrollable-coupons::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.scrollable-coupons::-webkit-scrollbar-thumb {
+    background-color: #d1d1d1;
+    border-radius: 10px;
+}
+
+.scrollable-coupons::-webkit-scrollbar-thumb:hover {
+    background-color: #a8a8a8;
+}
+
+/* 确保子元素样式适合滚动区域 */
+.scrollable-coupons .archives-year {
+    margin-bottom: 15px;
+}
+
+.scrollable-coupons .coupon-item {
+    transition: transform 0.2s ease;
+}
+
+.scrollable-coupons .coupon-item:hover {
+    transform: translateY(-3px);
+}
+
+/* 完全改造"查看更多"按钮样式，解决穿透问题 */
+.scrollable-coupons .view-more {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%, rgba(255,255,255,1) 40%);
+    padding: 15px 0 10px;
+    margin-top: -5px; /* 稍微上移，创造渐变重叠效果 */
+    text-align: center;
+    backdrop-filter: blur(5px); /* 现代浏览器支持模糊背景效果 */
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 5; /* 确保在优惠券上方 */
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.scrollable-coupons .view-more .more-link {
+    display: inline-block;
+    padding: 6px 15px;
+    background-color: #f8f8f8;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.scrollable-coupons .view-more .more-link:hover {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-color: #007bff;
+}
+</style>
