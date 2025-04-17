@@ -8,7 +8,6 @@
     </div>
     {{ end }}
   </header>
-
   <!-- 分类筛选功能 -->
   <div class="coupon-categories">
     <div class="category-filters">
@@ -20,96 +19,117 @@
       <button class="category-button" data-category="other">其他</button>
     </div>
   </div>
-
+  <!-- 优惠券列表（瀑布流布局）-->
   <div class="coupon-list">
-    {{ $paginator := .Paginate (where .Site.RegularPages "Section" "coupons") }}
+    {{ $pages := where .Site.RegularPages "Section" "coupons" }}
+    {{ $sorted := sort $pages "Date" "desc" }}
+    {{ $paginator := .Paginate $sorted }}
     {{ if $paginator.Pages }}
-      {{ range $paginator.Pages }}
-      <!-- 使用页面资源获取图片 -->
-      {{ $directory := path.Dir .File.Path }}
-      {{ $image := .Params.thumbnail | default .Params.image }}
-      {{ $thumbnailPath := print "/" $directory "/" $image }}
-      
-      <div class="coupon-item" data-category="{{ .Params.category | default "other" }}">
-        <div class="coupon-inner">
-          <div class="coupon-thumbnail">
-            <img src="{{ $thumbnailPath | relURL }}" alt="{{ .Title }}" />
-          </div>
-          <div class="coupon-content">
-            <h3 class="coupon-name">{{ .Title }}</h3>
-            <div class="coupon-amount">{{ .Params.amount }}</div>
-            <div class="coupon-rules">{{ .Params.rules }}</div>
-            <div class="coupon-validity">{{ if .Params.validity }}有效期至: {{ .Params.validity }}{{ end }}</div>
-            <a href="{{ .RelPermalink }}" class="coupon-link">
-              立即领取 <span class="icon">→</span>
-            </a>
-          </div>
-        </div>
-      </div>
-      {{ end }}
-    {{ else }}
-    <div class="no-coupons-message">
-      <p>没有找到优惠券。请确保在 content/coupons/ 目录下有 markdown 文件。</p>
-      <!-- 从数据文件显示优惠券 -->
-      {{ $coupons := .Site.Data.coupons.coupons }}
-      {{ if $coupons }}
-      <div class="data-coupon-list">
-        <h2>从数据文件显示的优惠券：</h2>
-        {{ range $coupons }}
-        <!-- 数据文件中优惠券图片路径构建 -->
-        {{ $thumbnailPath := print "/coupons/" .id "/image.png" }}
-        
-        <div class="coupon-item" data-category="{{ .category | default "other" }}">
-          <div class="coupon-inner">
-            <div class="coupon-thumbnail">
-              <img src="{{ $thumbnailPath | relURL }}" alt="{{ .name }}" />
-            </div>
-            <div class="coupon-content">
-              <h3 class="coupon-name">{{ .name }}</h3>
-              <div class="coupon-amount">{{ .amount }}</div>
-              <div class="coupon-rules">{{ .rules }}</div>
-              <div class="coupon-validity">{{ if .validity }}有效期至: {{ .validity }}{{ end }}</div>
-              <a href="{{ $.Site.BaseURL }}coupons/{{ .id }}/" class="coupon-link">
-                查看详情 <span class="icon">→</span>
-              </a>
+      <div class="coupon-items-wrapper">
+        {{ range $paginator.Pages }}
+          <div class="coupon-item" data-category="{{ .Params.category | default "other" }}">
+            <div class="coupon-inner">
+              <div class="coupon-thumbnail">
+                {{ $image := "" }}
+                {{ with .Resources.GetMatch "image.png" }}
+                  {{ $image = . }}
+                {{ else }}
+                  {{ with .Resources.GetMatch "image-1.png" }}
+                    {{ $image = . }}
+                  {{ else }}
+                    {{ with .Resources.GetMatch "*.png" }}
+                      {{ $image = . }}
+                    {{ end }}
+                  {{ end }}
+                {{ end }}
+                
+                {{ if $image }}
+                  <img src="{{ $image.RelPermalink }}" alt="{{ $.Title }}">
+                {{ else if .Params.thumbnail }}
+                  <img src="{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}">
+                {{ else }}
+                  <img src="/images/default.png" alt="默认缩略图">
+                {{ end }}
+              </div>
+              <div class="coupon-content">
+                <h3 class="coupon-name">{{ .Title }}</h3>
+                <div class="coupon-amount">{{ .Params.amount }}</div>
+                <div class="coupon-rules">{{ .Params.rules }}</div>
+                <div class="coupon-validity">
+                  {{ if .Params.validity }}有效期至: {{ .Params.validity }}{{ end }}
+                </div>
+                <a href="{{ .RelPermalink }}" class="coupon-link">立即领取 <span class="icon">→</span></a>
+              </div>
             </div>
           </div>
-        </div>
         {{ end }}
       </div>
-      {{ end }}
-    </div>
+    {{ else }}
+      <p>没有找到任何优惠券。</p>
     {{ end }}
   </div>
+  <!-- 分页 -->
   <div class="pagination-wrapper">
     {{ template "_internal/pagination.html" . }}
   </div>
 </div>
-
+<!-- 分类筛选功能 JS -->
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  // 分类筛选功能
+document.addEventListener('DOMContentLoaded', function () {
   const categoryButtons = document.querySelectorAll('.category-button');
   const couponItems = document.querySelectorAll('.coupon-item');
-  
   categoryButtons.forEach(button => {
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function () {
       const category = this.getAttribute('data-category');
-      
-      // 切换按钮状态
       categoryButtons.forEach(btn => btn.classList.remove('active'));
       this.classList.add('active');
-      
-      // 筛选优惠券
       couponItems.forEach(item => {
-        if (category === 'all' || item.getAttribute('data-category') === category) {
-          item.style.display = 'block';
-        } else {
-          item.style.display = 'none';
-        }
+        const itemCategory = item.getAttribute('data-category');
+        item.style.display = (category === 'all' || itemCategory === category) ? 'block' : 'none';
       });
     });
   });
 });
 </script>
+<style>
+/* 瀑布流布局样式 */
+.coupon-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.coupon-items-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  width: 100%;
+}
+.coupon-item {
+  width: calc(33.333% - 1rem); /* 3 列，考虑间距 */
+  margin-bottom: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+  overflow: hidden;
+  display: block;
+}
+@media (max-width: 1024px) {
+  .coupon-item {
+    width: calc(50% - 0.75rem); /* 2 列，考虑间距 */
+  }
+}
+@media (max-width: 640px) {
+  .coupon-item {
+    width: 100%; /* 1 列 */
+  }
+}
+.coupon-thumbnail img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.coupon-content {
+  padding: 1rem;
+}
+</style>
 {{ end }}
