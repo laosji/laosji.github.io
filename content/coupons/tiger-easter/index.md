@@ -15,6 +15,7 @@ amount: "总值高达2200港币开户奖励"
 rules: "首入金满 HK$10,000 或 US$1,300 即可获得"
 validity: "2025-04-30"
 link: "https://www.vbkr.com/promotions"
+code: "laosji"
 draft: false
 hidden: false
 comments: true
