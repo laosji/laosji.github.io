@@ -16,7 +16,16 @@
         {{ $thumbnailPath = path.Join .File.Dir $thumbnailPath | relURL }}
     {{ end }}
 {{ else }}
-    {{ $thumbnailPath = printf "/images/coupons/%s.jpg" .File.ContentBaseName | relURL }}
+    <!-- Try JPG first, then PNG if JPG doesn't exist -->
+    {{ $jpgPath := printf "/images/coupons/%s.jpg" .File.ContentBaseName }}
+    {{ $pngPath := printf "/images/coupons/%s.png" .File.ContentBaseName }}
+    {{ if (fileExists (printf "static%s" $jpgPath)) }}
+        {{ $thumbnailPath = $jpgPath | relURL }}
+    {{ else if (fileExists (printf "static%s" $pngPath)) }}
+        {{ $thumbnailPath = $pngPath | relURL }}
+    {{ else }}
+        {{ $thumbnailPath = $jpgPath | relURL }} <!-- Default to JPG path even if not found -->
+    {{ end }}
 {{ end }}
 
 <!-- 修改 single.html 中的封面图部分 -->
@@ -121,9 +130,22 @@
                         {{ range first 3 $relatedCoupons }}
                         <div class="related-coupon-item">
                             <div class="related-coupon-thumbnail">
-                                {{ $relatedThumbnailPath := .Params.thumbnail }}
-                                {{ if not (hasPrefix $relatedThumbnailPath "/") }}
-                                    {{ $relatedThumbnailPath = path.Join .File.Dir $relatedThumbnailPath | relURL }}
+                                {{ $relatedThumbnailPath := "" }}
+                                {{ if .Params.thumbnail }}
+                                    {{ $relatedThumbnailPath = .Params.thumbnail }}
+                                    {{ if not (hasPrefix $relatedThumbnailPath "/") }}
+                                        {{ $relatedThumbnailPath = path.Join .File.Dir $relatedThumbnailPath | relURL }}
+                                    {{ end }}
+                                {{ else }}
+                                    {{ $jpgPath := printf "/images/coupons/%s.jpg" .File.ContentBaseName }}
+                                    {{ $pngPath := printf "/images/coupons/%s.png" .File.ContentBaseName }}
+                                    {{ if (fileExists (printf "static%s" $jpgPath)) }}
+                                        {{ $relatedThumbnailPath = $jpgPath | relURL }}
+                                    {{ else if (fileExists (printf "static%s" $pngPath)) }}
+                                        {{ $relatedThumbnailPath = $pngPath | relURL }}
+                                    {{ else }}
+                                        {{ $relatedThumbnailPath = $jpgPath | relURL }}
+                                    {{ end }}
                                 {{ end }}
                                 <img src="{{ $relatedThumbnailPath }}" alt="{{ .Title }}">
                             </div>
