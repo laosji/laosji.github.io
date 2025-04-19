@@ -93,6 +93,10 @@ draft: false
 
 - **邀请链接**：<https://www.interactivebrokers.com/referral/chao135>
 
+## 第一证券
+
+- **邀请链接**：<https://affiliate.firstrade.com/affiliate/idevaffiliate.php?id=1679>
+
 ## MoomooSG
 
 - **邀请链接**：<https://j.moomoo.com/017wOA>
