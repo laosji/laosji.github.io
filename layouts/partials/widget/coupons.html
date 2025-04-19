@@ -3,41 +3,20 @@
     {{ partial "helper/icon" "discount" }}
   </div>
   <h2 class="widget-title section-title">港美股开户奖励</h2>
+  
   <div class="widget-archive--list scrollable-coupons">
-    {{ $coupons := where .Context.Site.RegularPages "Section" "coupons" }}
-    {{ $sortedCoupons := $coupons }}
-    {{ if gt (len $coupons) 0 }}
-      {{ range first 6 $sortedCoupons }}
+    {{ $couponPages := where .Context.Site.RegularPages "Section" "coupons" }}
+    
+    {{ if gt (len $couponPages) 0 }}
+      {{ range first 6 (sort $couponPages "Date" "desc") }}
         <div class="archives-year">
           <div class="coupon-item">
             <div class="coupon-thumbnail">
-              {{ $image := "" }}
-              {{ $resourcePage := . }}
-              
-              <!-- 扩展图片匹配模式，支持更多格式 -->
-              {{ with $resourcePage.Resources.GetMatch "image.png" }}{{ $image = . }}
-              {{ else }}{{ with $resourcePage.Resources.GetMatch "image.jpg" }}{{ $image = . }}
-              {{ else }}{{ with $resourcePage.Resources.GetMatch "image.jpeg" }}{{ $image = . }}
-              {{ else }}{{ with $resourcePage.Resources.GetMatch "image.webp" }}{{ $image = . }}
-              {{ else }}{{ with $resourcePage.Resources.GetMatch "image-*.png" }}{{ $image = . }}
-              {{ else }}{{ with $resourcePage.Resources.GetMatch "image-*.jpg" }}{{ $image = . }}
-              {{ else }}{{ with $resourcePage.Resources.GetMatch "image-*.jpeg" }}{{ $image = . }}
-              {{ else }}{{ with $resourcePage.Resources.GetMatch "*.png" }}{{ $image = . }}
-              {{ else }}{{ with $resourcePage.Resources.GetMatch "*.jpg" }}{{ $image = . }}
-              {{ else }}{{ with $resourcePage.Resources.GetMatch "*.jpeg" }}{{ $image = . }}
-              {{ end }}{{ end }}{{ end }}{{ end }}{{ end }}{{ end }}{{ end }}{{ end }}{{ end }}{{ end }}
-              
-              <!-- 使用双重路径处理逻辑，兼容开发环境和生产环境 -->
-              {{ if $image }}
-                <img src="{{ $image.RelPermalink }}" alt="{{ .Title }}" />
-              {{ else if .Params.thumbnail }}
+              {{ if .Params.thumbnail }}
                 {{ if hasPrefix .Params.thumbnail "http" }}
                   <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" />
-                {{ else if hasPrefix .Params.thumbnail "/" }}
-                  <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" />
                 {{ else }}
-                  {{ $folder := path.Base .File.Dir }}
-                  <img src="{{ printf "/coupons/%s/%s" $folder .Params.thumbnail }}" alt="{{ .Title }}" />
+                  <img src="{{ .RelPermalink }}{{ .Params.thumbnail }}" alt="{{ .Title }}" />
                 {{ end }}
               {{ else }}
                 <img src="/images/default.png" alt="{{ .Title }}" />
@@ -57,11 +36,13 @@
         <p>暂无优惠活动</p>
       </div>
     {{ end }}
+    
     <div class="archives-year view-more">
-      <a href="/coupons" class="more-link">查看更多优惠券 »</a>
+      <a href="/coupons/" class="more-link">查看更多优惠券 »</a>
     </div>
   </div>
 </section>
+
 <style>
 /* 滚动式优惠券列表样式 */
 .scrollable-coupons {
