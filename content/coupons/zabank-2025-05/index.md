@@ -12,6 +12,7 @@ tags:
   - 美股投资
 categories: 
   - 证券活动
+category: "bank"
 amount: "ZA Bank回赠 HK$500 + 20% 港元定存利率"
 rules: "开户填写邀请码并完成达标任务，即可享受多重奖励"
 validity: "2025-04-30"

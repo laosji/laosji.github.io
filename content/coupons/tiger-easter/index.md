@@ -4,6 +4,7 @@ description: "老虎证券 2025 年 4 月最新开户福利来袭！新用户入
 date: 2025-04-18T03:22:03Z
 thumbnail: "image.png"
 image: "image.png"
+category: "securities"
 tags: 
   - 老虎证券
   - Tiger Brokers

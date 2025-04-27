@@ -12,6 +12,7 @@ tags:
   - 邀请奖励
 categories: 
   - 证券活动
+category: "bank"
 amount: "推荐满10人送 HK$1000 + 周杰伦演唱会门票"
 rules: "好友开户后 7 日内完成 HK$10,000 定存"
 validity: "2025-04-30"
