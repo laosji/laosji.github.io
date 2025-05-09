@@ -2,7 +2,7 @@
 title: "蚂蚁银行开户送1350港元，内地旅客可领，5月底截止！"
 description: "蚂蚁银行迎新活动,注册并完成入金任务可领取1350港元奖励，适合5月访港内地用户参与"
 date: 2025-05-09T03:23:00Z
-image: 
+image: image.png
 categories:
   - 港卡攻略
 tags:
