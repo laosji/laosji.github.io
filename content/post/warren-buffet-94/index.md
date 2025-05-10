@@ -18,7 +18,7 @@ wechatlink: "https://mp.weixin.qq.com/s/8foXlWklpZE0V0tJvqH09g"
 featured: false
 ---
 
-# 2025年伯克希尔·哈撒韦股东大会观察与启示
+## 2025年伯克希尔·哈撒韦股东大会观察与启示
 
 2025年伯克希尔·哈撒韦股东大会于5月3日在美国内布拉斯加州奥马哈CHI Health Center举行，被称为"资本主义者的伍德斯托克"。参会的股东约有4万余人，到场的还有Apple CEO蒂姆·库克，比尔盖茨等。
 
