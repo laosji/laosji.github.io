@@ -2,7 +2,7 @@
 title: "🗓️ 愿世界和平！"
 description: ""
 date: 2025-05-11T02:30:48Z
-image: image.png
+image: image-1.png
 math: false
 license: ""
 categories:
