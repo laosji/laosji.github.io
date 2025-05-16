@@ -2,7 +2,7 @@
 title: "尊驾证券开户教程"
 description: "详细讲解尊驾证券（ZunJia Securities）开户流程，包括注册准备、资料提交、KYC认证和注意事项，适合首次开设尊驾证券账户的用户参考。"
 date: 2025-05-16T05:56:46Z
-image: myfin-cover.png
+image: image.png
 math: false
 license: ""
 categories:
