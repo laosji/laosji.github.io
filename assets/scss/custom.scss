@@ -1519,3 +1519,308 @@
     box-shadow: inset 0 0 0 1px #4a5568;
   }
 }
+
+
+/* 视频栏目样式 */
+.video-section {
+    margin: 2rem 0;
+    padding: 1.5rem 0;
+    border-radius: 12px;
+    background: var(--card-background);
+    box-shadow: var(--shadow-l1);
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 0 1.5rem;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--card-text-color-main);
+    margin: 0;
+}
+
+.section-title .icon {
+    color: #ff0000;
+    stroke-width: 2;
+}
+
+.view-more-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.5rem 1rem;
+    background: var(--accent-color);
+    color: var(--accent-color-text);
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.view-more-btn:hover {
+    background: var(--accent-color-darker);
+    transform: translateY(-1px);
+}
+
+.view-more-btn .icon {
+    stroke: currentColor;
+    stroke-width: 2;
+    fill: none;
+}
+
+/* 轮播容器 */
+.video-carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1.5rem;
+}
+
+.video-carousel {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    flex: 1;
+    padding: 0.5rem 0;
+}
+
+.video-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+/* 轮播按钮 */
+.carousel-btn {
+    display: none;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: var(--card-background);
+    color: var(--card-text-color-main);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: var(--shadow-l1);
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.carousel-btn:hover {
+    background: var(--accent-color);
+    color: var(--accent-color-text);
+    transform: scale(1.1);
+}
+
+.carousel-btn svg {
+    stroke: currentColor;
+    stroke-width: 2;
+    fill: none;
+}
+
+/* 桌面端显示按钮 */
+@media (min-width: 768px) {
+    .carousel-btn {
+        display: flex;
+    }
+}
+
+/* 视频卡片 */
+.video-card {
+    flex-shrink: 0;
+    width: 300px;
+    background: var(--card-background);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-l1);
+    transition: all 0.3s ease;
+    border: 1px solid var(--card-border);
+}
+
+.video-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-l2);
+}
+
+.video-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 视频缩略图 */
+.video-thumbnail {
+    position: relative;
+    width: 100%;
+    height: 168px;
+    overflow: hidden;
+    background: var(--card-background-selected);
+}
+
+.video-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.video-card:hover .video-thumbnail img {
+    transform: scale(1.05);
+}
+
+.thumbnail-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: var(--card-background-selected);
+    color: var(--card-text-color-tertiary);
+}
+
+/* 播放按钮覆盖层 */
+.play-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.video-card:hover .play-overlay {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+    background: rgba(255, 0, 0, 0.9);
+}
+
+/* 视频信息 */
+.video-info {
+    padding: 1rem;
+}
+
+.video-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--card-text-color-main);
+    margin: 0 0 0.5rem 0;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    overflow: hidden;
+}
+
+.video-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.video-date {
+    font-size: 0.85rem;
+    color: var(--card-text-color-tertiary);
+}
+
+.video-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.video-tags .tag {
+    font-size: 0.75rem;
+    color: var(--accent-color);
+    background: var(--accent-color-bg);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.video-description {
+    font-size: 0.9rem;
+    color: var(--card-text-color-secondary);
+    line-height: 1.4;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    overflow: hidden;
+}
+
+/* 移动端适配 */
+@media (max-width: 767px) {
+    .video-section {
+        margin: 1rem -1rem;
+        border-radius: 0;
+    }
+    
+    .section-header {
+        padding: 0 1rem;
+    }
+    
+    .video-carousel-container {
+        padding: 0 1rem;
+    }
+    
+    .video-card {
+        width: 280px;
+    }
+    
+    .video-carousel {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .video-card {
+        width: 260px;
+    }
+    
+    .section-title {
+        font-size: 1.25rem;
+    }
+    
+    .view-more-btn {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+/* 暗色主题适配 */
+@media (prefers-color-scheme: dark) {
+    .play-overlay {
+        background: rgba(0, 0, 0, 0.8);
+    }
+    
+    .video-card:hover .play-overlay {
+        background: rgba(255, 0, 0, 0.9);
+    }
+}

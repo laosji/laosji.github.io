@@ -1,0 +1,163 @@
+{{ $videoPages := slice }}
+{{ range site.RegularPages }}
+    {{ if in .Content "{{< youtube" }}
+        {{ $videoPages = $videoPages | append . }}
+    {{ end }}
+{{ end }}
+{{ if gt (len $videoPages) 0 }}
+<section class="video-section">
+    <div class="section-header">
+        <h2 class="section-title">
+            <svg class="icon" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" fill="none">
+                <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+            </svg>
+            最新视频
+        </h2>
+        <a href="https://www.youtube.com/@laosji" target="_blank" class="view-more-btn">
+            查看更多
+            <svg class="icon" viewBox="0 0 24 24" width="16" height="16">
+                <path d="m9 18 6-6-6-6"/>
+            </svg>
+        </a>
+    </div>
+    
+    <div class="video-carousel-container">
+        <button class="carousel-btn carousel-btn-prev" id="prevBtn">
+            <svg viewBox="0 0 24 24" width="20" height="20">
+                <path d="m15 18-6-6 6-6"/>
+            </svg>
+        </button>
+        
+        <div class="video-carousel" id="videoCarousel">
+            {{ range first 8 (sort $videoPages "Date" "desc") }}
+            {{ $youtubeID := "" }}
+            {{ range findRE `{{< youtube ([^}]+) >}}` .Content }}
+                {{ $youtubeID = replaceRE `{{< youtube ([^}]+) >}}` "$1" . }}
+                {{ $youtubeID = trim $youtubeID " " }}
+            {{ end }}
+            
+            <div class="video-card">
+                <a href="{{ .Permalink }}" class="video-link">
+                    <div class="video-thumbnail">
+                        {{ if .Params.image }}
+                            <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" loading="lazy">
+                        {{ else if $youtubeID }}
+                            <img src="https://img.youtube.com/vi/{{ $youtubeID }}/maxresdefault.jpg" alt="{{ .Title }}" loading="lazy">
+                        {{ else }}
+                            <div class="thumbnail-placeholder">
+                                <svg viewBox="0 0 24 24" width="48" height="48">
+                                    <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                                    <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                                </svg>
+                            </div>
+                        {{ end }}
+                        <div class="play-overlay">
+                            <svg viewBox="0 0 24 24" width="48" height="48">
+                                <polygon points="5,3 19,12 5,21" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="video-info">
+                        <h3 class="video-title">{{ .Title }}</h3>
+                        <div class="video-meta">
+                            <time class="video-date">{{ .Date.Format "2006-01-02" }}</time>
+                            {{ if .Params.tags }}
+                            <div class="video-tags">
+                                {{ range first 2 .Params.tags }}
+                                <span class="tag"># {{ . }}</span>
+                                {{ end }}
+                            </div>
+                            {{ end }}
+                        </div>
+                        {{ if .Description }}
+                        <p class="video-description">{{ truncate 80 .Description }}</p>
+                        {{ end }}
+                    </div>
+                </a>
+            </div>
+            {{ end }}
+        </div>
+        
+        <button class="carousel-btn carousel-btn-next" id="nextBtn">
+            <svg viewBox="0 0 24 24" width="20" height="20">
+                <path d="m9 18 6-6-6-6"/>
+            </svg>
+        </button>
+    </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const carousel = document.getElementById('videoCarousel');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    
+    if (!carousel || !prevBtn || !nextBtn) return;
+    
+    const cardWidth = 320; // 卡片宽度 + 间距
+    let currentPosition = 0;
+    const maxScroll = carousel.scrollWidth - carousel.clientWidth;
+    
+    function updateButtons() {
+        prevBtn.style.opacity = currentPosition <= 0 ? '0.3' : '1';
+        nextBtn.style.opacity = currentPosition >= maxScroll ? '0.3' : '1';
+    }
+    
+    function scrollTo(position) {
+        currentPosition = Math.max(0, Math.min(maxScroll, position));
+        carousel.scrollTo({
+            left: currentPosition,
+            behavior: 'smooth'
+        });
+        updateButtons();
+    }
+    
+    prevBtn.addEventListener('click', () => {
+        scrollTo(currentPosition - cardWidth * 2);
+    });
+    
+    nextBtn.addEventListener('click', () => {
+        scrollTo(currentPosition + cardWidth * 2);
+    });
+    
+    // 触摸滑动支持
+    let startX = 0;
+    let isScrolling = false;
+    
+    carousel.addEventListener('touchstart', (e) => {
+        startX = e.touches[0].clientX;
+        isScrolling = true;
+    });
+    
+    carousel.addEventListener('touchmove', (e) => {
+        if (!isScrolling) return;
+        const currentX = e.touches[0].clientX;
+        const diff = startX - currentX;
+        
+        if (Math.abs(diff) > 50) {
+            if (diff > 0) {
+                scrollTo(currentPosition + cardWidth);
+            } else {
+                scrollTo(currentPosition - cardWidth);
+            }
+            isScrolling = false;
+        }
+    });
+    
+    carousel.addEventListener('touchend', () => {
+        isScrolling = false;
+    });
+    
+    // 监听滚动事件更新按钮状态
+    carousel.addEventListener('scroll', () => {
+        currentPosition = carousel.scrollLeft;
+        updateButtons();
+    });
+    
+    // 初始化按钮状态
+    updateButtons();
+});
+</script>
+{{ end }}

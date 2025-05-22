@@ -14,6 +14,8 @@ wechatlink: "https://mp.weixin.qq.com/template/article/1747750334/index.html"
 draft: false
 hidden: false
 comments: true
+video: true
+youtube_id: "d-YzJbj-qKo" 
 ---
 
 

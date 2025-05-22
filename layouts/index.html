@@ -62,6 +62,8 @@
     </div>
     {{ end }}
 
+    {{ partial "video-section.html" . }}
+
     <!-- Article List Section -->
     <section class="article-list">
         {{ range $index, $element := $pag.Pages }}
