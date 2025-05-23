@@ -1521,491 +1521,297 @@
 }
 
 
-/* 视频栏目样式 */
-/* 视频栏目样式 - 优化版 */
+/* 视频区域样式 */
+@mixin line-clamp($lines: 2) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: #{$lines};
+    line-clamp: #{$lines};
+    overflow: hidden;
+}
+
 .video-section {
-    margin: 2rem 0;
-    padding: 0;
+  margin: 2rem 0;
+  padding: 0 1rem;
 }
 
 .section-header {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .section-title {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: var(--card-text-color-main);
-    margin: 0;
-    letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
 }
 
 .section-title .icon {
-    color: #ff4757;
-    stroke-width: 2.5;
-    filter: drop-shadow(0 2px 4px rgba(255, 71, 87, 0.3));
+  flex-shrink: 0;
 }
 
-/* 查看更多卡片 */
-.view-more-card {
-    background: linear-gradient(135deg, var(--accent-color), var(--accent-color-darker));
-    border-radius: 16px;
-    overflow: hidden;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    aspect-ratio: 16/9;
-    text-decoration: none;
-    color: var(--accent-color-text);
-    margin-bottom: 1rem;
-}
-
-.view-more-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transition: left 0.5s ease;
-}
-
-.view-more-card:hover::before {
-    left: 100%;
-}
-
-.view-more-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-}
-
-.view-more-content {
-    text-align: center;
-    padding: 2rem;
-}
-
-.view-more-icon {
-    width: 48px;
-    height: 48px;
-    margin: 0 auto 1rem auto;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    stroke: currentColor;
-    stroke-width: 2.5;
-    transition: all 0.3s ease;
-}
-
-.view-more-card:hover .view-more-icon {
-    transform: scale(1.1);
-    background: rgba(255, 255, 255, 0.3);
-}
-
-.view-more-text {
-    font-size: 1.1rem;
-    font-weight: 700;
-    margin: 0 0 0.5rem 0;
-}
-
-.view-more-desc {
-    font-size: 0.9rem;
-    opacity: 0.8;
-    margin: 0;
-}
-
-/* YouTube标识 - 仅针对实际视频卡片 */
-.video-card .youtube-badge {
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    background: #ff0000;
-    color: white;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-size: 0.7rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-/* 视频网格布局 */
+/* 核心横向滚动样式 */
 .video-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 2rem;
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  padding-bottom: 1rem;
+  -webkit-overflow-scrolling: touch; /* iOS 流畅滚动 */
 }
 
-/* 视频卡片 */
+/* 隐藏滚动条但保持滚动功能 */
+.video-grid::-webkit-scrollbar {
+  height: 6px;
+}
+
+.video-grid::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.video-grid::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.video-grid::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* 视频卡片样式 */
 .video-card {
-    background: var(--card-background);
-    border-radius: 16px;
-    overflow: hidden;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    position: relative;
-}
-
-.video-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
-}
-
-.video-card:hover::before {
-    opacity: 1;
+  flex: 0 0 280px; /* 固定宽度，不收缩不扩展 */
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .video-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
-    border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .video-link {
-    display: block;
-    text-decoration: none;
-    color: inherit;
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
 
-/* 视频缩略图 */
+/* 缩略图容器 */
 .video-thumbnail {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 16/9;
-    overflow: hidden;
-    background: var(--card-background-selected);
-    border-radius: 12px;
-    margin-bottom: 1rem;
+  position: relative;
+  width: 100%;
+  height: 160px;
+  background: #f0f0f0;
+  overflow: hidden;
 }
 
 .video-thumbnail img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.video-card:hover .video-thumbnail img {
-    transform: scale(1.05);
-}
-
+/* 占位符样式 */
 .thumbnail-placeholder {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, var(--card-background-selected), rgba(255, 255, 255, 0.05));
-    color: var(--card-text-color-tertiary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.thumbnail-placeholder.hidden {
+  display: none;
 }
 
 /* 播放按钮覆盖层 */
 .play-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 56px;
-    height: 56px;
-    background: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(8px);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    opacity: 0;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    border: 2px solid rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s ease;
 }
 
 .video-card:hover .play-overlay {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1.1);
-    background: rgba(255, 71, 87, 0.9);
-    border-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 8px 24px rgba(255, 71, 87, 0.4);
+  opacity: 1;
 }
 
-.play-overlay::before {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 12px solid currentColor;
-    border-top: 8px solid transparent;
-    border-bottom: 8px solid transparent;
-    margin-left: 2px;
+/* YouTube 徽章 */
+.youtube-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: #ff0000;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
 }
 
-/* 视频时长标签 */
+/* 视频时长 */
 .video-duration {
-    position: absolute;
-    bottom: 12px;
-    right: 12px;
-    background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(8px);
-    color: white;
-    padding: 4px 8px;
-    border-radius: 6px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    line-height: 1.2;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.75rem;
 }
 
-/* 视频信息 */
+/* 视频信息区域 */
 .video-info {
-    padding: 1.25rem;
-    padding-top: 0;
+  padding: 1rem;
 }
 
 .video-title {
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: var(--card-text-color-main);
-    margin: 0 0 0.75rem 0;
-    line-height: 1.4;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    line-clamp: 2;
-    overflow: hidden;
-    height: 3.08rem;
-    letter-spacing: -0.01em;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .video-meta {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.video-stats {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-size: 0.875rem;
-    color: var(--card-text-color-tertiary);
-}
-
-.video-views {
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
 }
 
 .video-date {
-    font-size: 0.875rem;
-    color: var(--card-text-color-tertiary);
-    font-weight: 500;
+  color: #666;
+  font-size: 0.875rem;
 }
 
 .video-tags {
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 0.25rem;
 }
 
-.video-tags .tag {
-    font-size: 0.75rem;
-    color: var(--accent-color);
-    background: linear-gradient(135deg, var(--accent-color-bg), rgba(255, 71, 87, 0.1));
-    padding: 0.25rem 0.75rem;
-    border-radius: 20px;
-    font-weight: 600;
-    line-height: 1.2;
-    border: 1px solid rgba(255, 71, 87, 0.2);
-    transition: all 0.3s ease;
+.tag {
+  color: #667eea;
+  font-size: 0.75rem;
+  font-weight: 500;
 }
 
-.video-tags .tag:hover {
-    background: var(--accent-color);
-    color: white;
-    transform: translateY(-1px);
-}
-
-/* 视频描述信息 */
 .video-description {
-    font-size: 0.875rem;
-    color: var(--card-text-color-secondary);
-    line-height: 1.5;
-    margin-top: 0.5rem;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+  color: #666;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* 查看更多卡片 */
+.view-more-card {
+  flex: 0 0 280px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.view-more-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.view-more-content {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+}
+
+.view-more-icon {
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.channel-info h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.view-more-desc {
+  margin: 0 0 1rem 0;
+  font-size: 0.875rem;
+  opacity: 0.9;
+}
+
+.subscriber-count {
+  font-size: 0.875rem;
+  opacity: 0.8;
+}
+
+.arrow-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  opacity: 0.7;
 }
 
 /* 响应式设计 */
-@media (max-width: 1400px) {
-    .video-grid {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 1.75rem;
-    }
-}
-
-@media (max-width: 1200px) {
-    .video-grid {
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-        gap: 1.5rem;
-    }
-}
-
 @media (max-width: 768px) {
-    .video-section {
-        margin: 1rem 0;
-        padding: 0;
-    }
-    
-    .section-header {
-        margin-bottom: 2rem;
-    }
-    
-    .video-grid {
-        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-        gap: 1.25rem;
-    }
-    
-    .section-title {
-        font-size: 1.5rem;
-    }
-    
-    .play-overlay {
-        width: 48px;
-        height: 48px;
-    }
-    
-    .view-more-card {
-        aspect-ratio: 16/9;
-    }
-    
-    .view-more-content {
-        padding: 1.5rem;
-    }
+  .video-card,
+  .view-more-card {
+    flex: 0 0 240px;
+  }
+  
+  .video-thumbnail {
+    height: 135px;
+  }
+  
+  .video-info {
+    padding: 0.75rem;
+  }
+  
+  .view-more-content {
+    padding: 1.5rem 1rem;
+  }
 }
 
 @media (max-width: 480px) {
-    .video-section {
-        padding: 0;
-    }
-    
-    .video-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-    
-    .section-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-    }
-    
-    .video-meta {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-    }
-    
-    .view-more-card {
-        aspect-ratio: 16/9;
-    }
-}
-
-/* 暗色主题适配 */
-@media (prefers-color-scheme: dark) {
-    .video-card {
-        border-color: rgba(255, 255, 255, 0.1);
-    }
-    
-    .video-card:hover {
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-    }
-    
-    .play-overlay {
-        background: rgba(0, 0, 0, 0.8);
-        border-color: rgba(255, 255, 255, 0.2);
-    }
-    
-    .video-card:hover .play-overlay {
-        background: rgba(255, 71, 87, 0.9);
-        box-shadow: 0 8px 24px rgba(255, 71, 87, 0.6);
-    }
-    
-    .video-duration {
-        background: rgba(0, 0, 0, 0.9);
-        border-color: rgba(255, 255, 255, 0.15);
-    }
-    
-    .view-more-card:hover {
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-    }
-}
-
-/* YouTube 标识 */
-.youtube-badge {
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    background: #ff0000;
-    color: white;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-size: 0.7rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-/* 加载动画 */
-@keyframes shimmer {
-    0% {
-        background-position: -200px 0;
-    }
-    100% {
-        background-position: calc(200px + 100%) 0;
-    }
-}
-
-.video-card.loading .video-thumbnail {
-    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
-    background-size: 200px 100%;
-    animation: shimmer 1.5s infinite linear;
-}
-
-/* 滚动优化 */
-.video-grid {
-    scroll-behavior: smooth;
-}
-
-/* 焦点状态 */
-.video-card:focus-within {
-    outline: 2px solid var(--accent-color);
-    outline-offset: 2px;
-}
-
-.view-more-card:focus {
-    outline: 2px solid var(--accent-color-text);
-    outline-offset: 2px;
+  .video-card,
+  .view-more-card {
+    flex: 0 0 200px;
+  }
+  
+  .video-thumbnail {
+    height: 112px;
+  }
 }
