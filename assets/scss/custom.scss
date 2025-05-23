@@ -1780,7 +1780,7 @@
 }
 
 .video-title {
-    font-size: 1.1rem;
+    font-size: 2.2rem;
     font-weight: 700;
     color: var(--card-text-color-main);
     margin: 0 0 0.75rem 0;
@@ -1961,32 +1961,6 @@
     .view-more-card:hover {
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
     }
-}
-
-/* 微信链接按钮 */
-.wechat-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
-    background: linear-gradient(135deg, #07c160, #06ad56);
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    margin-top: 0.75rem;
-}
-
-.wechat-link:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(7, 193, 96, 0.3);
-}
-
-.wechat-link .icon {
-    width: 16px;
-    height: 16px;
 }
 
 /* YouTube 标识 */
