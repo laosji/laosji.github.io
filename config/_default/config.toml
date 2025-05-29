@@ -213,6 +213,3 @@ pagesInArchive = 5
 
 timeout = "60s"
 build = { noJSConfigInAssets = true }
-
-[markup.goldmark.renderer]
-unsafe = true
