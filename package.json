@@ -4,9 +4,9 @@
   "description": "laosji's blog",
   "main": "index.js",
   "dependencies": {
+    "@tailwindcss/line-clamp": "^0.4.4",
     "tinacms": "^2.2.8"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
