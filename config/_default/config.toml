@@ -38,12 +38,21 @@ template = "layouts/coupons/single.html"
 data_file = "data/coupons.toml"
 
 [params]
-mainSections = ["post"]
+mainSections = ["post", "micro"]  # 添加 micro 到主要内容类型
 rssFullContent = true
 wechatQRCode = "img/qrcode.jpg"
 favicon = "/favicon.png"
 telegramLink = "https://t.me/+LD_hF5Oy8jJhYjM9"
 telegramQR = "/images/t_me-laosjigifts.jpg"  # 放在static目录下的Telegram二维码图片
+
+# 短博文配置
+[params.microblog]
+enabled = true
+showInList = true
+maxLength = 280
+dateFormat = "01-02 15:04"
+showInHomepage = true  # 是否在首页显示
+homepageLimit = 5     # 首页显示的短博文数量
 
 [[params.categoryCards]]
 name = "Moomoo SG"
@@ -193,8 +202,9 @@ customText = "Content licensed under <a href=\"https://creativecommons.org/licen
 
 [params.widgets]
 homepage = [
-    { type = "coupons", params = { limit = 3 } },
     { type = "search" },
+    { type = "micro-recent" },  # 添加短博文小部件
+    { type = "coupons", params = { limit = 3 } },
     { type = "archives", params = { limit = 5 } },
     { type = "categories", params = { limit = 10 } },
     { type = "tag-cloud", params = { limit = 10 } }

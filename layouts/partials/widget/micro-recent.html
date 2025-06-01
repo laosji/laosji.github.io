@@ -1,0 +1,49 @@
+<!-- layouts/partials/widget/micro-recent.html - 首页小部件 -->
+{{ if .Site.Params.microblog.enabled }}
+{{ if .Site.Params.microblog.showInHomepage }}
+<section class="widget twitter-widget">
+    <div class="widget-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+    </div>
+    
+    <h2 class="widget-title section-title">
+        <span>最新动态</span>
+    </h2>
+    
+    <div class="widget-body">
+        {{ range first (.Site.Params.microblog.homepageLimit | default 3) (where .Site.RegularPages "Type" "micro") }}
+        <article class="mini-tweet">
+            <div class="mini-tweet-content">
+                <div class="mini-tweet-text">
+                    {{ .Content | truncate 120 }}
+                </div>
+                <div class="mini-tweet-meta">
+                    <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+                        {{ .Date.Format "01-02 15:04" }}
+                    </time>
+                    {{ if .Params.tags }}
+                        {{ range first 2 .Params.tags }}
+                        <span class="mini-hashtag">#{{ . }}</span>
+                        {{ end }}
+                    {{ end }}
+                </div>
+            </div>
+            <a href="{{ .Permalink }}" class="mini-tweet-link"></a>
+        </article>
+        {{ end }}
+        
+        <div class="widget-more">
+            <a href="{{ "micro" | relURL }}/" class="btn-more">
+                查看所有动态
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12,5 19,12 12,19"></polyline>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}

@@ -1,0 +1,124 @@
+{{ define "main" }}
+<div class="twitter-like-container">
+    <div class="single-tweet-container">
+        <article class="tweet-card single-tweet" data-id="{{ .File.ContentBaseName }}">
+            <div class="tweet-content">
+                <div class="tweet-text large">
+                    {{ .Content }}
+                </div>
+                
+                {{ if .Params.tags }}
+                <div class="tweet-hashtags">
+                    {{ range .Params.tags }}
+                    <a href="{{ "tags" | relURL }}/{{ . | urlize }}/" class="hashtag">#{{ . }}</a>
+                    {{ end }}
+                </div>
+                {{ end }}
+                
+                <div class="tweet-time-full">
+                    <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+                        {{ .Date.Format "下午 3:04 · 2006年1月2日" }}
+                    </time>
+                </div>
+                
+                <div class="tweet-stats">
+                    <div class="stat-item">
+                        <strong class="like-count-single">0</strong> 喜欢
+                    </div>
+                </div>
+                
+                <div class="tweet-actions large">
+                    <button class="action-btn like-btn" title="喜欢" onclick="toggleLikeSingle('{{ .File.ContentBaseName }}', this)">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                        <span>喜欢</span>
+                    </button>
+                </div>
+                
+                <!-- 评论系统 -->
+                {{ if .Site.Params.comments.enabled }}
+                <div class="single-comments">
+                    {{ if eq .Site.Params.comments.provider "cactus" }}
+                        <div id="comment-single" 
+                             data-sitename="{{ .Site.Params.comments.cactus.siteName | default .Site.Title }}"
+                             data-room="micro-{{ .File.ContentBaseName }}"></div>
+                    {{ end }}
+                </div>
+                {{ end }}
+            </div>
+        </article>
+    </div>
+</div>
+
+<script>
+// 单页面喜欢功能
+function toggleLikeSingle(postId, button) {
+    const likeKey = 'micro_likes_' + postId;
+    const countSpan = document.querySelector('.like-count-single');
+    let currentCount = parseInt(localStorage.getItem(likeKey) || '0');
+    const isLiked = button.classList.contains('liked');
+    
+    if (isLiked) {
+        currentCount = Math.max(0, currentCount - 1);
+        button.classList.remove('liked');
+    } else {
+        currentCount += 1;
+        button.classList.add('liked');
+    }
+    
+    localStorage.setItem(likeKey, currentCount.toString());
+    countSpan.textContent = currentCount;
+}
+
+// 页面加载时初始化评论和喜欢数据
+document.addEventListener('DOMContentLoaded', function() {
+    const postId = document.querySelector('.single-tweet').getAttribute('data-id');
+    
+    // 加载喜欢数据
+    if (postId) {
+        const saved = localStorage.getItem('micro_likes_' + postId);
+        const likeBtn = document.querySelector('.like-btn');
+        const likeCount = document.querySelector('.like-count-single');
+        
+        if (saved && parseInt(saved) > 0) {
+            likeCount.textContent = saved;
+            likeBtn.classList.add('liked');
+        }
+    }
+    
+    // 加载评论系统
+    const commentElement = document.getElementById('comment-single');
+    if (commentElement) {
+        loadCactusComments('comment-single');
+    }
+});
+
+// 加载Cactus评论系统（与list页面共用）
+function loadCactusComments(elementId) {
+    const element = document.getElementById(elementId);
+    if (!element || element.hasAttribute('data-cactus-loaded')) return;
+    
+    const siteName = element.getAttribute('data-sitename');
+    const roomId = element.getAttribute('data-room');
+    
+    const script = document.createElement('script');
+    script.src = 'https://latest.cactus.chat/cactus.js';
+    script.async = true;
+    script.onload = function() {
+        if (window.Cactus) {
+            window.Cactus.init({
+                node: element,
+                defaultHomeserverUrl: "https://matrix.cactus.chat:8448",
+                serverName: "cactus.chat",
+                siteName: siteName,
+                roomId: roomId
+            });
+        }
+    };
+    
+    element.setAttribute('data-cactus-loaded', 'true');
+    document.head.appendChild(script);
+}
+</script>
+{{ end }}

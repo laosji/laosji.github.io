@@ -23,6 +23,14 @@ url = "https://fl.laosji.net"
 icon = "fuli"
 newtab = true
 
+[[main]]
+identifier = "micro"
+name = "瞬间"
+url = "/micro"
+[main.params]
+icon = "pokeai-app"
+newtab = true
+
 [[social]]
 identifier = "导航"
 name = "导航"
