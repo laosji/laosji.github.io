@@ -2,7 +2,7 @@
 title: "香港OSL开户奖励：注册即送80元，入金再得288元"
 description: "注册OSL香港站立领80元奖励，入金满1万元再送288元，仅限一个月内不提现用户。"
 date: 2025-06-19T08:30:06Z
-image: "telegram-cloud-document-5-6237541760864622281.jpg"
+image: image.png
 thumbnail: "telegram-cloud-document-5-6237541760864622281-1.jpg"
 link: "https://trade-hk.osl.com/invite/activities?invitationCode=ycYoX"
 code: "ycYoX"
