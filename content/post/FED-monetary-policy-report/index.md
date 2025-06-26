@@ -2,7 +2,7 @@
 title: "美联储《半年度货币政策报告》来了！"
 description: "美联储发布《半年度货币政策报告》，涉及利率、通胀、就业和金融稳定。Powell即将接受国会质询，市场关注未来降息节奏。"
 date: 2025-06-25T08:53:07Z
-image: ![美联储半年度报告](image.png)
+image: image.png
 math: false
 license: CC-BY-NC-SA-4.0
 categories:
