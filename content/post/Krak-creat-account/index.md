@@ -15,7 +15,7 @@ tags:
 hidden: false
 comments: true
 draft: false
-wechatlink: ""
+wechatlink: "https://mp.weixin.qq.com/s/8EJvwTOwzgW1R7_UPX2uWQ"
 featured: false
 ---
 
