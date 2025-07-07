@@ -16,7 +16,7 @@ tags:
 hidden: false
 comments: true
 draft: false
-wechatlink: ""
+wechatlink: "https://mp.weixin.qq.com/s/_qgyUwkvFI-pc7UXxPikYg"
 featured: false
 ---
 
@@ -81,4 +81,3 @@ Revolut是英国的一家金融科技公司，在行业内也算是鼎鼎大名�
 ---
 
 > 如果你也准备或者正打算开美区 Revolut，可以参考一下这篇体验，或者留言和我一起讨论！
-
