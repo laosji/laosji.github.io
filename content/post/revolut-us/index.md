@@ -2,7 +2,7 @@
 title: "放水了：无信用分申请美区Revolut，秒开。还能建立美国信用分！"
 description: "revolut美区无信用分可以直接秒开了"
 date: 2025-07-06T12:08:53Z
-image: 
+image: image.png
 math: false
 license: ""
 categories:
