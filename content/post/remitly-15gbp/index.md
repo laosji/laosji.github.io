@@ -16,7 +16,7 @@ tags:
 hidden: false
 comments: true
 draft: false
-wechatlink: "https://mp.weixin.qq.com/s/xxxxxxxxxxxxxxxx"  # 如有公众号文章可替换
+wechatlink: "https://mp.weixin.qq.com/s/NMRT0V7nVCGKXmX7WHNgzg"  # 如有公众号文章可替换
 featured: false
 ---
 
