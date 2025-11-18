@@ -29,6 +29,9 @@
     
     <!-- 添加打赏和微信公众号阅读功能（放在相关文章上面） -->
     {{ partial "article/components/donation.html" . }}
+
+    <!-- 插入 Google AdSense 广告单元 -->
+    {{ partial "adsense.html" . }}
     
     {{ partial "article/components/related-content" . }}
      
