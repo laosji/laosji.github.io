@@ -1,0 +1,21 @@
+<article class="main-article">
+    {{ if .Params.image }}
+        <div class="main-article-image">
+            <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
+        </div>
+    {{ end }}
+
+    {{ partial "article/components/header" . }}
+
+    <section class="article-content">
+        {{ .Content }}
+    </section>
+
+    {{ if .Params.wechat_url }}
+        <div class="wechat-link">
+            <a href="{{ .Params.wechat_url }}" target="_blank" rel="noopener noreferrer">阅读微信原文</a>
+        </div>
+    {{ end }}
+
+    {{ partial "article/components/footer" . }}
+</article>
