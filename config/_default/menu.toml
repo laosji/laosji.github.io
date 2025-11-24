@@ -9,18 +9,10 @@
 
 [[main]]
 identifier = "nav"
-name = "AI导航"
-url = "https://ai.laosji.net"
+name = "导航"
+url = "https://1.laosji.net"
 [main.params]
 icon = "menu-nav"
-newtab = true
-
-[[main]]
-identifier = "nav"
-name = "领福利"
-url = "https://fl.laosji.net"
-[main.params]
-icon = "fuli"
 newtab = true
 
 [[main]]

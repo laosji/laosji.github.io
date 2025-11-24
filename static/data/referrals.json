@@ -1,0 +1,554 @@
+{
+  "lastUpdate": "2025-11-23",
+  "categories": [
+    {
+      "id": "brokerage",
+      "name": "券商",
+      "items": [
+        {
+          "platform": "IBKR盈透证券",
+          "bonus": "最多$1000美金开户奖励",
+          "activityDescription": "开户并达到相应入金要求 | 全球可用 | 长期有效",
+          "inviteCode": "chao135",
+          "referralLink": "https://ibkr.com/referral/chao135",
+          "updatedAt": "2024-11-23",
+          "hot": true
+        },
+        {
+          "platform": "老虎证券",
+          "bonus": "1300港币+100港币券+180天免佣卡",
+          "activityDescription": "填写邀请码注册 | 全球可用，需要境外身份注册 | 长期有效",
+          "inviteCode": "laosji",
+          "referralLink": "https://tigr.link/7gIFaD",
+          "updatedAt": "2025-11-23",
+          "hot": true
+        },
+        {
+          "platform": "富途牛牛",
+          "bonus": "入金之前输入兑换码，额外多得“$200”HKD现金券",
+          "activityDescription": "目前，仅限海外身份用户注册，长期有效",
+          "inviteCode": "AZ48SM",
+          "referralLink": "https://www.futunn.com/",
+          "updatedAt": "2025-11-23",
+          "hot": false
+        },
+        {
+          "platform": "Moomoo SG",
+          "bonus": "高达$990新加坡元",
+          "activityDescription": "存入S$100并执行1笔买入交易，获得S$20 | 需要券商存量证明 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://j.moomoo.com/017wOA",
+          "updatedAt": "2024-11-23",
+          "hot": false
+        },
+        {
+          "platform": "新加坡盈立证券",
+          "bonus": "最多50新币",
+          "activityDescription": "开户 | 新加坡用户 | 长期有效",
+          "inviteCode": "nyaljb",
+          "referralLink": "https://m.usmartsg.com/promo/overseas/sg-register.html?langType=1&HCode=nyaljb&HBox=1#/marketing-register",
+          "updatedAt": "2024-11-23",
+          "hot": false
+        },
+        {
+          "platform": "盈立证券（香港）",
+          "bonus": "460HKD开户奖励",
+          "activityDescription": "交易免佣金，港股三巨头免佣金 | 内地身份+海外银行账户就能开户 | 长期有效",
+          "inviteCode": "U02457",
+          "referralLink": "https://m.usmart66.com/webapp/open-account/apply.html?ICode=U02457#/register",
+          "updatedAt": "2024-11-23",
+          "hot": false
+        },
+        {
+          "platform": "美国嘉信理财",
+          "bonus": "详见官网",
+          "activityDescription": "美国本土最大的老牌券商之一 | 全球可用 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://www.schwab.com/client-referral?refrid=REFERCHPQ83NZ",
+          "updatedAt": "2024-11-23",
+          "hot": false
+        },
+        {
+          "platform": "美国第一证券",
+          "bonus": "永久$0佣金",
+          "activityDescription": "交易美股 | 全球可用 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://affiliate.firstrade.com/affiliate/idevaffiliate.php?id=1679",
+          "updatedAt": "2024-11-23",
+          "hot": false
+        },
+        {
+          "platform": "Wealth broker",
+          "bonus": "手续费优惠40%",
+          "activityDescription": "一家可出入U的券商，已在美国上市 | 全球可用 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://p.whalesb.com/xzCaHFJ?lan=zh",
+          "updatedAt": "2024-11-23",
+          "hot": false
+        },
+        {
+          "platform": "Freetrade",
+          "bonus": "免佣金交易",
+          "activityDescription": "英国的免佣金股票交易和投资应用 | 英国用户为主 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://t.co/EzlrCxdW3z",
+          "updatedAt": "2024-11-23",
+          "hot": false
+        },
+        {
+          "platform": "胜利证券",
+          "bonus": "开户优惠",
+          "activityDescription": "开户无需海外地址证明 | 港美股用户 | 有效期至2025-12-31",
+          "inviteCode": "",
+          "referralLink": "https://accountopen.victorysec.com.hk/login?ae=DC066928BCD0B3E4EDE6D2DAE63CC0C0",
+          "updatedAt": "2025-11-23",
+          "hot": true
+        },
+        {
+          "platform": "致富证券",
+          "bonus": "开户优惠",
+          "activityDescription": "开户无需海外地址证明 | 港美股用户 | 有效期至2025-12-31",
+          "inviteCode": "DC6789",
+          "referralLink": "https://ca.chiefgroup.com.hk/hk/open/start?PromoCode=DC6789",
+          "updatedAt": "2025-11-23",
+          "hot": true
+        },
+        {
+          "platform": "华盛通",
+          "bonus": "最多1500港币奖励",
+          "activityDescription": "需海外身份 | 港美股用户 | 长期有效",
+          "inviteCode": "E1NC",
+          "referralLink": "https://www.vbkr.com/kh/apply/app-switch?_scnl=E1NC&_p=1",
+          "updatedAt": "2025-11-23",
+          "hot": false
+        },
+        {
+          "platform": "NinjaTrader",
+          "bonus": "高级交易平台",
+          "activityDescription": "期货和外汇交易 | 全球可用 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://ninjatraderdomesticvendor.sjv.io/aOdYvQ",
+          "updatedAt": "2024-11-23",
+          "hot": false
+        }
+      ]
+    },
+    {
+      "id": "banking",
+      "name": "银行账户",
+      "items": [
+        {
+          "platform": "iFast Global Bank英国银行",
+          "bonus": "存入500英镑可获得5英镑奖励",
+          "activityDescription": "FSCS保障 | 全球可用 | 长期有效",
+          "inviteCode": "chaod1702",
+          "referralLink": "https://www.ifastgb.com/tellafriend/chaod1702",
+          "updatedAt": "2024-11-23",
+          "hot": true
+        },
+        {
+          "platform": "Wise",
+          "bonus": "免除第一笔 600 USD 的手续费",
+          "activityDescription": "英区可申请实体卡，全球收付款 | 全球可用 | 长期有效",
+          "inviteCode": "duanc11",
+          "referralLink": "https://wise.com/invite/ihpc/duanc11",
+          "updatedAt": "2024-11-23",
+          "hot": true
+        },
+        {
+          "platform": "ZA Bank（众安银行）",
+          "bonus": "开户奖励",
+          "activityDescription": "香港数字银行 | 内地用户需到港申请注册 | 长期有效",
+          "inviteCode": "NUGAP7",
+          "referralLink": "https://mp.weixin.qq.com/s/Sp03PeHj-tF3lSAhx-fGAw",
+          "updatedAt": "2025-11-23",
+          "hot": false
+        },
+        {
+          "platform": "WeLab Bank",
+          "bonus": "存入1万港币以上保留30天：1.可得200港币；2.免费申请实体卡",
+          "activityDescription": "汇立银行，香港最佳数字银行 | 内地用户需到港申请注册 | 长期有效",
+          "inviteCode": "LAOSJI",
+          "referralLink": "https://mp.weixin.qq.com/s/qrVtd8KhrOHFKBZqmd7uhA",
+          "updatedAt": "2025-11-23",
+          "hot": false
+        },
+        {
+          "platform": "Revolut美区",
+          "bonus": "50USD奖励",
+          "activityDescription": "需要美国手机号、地址、ITIN和护照 | 美国用户，无信用要求 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://revolut.com/referral/?referral-code=chaod!JUN2-25-AR-US-H1-REFBLOCK-AE&geo-redirect",
+          "updatedAt": "2025-11-23",
+          "hot": true
+        },
+        {
+          "platform": "SoFi",
+          "bonus": "DD $325USD奖励",
+          "activityDescription": "需要美国手机号、地址、ITIN和护照 | 美国用户，无信用要求 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://www.sofi.com/invite/money?gcp=32c0dc29-3d69-4787-b3b7-0398d37f1099&isAliasGcp=false",
+          "updatedAt": "2025-11-23",
+          "hot": true
+        },
+        {
+          "platform": "Xapo Bank",
+          "bonus": "美元存款3.9%年利率，比特币0.5%",
+          "activityDescription": "直布罗陀监管，10万欧元保障 | 全球可用 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://www.xapobank.com/en?utm_source=kol_hklife&utm_medium=text&utm_campaign=hklife_jul2025&utm_content=article",
+          "updatedAt": "2025-11-23",
+          "hot": true
+        },
+        {
+          "platform": "中银香港",
+          "bonus": "0存款，免管理费",
+          "activityDescription": "需要本人到香港 | 需到港面签 | 长期有效",
+          "inviteCode": "M26996872070",
+          "referralLink": "https://mp.weixin.qq.com/s/0HBUXFMSAiIGVEKxt_hwEAQ",
+          "updatedAt": "2024-11-23",
+          "hot": false
+        },
+        {
+          "platform": "汇丰香港",
+          "bonus": "无存款要求",
+          "activityDescription": "存款$10,000港币可申请信用卡 | 需到港面签 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://mp.weixin.qq.com/s/dFiwX49BmgvOmjdicJVE8w",
+          "updatedAt": "2024-11-23",
+          "hot": false
+        },
+        {
+          "platform": "渣打香港",
+          "bonus": "定存利率最高",
+          "activityDescription": "香港银行账户 | 需到港面签 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://mp.weixin.qq.com/s/Q-o1tObsxtWUD3CEHVP6lQ",
+          "updatedAt": "2024-11-23",
+          "hot": false
+        },
+        {
+          "platform": "招商永隆",
+          "bonus": "国内可申请",
+          "activityDescription": "需要到香港面签 | 需到港面签 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://mp.weixin.qq.com/s/eKTAewMXX6xPUpq4TpNPUg",
+          "updatedAt": "2024-11-23",
+          "hot": false
+        }
+      ]
+    },
+    {
+      "id": "transfer",
+      "name": "转账汇款",
+      "items": [
+        {
+          "platform": "熊猫速汇",
+          "bonus": "额外30万人民币汇款额度",
+          "activityDescription": "跨境汇款 | 在外汇管制5万美金之外 | 长期有效",
+          "inviteCode": "11221680",
+          "referralLink": "https://pandaremit.kcbebank.com.cn/h5activity/jcRemit?invtCode=11221680&targetLocation=ip",
+          "updatedAt": "2024-11-23",
+          "hot": true
+        },
+        {
+          "platform": "熊猫速汇（港币回国）",
+          "bonus": "首笔汇款大于$500HKD，免手续费",
+          "activityDescription": "跨境汇款 | 首笔汇款免手续费福利 | 长期有效",
+          "inviteCode": "10370739",
+          "referralLink": "https://p.pandaremit.com/h5ditui/launchIndex?invtCode=10370739&area=HKG&type=ditui",
+          "updatedAt": "2024-11-23",
+          "hot": true
+        },
+        {
+          "platform": "Remitly",
+          "bonus": "首笔汇款优惠利率+免手续费",
+          "activityDescription": "首次汇款且金额≥$50 usd | 多国可用 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://remit.ly/3dp90ahv",
+          "updatedAt": "2024-11-23",
+          "hot": false
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "name": "手机卡",
+      "items": [
+        {
+          "platform": "Xesim",
+          "bonus": "9折优惠",
+          "activityDescription": "让国行手机支持eSIM，一卡多号 | 全球可用 | 长期有效",
+          "inviteCode": "zfWBpM",
+          "referralLink": "https://xesim.cc/?DIST=RkJOFQ%3D%3D",
+          "updatedAt": "2024-11-23",
+          "hot": true
+        },
+        {
+          "platform": "Giffgaff",
+          "bonus": "免费英国手机卡",
+          "activityDescription": "每年6便士保号 | 英国号码 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "http://www.giffgaff.com/orders/affiliate/pmdua778_1721188536165",
+          "updatedAt": "2024-11-23",
+          "hot": false
+        }
+      ]
+    },
+    {
+      "id": "vpn",
+      "name": "VPN",
+      "items": [
+        {
+          "platform": "Kookeey",
+          "bonus": "全球纯净住宅IP",
+          "activityDescription": "代理IP精选 | 全球可用 | 长期有效",
+          "inviteCode": "45808377",
+          "referralLink": "https://www.kookeey.com/register.html?aff=45808377",
+          "updatedAt": "2024-11-23",
+          "hot": false
+        },
+        {
+          "platform": "Astrill",
+          "bonus": "Astrill VPN黑五75折",
+          "activityDescription": "内地用超稳定，专为在有网络封锁、深度包检测（DPI）环境下使用设计",
+          "inviteCode": "",
+          "referralLink": "https://www.astrill.com/a/fkjoe80ilzvg",
+          "updatedAt": "2025-11-23",
+          "hot": false
+        },
+        {
+          "platform": "Nord VPN",
+          "bonus": "＋3 個月額外服務",
+          "activityDescription": "不满意30天内可以随时退款，最低每月只要2.99美元，全球168哥位置可选",
+          "inviteCode": "",
+          "referralLink": "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=135524&url_id=22500",
+          "updatedAt": "2025-11-23",
+          "hot": false
+        }
+      ]
+    },
+    {
+      "id": "crypto-wallet",
+      "name": "加密钱包/U卡",
+      "items": [
+        {
+          "platform": "Binpay",
+          "bonus": "$5美元现金券+$8美元开卡费",
+          "activityDescription": "稳定的美元U卡，可绑定支付宝/Google pay消费 | 全球可用 | 长期有效",
+          "inviteCode": "1106548",
+          "referralLink": "https://app.binpay.cc/pages/passport/invitation?r=1106548",
+          "updatedAt": "2024-11-23",
+          "hot": true
+        },
+        {
+          "platform": "UR（瑞士个人IBAN）",
+          "bonus": "新用户注册后消费5美元，立返5美元",
+          "activityDescription": "法币与加密货币自由合法兑换 | 全球可用 | 长期有效",
+          "inviteCode": "qn895r",
+          "referralLink": "https://get.ur.app/login?code=qn895r",
+          "updatedAt": "2024-11-23",
+          "hot": true
+        },
+        {
+          "platform": "Payy",
+          "bonus": "波多黎各美元U卡",
+          "activityDescription": "注册使用 | 全球可用 | 长期有效",
+          "inviteCode": "8UFBN7",
+          "referralLink": "https://payy.link/invite/8UFBN7",
+          "updatedAt": "2024-11-23",
+          "hot": false
+        },
+        {
+          "platform": "Dogpay Card",
+          "bonus": "万事达美元虚拟卡",
+          "activityDescription": "美国卡段的，支持Apple pay google pay，也可以绑定美区App store。个人美国银行账户：有海外地址证明和账户里面有500u就可以免费开通，自由的转账美元到银行账户里面转换成USDT。",
+          "inviteCode": "12828726",
+          "referralLink": "https://h5.dogpay.com/r/12828726",
+          "updatedAt": "2025-11-23",
+          "hot": true
+        },
+        {
+          "platform": "Crydit Card",
+          "bonus": "消费无上限",
+          "activityDescription": "万事达和visa借记卡 | 全球可用 | 长期有效",
+          "inviteCode": "9F6266VY",
+          "referralLink": "https://h5.company.crydit.com/register?invite_code=9F6266VY",
+          "updatedAt": "2025-11-23",
+          "hot": false
+        },
+        {
+          "platform": "Ready",
+          "bonus": "低费率，最高5%消费返现",
+          "activityDescription": "注册使用 | 全球可用 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://www.ready.co/ready",
+          "updatedAt": "2025-11-23",
+          "hot": false
+        },
+        {
+          "platform": "Krak",
+          "bonus": "新用户首充大于$10，送10USD",
+          "activityDescription": "海妖资产管理平台 | 全球可用 | 长期有效",
+          "inviteCode": "laosjifuli",
+          "referralLink": "https://krak.app/zh-cn/@laosjifuli",
+          "updatedAt": "2024-11-23",
+          "hot": true
+        },
+        {
+          "platform": "Bitget Wallet",
+          "bonus": "终身0手续费、0年费、0充值费",
+          "activityDescription": "0 手续费消费 | 全球可用 | 长期有效",
+          "inviteCode": "jApNeR",
+          "referralLink": "https://newshare.bwb.global/en/referralLanding?inviteCode=jApNeR&type=card&channel=Copylink&utm_source=newInviteRebate",
+          "updatedAt": "2024-11-23",
+          "hot": true
+        },
+        {
+          "platform": "Safepal",
+          "bonus": "全方面的硬件加密钱包",
+          "activityDescription": "购买硬件钱包 | 全球可用 | 长期有效",
+          "inviteCode": "odu4mwu",
+          "referralLink": "https://www.safepal.com/store/s1?ref=odu4mwu",
+          "updatedAt": "2024-11-23",
+          "hot": false
+        }
+      ]
+    },
+    {
+      "id": "crypto-exchange",
+      "name": "数字货币交易所",
+      "items": [
+        {
+          "platform": "Binance 币安",
+          "bonus": "手续费优惠",
+          "activityDescription": "全球最大的数字货币交易平台之一 | 全球可用 | 长期有效",
+          "inviteCode": "CPA_00U6B6DNIR",
+          "referralLink": "https://www.binance.com/zh-CN/activity/referral/offers/claim?ref=CPA_00U6B6DNIR&utm_source=Lite_web_account",
+          "updatedAt": "2024-11-23",
+          "hot": true
+        },
+        {
+          "platform": "OKX(欧易)",
+          "bonus": "交易手续费优惠",
+          "activityDescription": "中国身份证注册，支持微信/支付宝/内地银行卡 | 全球可用 | 长期有效",
+          "inviteCode": "61967724",
+          "referralLink": "https://ouxyi.me/ul/YbU25D?channelId=61967724",
+          "updatedAt": "2024-11-23",
+          "hot": true
+        },
+        {
+          "platform": "Kraken 海妖",
+          "bonus": "2025年最佳加密货币平台",
+          "activityDescription": "全球前5大交易所之一 | 全球可用 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://kraken.pxf.io/o4aXPm",
+          "updatedAt": "2024-11-23",
+          "hot": true
+        },
+        {
+          "platform": "OSL",
+          "bonus": "注册送80元，入金10,000送288元",
+          "activityDescription": "香港首家持牌交易所 | 一个月内不提现 | 长期有效",
+          "inviteCode": "ycYoX",
+          "referralLink": "https://trade-hk.osl.com/invite/activities?invitationCode=ycYoX",
+          "updatedAt": "2024-11-23",
+          "hot": false
+        },
+        {
+          "platform": "Bybit",
+          "bonus": "丰富的交易对和衍生品",
+          "activityDescription": "全球领先的数字货币交易平台 | 全球可用 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://www.bybit.com/",
+          "updatedAt": "2024-11-23",
+          "hot": false
+        },
+        {
+          "platform": "Neverless",
+          "bonus": "新兴投资应用",
+          "activityDescription": "新兴投资应用 | 全球可用 | 长期有效",
+          "inviteCode": "laosji",
+          "referralLink": "https://neverless.com/referral?code=laosji",
+          "updatedAt": "2024-11-23",
+          "hot": false
+        },
+        {
+          "platform": "Nexo",
+          "bonus": "数字资产财富平台",
+          "activityDescription": "700多万客户信赖 | 全球200+司法管辖区 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://nexo.com/ref/hohlm5otzh?src=ios-link",
+          "updatedAt": "2024-11-23",
+          "hot": false
+        }
+      ]
+    },
+    {
+      "id": "forwarding",
+      "name": "国际转运",
+      "items": [
+        {
+          "platform": "UKpostbox",
+          "bonus": "英国地址转运",
+          "activityDescription": "英国通讯地址转运回国 | 全球可用 | 长期有效",
+          "inviteCode": "REF138644",
+          "referralLink": "https://client.ipostalmail.net/Signup?Referrer=REF138644",
+          "updatedAt": "2024-11-23",
+          "hot": false
+        },
+        {
+          "platform": "Tiptrans",
+          "bonus": "欧洲/香港转运",
+          "activityDescription": "注册使用 | 全球可用 | 长期有效",
+          "inviteCode": "131031",
+          "referralLink": "https://www.tiptrans.com/?ref=131031",
+          "updatedAt": "2024-11-23",
+          "hot": false
+        },
+        {
+          "platform": "Traveling Mailbox",
+          "bonus": "美国地址",
+          "activityDescription": "美国通讯地址服务 | 全球可用 | 长期有效",
+          "inviteCode": "3435",
+          "referralLink": "https://travelingmailbox.com/?ref=3435",
+          "updatedAt": "2024-11-23",
+          "hot": false
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "name": "AI工具",
+      "items": [
+        {
+          "platform": "ChatGPT",
+          "bonus": "AI智能对话助手",
+          "activityDescription": "OpenAI产品 | 全球可用 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://chat.openai.com",
+          "updatedAt": "2024-11-23",
+          "hot": true
+        },
+        {
+          "platform": "Claude",
+          "bonus": "Anthropic AI助手",
+          "activityDescription": "注册使用 | 全球可用 | 长期有效",
+          "inviteCode": "EIKliugDvw",
+          "referralLink": "https://claude.ai/referral/EIKliugDvw",
+          "updatedAt": "2024-11-23",
+          "hot": true
+        },
+        {
+          "platform": "Midjourney",
+          "bonus": "AI图像生成工具",
+          "activityDescription": "订阅使用 | 全球可用 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://www.midjourney.com",
+          "updatedAt": "2024-11-23",
+          "hot": true
+        }
+      ]
+    }
+  ]
+}
