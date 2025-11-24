@@ -1,7 +1,7 @@
 ---
 title: "香港致富证券开户优惠，大陆身份证即可开户（推荐码 DC6789）"
 description: "香港致富证券是香港本地 47 年老牌券商，持有香港金融全牌照，支持港美股期货期权交易。目前大陆客户开户无需地址证明，仅凭身份证即可完成开户，并能领取开户与入金奖励。"
-date: 2025-11-23T16:20:00Z
+date: 2025-11-24T15:04:17+08:00
 image: "https://raw.githubusercontent.com/laosji/img/main/img/20251122211158.png"
 license: ""
 categories:

@@ -1,7 +1,7 @@
 ---
 title: "Remitly从美国汇款到英国立减25美元，薅羊毛！"
 description: "从美国汇款到中国也可以使用 Remitly 啦，首笔免手续费，可以直接转账到微信、支付宝或者银行卡，而且还有 30 美金的立减优惠。今天来跟大家分享一下美区的 Remitly 优惠，之前是奖励 15 美金现在已经升级到 30 美金啦。有美国银行账户的朋友，可以来薅一下这 30 美金，无论是美国的 Revolut。"
-date: 2025-05-06T09:41:27Z
+date: 2025-11-24T15:04:17+08:00
 image: "https://raw.githubusercontent.com/laosji/img/main/img/20251119142753.png"
 license: ""
 categories:
