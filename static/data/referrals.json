@@ -6,13 +6,22 @@
       "name": "券商",
       "items": [
         {
+          "platform": "Freetrade",
+          "bonus": " 新用户注册可获得10=100英镑的股票奖励",
+          "activityDescription": "英国的免佣金股票交易和投资应用 | 英国用户为主 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://t.co/EzlrCxdW3z",
+          "updatedAt": "2024-11-23",
+          "hot": true
+        },
+        {
           "platform": "IBKR盈透证券",
           "bonus": "最多$1000美金开户奖励",
           "activityDescription": "开户并达到相应入金要求 | 全球可用 | 长期有效",
           "inviteCode": "chao135",
           "referralLink": "https://ibkr.com/referral/chao135",
           "updatedAt": "2024-11-23",
-          "hot": true
+          "hot": false
         },
         {
           "platform": "老虎证券",
@@ -21,7 +30,7 @@
           "inviteCode": "laosji",
           "referralLink": "https://tigr.link/7gIFaD",
           "updatedAt": "2025-11-23",
-          "hot": true
+          "hot": false
         },
         {
           "platform": "富途牛牛",
@@ -83,15 +92,6 @@
           "activityDescription": "一家可出入U的券商，已在美国上市 | 全球可用 | 长期有效",
           "inviteCode": "",
           "referralLink": "https://p.whalesb.com/xzCaHFJ?lan=zh",
-          "updatedAt": "2024-11-23",
-          "hot": false
-        },
-        {
-          "platform": "Freetrade",
-          "bonus": "免佣金交易",
-          "activityDescription": "英国的免佣金股票交易和投资应用 | 英国用户为主 | 长期有效",
-          "inviteCode": "",
-          "referralLink": "https://t.co/EzlrCxdW3z",
           "updatedAt": "2024-11-23",
           "hot": false
         },
