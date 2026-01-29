@@ -15,6 +15,7 @@ readingTime = true
 [widgets]
 homepage = [
     {type = "search"},
+    {type = "app-download"}, # APP下载提示
     {type = "coupons"}, # 将优惠券移到搜索框下面
     {type = "archives"},
     {type = "categories"},
@@ -22,7 +23,8 @@ homepage = [
 ]
 
 page = [
-    {type = "toc"}
+    {type = "toc"},
+    {type = "app-download"} # APP下载提示
 ]
 
 # 新增自定义样式设置
