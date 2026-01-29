@@ -1,7 +1,11 @@
 # Change baseurl before deploy
 baseurl = "https://laosji.net/"
 languageCode = "zh-cn"
-title = "laosji"
+title = "laosji的博客 | 港美股开户奖励·海外银行返现·数字货币"
+
+[params.seo]
+description = "港美股在线开户奖励、海外银行在线开户返现、U卡、数字货币交易所，金融科技平台开户返现，银行开户返现。"
+keywords = ["港美股开户", "海外银行", "数字货币", "U卡", "开户返现", "金融科技", "银行开户"]
 
 # Theme i18n support
 defaultContentLanguage = "zh-cn"

@@ -3,8 +3,12 @@
 <meta name='impact-site-verification' value='ef3b04eb-adec-43fb-a11b-84bbbc40bb71'>
 
 {{- $description := partialCached "data/description" . .RelPermalink -}}
+{{- if and (not $description) .Site.Params.seo.description -}}
+  {{- $description = .Site.Params.seo.description -}}
+{{- end -}}
 <meta name='description' {{ printf "content=%q" $description | safeHTMLAttr }}>
-{{ with .Params.Keywords }}<meta name="keywords" content="{{ delimit . ", " }}">{{ end }}
+{{- $keywords := .Params.Keywords | default .Site.Params.seo.keywords -}}
+{{ with $keywords }}<meta name="keywords" content="{{ delimit . ", " }}">{{ end }}
 
 {{- $title := partial "data/title" . -}}
 <title>{{ $title }}</title>
