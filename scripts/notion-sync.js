@@ -109,10 +109,11 @@ title: "${title.replace(/"/g, '\\"')}"
 description: ""
 date: ${date}
 image: ""
-categories:
-  -
-tags:
-  -
+categories: []
+tags: []
+hidden: false
+draft: false
+comments: true
 ---
 
 `;
