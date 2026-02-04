@@ -27,9 +27,14 @@
                         {{ $imageSrc := replaceRE "<img src=\"([^\"]+)\".*" "$1" (index $firstImage 0) }}
                         <img src="{{ $imageSrc }}" alt="{{ .Title }}">
                     {{ else }}
-                        <!-- 显示带有随机生成颜色的色块 -->
-                        {{ $colorHash := substr (md5 .Title) 0 6 }}
-                        <div class="color-block" data-color="#{{ $colorHash }}"></div>
+                        <!-- 渐变色背景 + 标题首字 -->
+                        {{ $hash := md5 .Title }}
+                        {{ $color1 := substr $hash 0 6 }}
+                        {{ $color2 := substr $hash 6 6 }}
+                        {{ $firstChar := substr .Title 0 1 }}
+                        <div class="gradient-placeholder" data-color1="#{{ $color1 }}" data-color2="#{{ $color2 }}">
+                            <span class="first-char">{{ $firstChar }}</span>
+                        </div>
                     {{ end }}
                     {{ end }}
                 </div>
@@ -74,20 +79,41 @@
     {{- partial "pagination.html" . -}}
     {{- partial "footer/footer" . -}}
 
-    <!-- Custom Script to Apply Color to Color Block Elements -->
+    <!-- Custom Script for Gradient Placeholders -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const colorBlocks = document.querySelectorAll('.color-block');
-            colorBlocks.forEach(function(block) {
-                const color = block.getAttribute('data-color');
-                if (color) {
-                    block.style.backgroundColor = color;
-                    block.style.width = '100%';
-                    block.style.height = '100%';
+            const gradients = document.querySelectorAll('.gradient-placeholder');
+            gradients.forEach(function(el) {
+                const c1 = el.getAttribute('data-color1');
+                const c2 = el.getAttribute('data-color2');
+                if (c1 && c2) {
+                    el.style.background = `linear-gradient(135deg, ${c1} 0%, ${c2} 100%)`;
                 }
             });
         });
     </script>
+    <style>
+        .gradient-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .gradient-placeholder .first-char {
+            font-size: 4rem;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.9);
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            text-transform: uppercase;
+        }
+        @media (max-width: 768px) {
+            .gradient-placeholder .first-char {
+                font-size: 3rem;
+            }
+        }
+    </style>
 {{ end }}
 
 {{ define "right-sidebar" }}
