@@ -2,6 +2,7 @@
 title: "Claude的这个AI证书很好拿"
 description: "通过Anthropic的AI Fluency课程拿到AI Competency Certificate，学到了4D协作框架"
 date: 2026-03-16T00:00:00Z
+image: https://raw.githubusercontent.com/laosji/img/main/img/claude-ai-cert-01_封面.png
 categories:
     - AI
 tags:
