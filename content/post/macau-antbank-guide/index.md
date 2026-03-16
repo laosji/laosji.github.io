@@ -2,6 +2,7 @@
 title: "别只是去了一次澳门 — 顺手开个蚂蚁银行账户"
 description: "去澳门旅游顺便开蚂蚁银行账户，仅需身份证+通行证，5分钟搞定，开户送2股阿里巴巴。"
 date: 2026-03-16T00:00:00Z
+image: https://raw.githubusercontent.com/laosji/img/main/img/antbank-macau-cover.jpg
 categories:
     - 银行
 tags:
