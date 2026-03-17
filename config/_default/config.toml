@@ -170,7 +170,7 @@ link = "https://pandaremit.kcbebank.com.cn/h5activity/jcRemit?invtCode=11221680&
 
 [[params.categoryCards]]
 name = "Just My Socks"
-favicon = "Just My Socks"
+favicon = "https://justmysocks.net/favicon.ico"
 link = "https://justmysocks.net/members/aff.php?aff=32305"
 
 [[params.categoryCards]]

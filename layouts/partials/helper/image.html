@@ -1,0 +1,56 @@
+{{ $result := dict "exists" false "permalink" nil "resource" nil "isDefault" false }}
+{{ $imageField := default "image" .Context.Site.Params.featuredImageField }}
+{{ $imageValue := index .Context.Params $imageField }}
+
+{{ if $imageValue }}
+    {{ $url := urls.Parse $imageValue }}
+
+    {{ if or (eq $url.Scheme "http") (eq $url.Scheme "https") }}
+        {{ $result = merge $result (dict "exists" true "permalink" $imageValue) }}
+    {{ else }}
+        {{ $imageValueSafe := printf "%s" ($imageValue | safeURL) }}
+        {{ $pageResourceImage := .Context.Resources.GetMatch $imageValueSafe }}
+
+        {{ if $pageResourceImage }}
+            {{ $result = merge $result (dict "exists" true "permalink" $pageResourceImage.RelPermalink) }}
+
+            {{ if ne (path.Ext $imageValueSafe) ".svg" }}
+                {{ $result = merge $result (dict "resource" $pageResourceImage) }}
+            {{ end }}
+        {{ else }}
+            {{ $staticPath := strings.TrimPrefix "/" $imageValueSafe }}
+            {{ if fileExists (path.Join "static" $staticPath) }}
+                {{ $result = merge $result (dict "exists" true "permalink" (relURL $imageValueSafe)) }}
+            {{ else }}
+                {{/* Missing image: keep exists=false to avoid rendering broken <img> */}}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+
+{{ else if and (ne .Type nil) (index .Context.Site.Params.defaultImage .Type) }}
+    {{ $defaultImageSetting := index .Context.Site.Params.defaultImage .Type }}
+
+    {{ if $defaultImageSetting.enabled }}
+        {{ $result = merge $result (dict "isDefault" true) }}
+
+        {{ if $defaultImageSetting.local }}
+            {{ $siteResourceImage := resources.GetMatch (printf "%s" ($defaultImageSetting.src | safeURL)) }}
+
+            {{ if $siteResourceImage }}
+                {{ $result = merge $result (dict "exists" true "permalink" $siteResourceImage.RelPermalink "resource" $siteResourceImage) }}
+            {{ else }}
+                {{ errorf "Failed loading image: %q" $defaultImageSetting.src }}
+            {{ end }}
+        {{ else }}
+            {{ $defaultPath := printf "%s" ($defaultImageSetting.src | safeURL) }}
+            {{ $staticDefaultPath := strings.TrimPrefix "/" $defaultPath }}
+            {{ if or (hasPrefix $defaultPath "http") (hasPrefix $defaultPath "https") }}
+                {{ $result = merge $result (dict "exists" true "permalink" $defaultPath) }}
+            {{ else if fileExists (path.Join "static" $staticDefaultPath) }}
+                {{ $result = merge $result (dict "exists" true "permalink" (relURL $defaultPath)) }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+
+{{ return $result }}

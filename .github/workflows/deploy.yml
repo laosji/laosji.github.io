@@ -28,7 +28,7 @@ jobs:
 
             - uses: actions/setup-go@v4
               with:
-                  go-version: "^1.17.0"
+                  go-version: "stable"
             - run: go version
 
             - name: Cache Go Modules
@@ -51,9 +51,11 @@ jobs:
               run: hugo --minify --gc
 
             - name: Deploy 🚀
+              if: github.event_name == 'push' && github.ref == 'refs/heads/master'
               uses: JamesIves/github-pages-deploy-action@4.1.4
               with:
                   branch: gh-pages
                   folder: public
+                  cname: laosji.net
                   clean: true
                   single-commit: true

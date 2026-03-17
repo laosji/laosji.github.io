@@ -57,7 +57,18 @@
                 {{ range .Site.Params.categoryCards }}
                 <a href="{{ .link }}" class="category-card" target="_blank" rel="noopener noreferrer">
                     <div class="category-icon">
-                        <img src="{{ .favicon }}" alt="{{ .name }} icon" class="category-favicon">
+                        {{- $favicon := .favicon -}}
+                        {{- if and $favicon (or (hasPrefix $favicon "http") (hasPrefix $favicon "/")) -}}
+                        <img
+                            src="{{ $favicon }}"
+                            alt="{{ .name }} icon"
+                            class="category-favicon"
+                            loading="lazy"
+                            referrerpolicy="no-referrer"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                        >
+                        {{- end -}}
+                        <span class="category-fallback" aria-hidden="true" style="display:none;">{{ substr .name 0 1 }}</span>
                     </div>
                     <div class="category-name">{{ .name }}</div>
                 </a>

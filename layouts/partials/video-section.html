@@ -32,7 +32,15 @@
 <div class="video-thumbnail">
  {{ if .Params.image }}
    <!-- 自定义封面图 -->
-   <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+   {{- $imgSrc := .Params.image -}}
+   {{- if not (hasPrefix $imgSrc "http") -}}
+     {{- with .Resources.GetMatch (printf "%s" ($imgSrc | safeURL)) -}}
+       {{- $imgSrc = .RelPermalink -}}
+     {{- else -}}
+       {{- $imgSrc = (path.Join .RelPermalink $imgSrc) -}}
+     {{- end -}}
+   {{- end -}}
+   <img src="{{ $imgSrc }}" alt="{{ .Title }}" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
    <!-- YouTube 封面作为备用 -->
    {{ if $youtubeID }}
    <img src="https://img.youtube.com/vi/{{ $youtubeID }}/hqdefault.jpg" alt="{{ .Title }}" loading="lazy" style="display:none;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">

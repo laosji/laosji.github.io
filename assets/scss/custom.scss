@@ -199,6 +199,34 @@
   position: relative;
 }
 
+/* 首页合作伙伴卡片：favicon 失败时降级为首字母，避免 404/破图影响观感 */
+.category-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-favicon {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.category-fallback {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  background: var(--card-background);
+  color: var(--card-text-color-main);
+  border: 1px solid var(--card-separator-color);
+}
+
 .code-wrapper .label {
   margin-right: 10px;
   color: var(--card-text-color-secondary);
