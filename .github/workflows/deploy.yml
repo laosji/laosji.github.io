@@ -5,10 +5,18 @@ on:
         branches: [master]
     pull_request:
         branches: [master]
+    workflow_dispatch:
+    workflow_run:
+        workflows: ["Sync YouTube Videos", "Sync Notion to Hugo"]
+        types:
+            - completed
 
 jobs:
     build:
         runs-on: ubuntu-latest
+        if: |
+            github.event_name != 'workflow_run' ||
+            github.event.workflow_run.conclusion == 'success'
 
         permissions:
             # Give the default GITHUB_TOKEN write permission to commit and push the
@@ -51,7 +59,7 @@ jobs:
               run: hugo --minify --gc
 
             - name: Deploy 🚀
-              if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+              if: github.event_name != 'pull_request'
               uses: JamesIves/github-pages-deploy-action@4.1.4
               with:
                   branch: gh-pages
