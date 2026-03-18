@@ -11,8 +11,7 @@ tags:
   - 骗局揭秘
 math: 
 wechatLink: "https://mp.weixin.qq.com/s/KkhVEJPu2vm_ZJi_SUOljg"
-license: 
-license: 
+license:
 hidden: false
 comments: true
 draft: false
