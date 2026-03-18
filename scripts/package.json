@@ -4,7 +4,8 @@
   "description": "Sync Notion pages to Hugo blog",
   "main": "notion-sync.js",
   "scripts": {
-    "sync": "node notion-sync.js"
+    "sync": "node notion-sync.js",
+    "youtube": "node youtube-sync.js"
   },
   "dependencies": {
     "@notionhq/client": "^2.2.14",
