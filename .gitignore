@@ -1,4 +1,17 @@
-public
-resources
-node_modules
+# Hugo build output
+public/
+resources/
+
+# Dependencies
+node_modules/
+
+# OS files
 .DS_Store
+Thumbs.db
+
+# Hugo lock
+.hugo_build.lock
+
+# Environment
+.env
+.env.*

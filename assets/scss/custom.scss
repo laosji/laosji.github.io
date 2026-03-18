@@ -1581,6 +1581,8 @@
   scroll-behavior: smooth;
   padding-bottom: 1rem;
   -webkit-overflow-scrolling: touch; /* iOS 流畅滚动 */
+  overscroll-behavior-x: contain;
+  touch-action: pan-y pinch-zoom;
 }
 
 /* 隐藏滚动条但保持滚动功能 */
@@ -1800,9 +1802,17 @@
 
 /* 响应式设计 */
 @media (max-width: 768px) {
+  .video-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: visible;
+    padding-bottom: 0;
+  }
+
   .video-card,
   .view-more-card {
-    flex: 0 0 240px;
+    flex: none;
+    width: 100%;
   }
   
   .video-thumbnail {
@@ -1821,7 +1831,7 @@
 @media (max-width: 480px) {
   .video-card,
   .view-more-card {
-    flex: 0 0 200px;
+    width: 100%;
   }
   
   .video-thumbnail {

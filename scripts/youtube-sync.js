@@ -119,7 +119,7 @@ async function writePost(postDir, videoId, title, description, publishedAt, tags
       thumbDownloaded = true;
       break;
     } catch (e) {
-      // try next
+      console.warn(`Thumbnail download failed (${url}): ${e.message}`);
     }
   }
 
@@ -195,22 +195,33 @@ async function main() {
   const uploadsPlaylistId = channelData.items[0].contentDetails.relatedPlaylists.uploads;
   console.log('Uploads playlist:', uploadsPlaylistId);
 
-  // Get latest videos from uploads playlist
-  const playlistUrl = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${uploadsPlaylistId}&maxResults=${MAX_RESULTS}&order=date&key=${YOUTUBE_API_KEY}`;
-  const playlistData = await httpsGet(playlistUrl);
+  // Get latest videos from uploads playlist (with pagination)
+  let allItems = [];
+  let nextPageToken = '';
 
-  if (!playlistData.items || playlistData.items.length === 0) {
+  do {
+    const pageParam = nextPageToken ? `&pageToken=${nextPageToken}` : '';
+    const playlistUrl = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${uploadsPlaylistId}&maxResults=50${pageParam}&key=${YOUTUBE_API_KEY}`;
+    const playlistData = await httpsGet(playlistUrl);
+
+    if (playlistData.items && playlistData.items.length > 0) {
+      allItems = allItems.concat(playlistData.items);
+    }
+    nextPageToken = playlistData.nextPageToken || '';
+  } while (nextPageToken);
+
+  if (allItems.length === 0) {
     console.log('No videos found');
     return;
   }
 
-  console.log(`Found ${playlistData.items.length} videos from channel`);
+  console.log(`Found ${allItems.length} videos from channel`);
 
   // Check existing
   const existingIds = getExistingVideoIds();
   console.log(`Existing video posts: ${existingIds.size}`);
 
-  const newVideos = playlistData.items.filter((item) => {
+  const newVideos = allItems.filter((item) => {
     const vid = item.snippet.resourceId.videoId;
     return !existingIds.has(vid);
   });

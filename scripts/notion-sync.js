@@ -5,7 +5,7 @@ const path = require("path");
 
 // 配置
 const NOTION_TOKEN = process.env.NOTION_TOKEN;
-const PARENT_PAGE_ID = process.env.NOTION_PAGE_ID || "1ec6986a999a8071abb7df8146edc75c";
+const PARENT_PAGE_ID = process.env.NOTION_PAGE_ID;
 const CONTENT_DIR = path.join(__dirname, "../content/post");
 
 // 初始化 Notion 客户端
@@ -130,6 +130,10 @@ comments: true
 async function main() {
   if (!NOTION_TOKEN) {
     console.error("❌ NOTION_TOKEN is required");
+    process.exit(1);
+  }
+  if (!PARENT_PAGE_ID) {
+    console.error("❌ NOTION_PAGE_ID is required");
     process.exit(1);
   }
 
