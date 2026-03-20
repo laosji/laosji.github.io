@@ -1,6 +1,7 @@
 ---
 title: "Claude龙虾也能远程安排电脑自己工作了"
 description: "Claude 推出 Coworking on the Go 功能，手机远程操控电脑上的 Claude 自动干活"
+slug: "claude-dispatch"
 date: 2026-03-20T00:00:00Z
 image: https://raw.githubusercontent.com/laosji/img/main/img/claude-dispatch/01_cover.png
 categories:
