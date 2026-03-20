@@ -1,5 +1,5 @@
 # Change baseurl before deploy
-baseurl = "https://laosji.net/"
+baseurl = "https://www.laosji.net/"
 languageCode = "zh-cn"
 title = "laosji的博客 | 港美股开户奖励·海外银行返现·数字货币"
 

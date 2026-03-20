@@ -62,6 +62,6 @@ jobs:
               with:
                   branch: gh-pages
                   folder: public
-                  cname: laosji.net
+                  cname: www.laosji.net
                   clean: true
                   single-commit: true
