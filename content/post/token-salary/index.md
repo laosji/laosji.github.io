@@ -14,5 +14,6 @@ license:
 hidden: false
 comments: true
 draft: false
+wechatlink: "https://mp.weixin.qq.com/s/gN9RnSea66Hrf0wz4kXV1w"
 ---
 
