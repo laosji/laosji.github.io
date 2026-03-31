@@ -16,6 +16,7 @@ license:
 hidden: false
 comments: true
 draft: false
+wechatlink: "https://mp.weixin.qq.com/s/jqjqTYvpwMHfyiuz-nBR9w"
 ---
 
 ## 国内就能开香港、新加坡银行账户
