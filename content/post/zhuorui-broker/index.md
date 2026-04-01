@@ -41,4 +41,8 @@ draft: false
 - ✅ 内地身份可以注册
 - 📋 需要提供海外地址证明（如银行结单、其他券商结单等）
 
+### 注册链接
+
+👉 [立即开户](https://channel.zr.hk/zhuorui_web_h5/login?inviteCode=ZR2982)（邀请码：ZR2982）
+
 ![卓锐证券开户福利](https://raw.githubusercontent.com/laosji/img/main/img/zhuorui-broker/01.jpg)
