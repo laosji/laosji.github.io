@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on laosji的博客 | 港美股开户奖励·海外银行返现·数字货币</title><link>https://www.laosji.net/page/</link><description>Recent content in Pages on laosji的博客 | 港美股开户奖励·海外银行返现·数字货币</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 06 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.laosji.net/page/index.xml" rel="self" type="application/rss+xml"/><item><title>Archives</title><link>https://www.laosji.net/archives/</link><pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate><guid>https://www.laosji.net/archives/</guid><description/></item><item><title>Search</title><link>https://www.laosji.net/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.laosji.net/search/</guid><description/></item><item><title>云开户福利</title><link>https://www.laosji.net/referral/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.laosji.net/referral/</guid><description/></item><item><title>友情链接</title><link>https://www.laosji.net/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.laosji.net/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/</guid><description>&lt;p&gt;&lt;code&gt;image&lt;/code&gt; field accepts both local and external images.&lt;/p&gt;</description></item><item><title>隐私政策</title><link>https://www.laosji.net/privacy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.laosji.net/privacy/</guid><description>&lt;p&gt;**发个小财（“我们”）**非常重视您的隐私与数据安全。本隐私政策旨在向您说明我们如何收集、使用、存储及保护您的个人信息。请在使用本应用前仔细阅读。&lt;/p&gt;
+&lt;h2 id="1-我们收集的信息"&gt;1. 我们收集的信息
+&lt;/h2&gt;&lt;p&gt;我们可能会收集以下信息以提供服务和优化体验：&lt;/p&gt;
+&lt;h3 id="11-设备与使用数据自动收集"&gt;1.1 设备与使用数据（自动收集）
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;设备型号、操作系统版本、语言设置&lt;/li&gt;
+&lt;li&gt;应用交互行为、访问页面、点击记录&lt;/li&gt;
+&lt;li&gt;崩溃日志、性能数据（用于稳定性优化）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="12-您主动提供的信息"&gt;1.2 您主动提供的信息
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;邀请码复制行为（不涉及身份识别）&lt;/li&gt;
+&lt;li&gt;记账、测评输入内容（仅本地或加密存储，不用于识别用户身份）&lt;/li&gt;
+&lt;li&gt;反馈内容、截图（当您联系支持时）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="13-我们不收集"&gt;1.3 我们不收集
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;银行账号、券商账号、交易密码、私钥、助记词&lt;/li&gt;
+&lt;li&gt;精准定位信息（GPS/地址）&lt;/li&gt;
+&lt;li&gt;生物识别数据（指纹/面部 ID）&lt;/li&gt;
+&lt;li&gt;任何用于直接识别您身份的信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="2-信息的使用方式"&gt;2. 信息的使用方式
+&lt;/h2&gt;&lt;p&gt;我们使用数据用于：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;提供优惠信息展示与邀请码复制功能&lt;/li&gt;
+&lt;li&gt;生成统计分析（例如：消费心理类型、记账报告）&lt;/li&gt;
+&lt;li&gt;改进 UI/性能/稳定性&lt;/li&gt;
+&lt;li&gt;响应您的客服支持请求&lt;/li&gt;
+&lt;li&gt;防止滥用行为（如批量恶意请求、刷邀请码）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="3-数据存储与保护"&gt;3. 数据存储与保护
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;我们优先使用&lt;strong&gt;本地存储或加密数据库&lt;/strong&gt;保存您输入的数据&lt;/li&gt;
+&lt;li&gt;服务器数据（如优惠内容）使用 Cloudflare Workers/KV 进行缓存，但&lt;strong&gt;不关联具体用户身份&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;传输采用 HTTPS 加密&lt;/li&gt;
+&lt;li&gt;我们不会出售、出租或共享您的数据给第三方用于营销或身份识别&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="4-第三方服务说明"&gt;4. 第三方服务说明
+&lt;/h2&gt;&lt;p&gt;我们可能会使用以下第三方服务，但仅用于必要功能：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Google Play Console（用于 App 发布管理）&lt;/li&gt;
+&lt;li&gt;Firebase/Gradle/Flutter Build 工具链（用于构建和崩溃分析）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这些服务可能会收集匿名或必要的技术数据，但不用于识别您的身份。&lt;/p&gt;
+&lt;h2 id="5-未成年人隐私保护"&gt;5. 未成年人隐私保护
+&lt;/h2&gt;&lt;p&gt;本应用&lt;strong&gt;不以 13 岁以下儿童为目标用户&lt;/strong&gt;。
+若我们发现误收集到儿童信息，将在确认后立即删除。&lt;/p&gt;
+&lt;h2 id="6-用户权利"&gt;6. 用户权利
+&lt;/h2&gt;&lt;p&gt;您有权：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;清除本地存储的记账/测评数据&lt;/li&gt;
+&lt;li&gt;通过客服联系要求删除服务器缓存中的关联记录（如您上传截图/反馈）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="7-政策更新"&gt;7. 政策更新
+&lt;/h2&gt;&lt;p&gt;本隐私政策可能会随版本更新调整。
+更新后我们会在应用内公告，不再另行收集新类型数据。&lt;/p&gt;
+&lt;h2 id="8-联系我们"&gt;8. 联系我们
+&lt;/h2&gt;&lt;p&gt;如有隐私相关问题，可通过应用内反馈或邮件联系我们。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;感谢您的信任与支持！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;本应用始终坚持：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;不收集身份，不触碰资产数据，只聚合优惠与认知。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;laosji&lt;/strong&gt;&lt;br&gt;
+2026.01.02&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;FaGe XiaoCai (“we”, “our”, or “the app”)&lt;/strong&gt; respects your privacy. This policy explains what data we collect, how it is used, and how it is protected.&lt;/p&gt;
+&lt;h2 id="1-data-we-may-collect"&gt;1. Data We May Collect
+&lt;/h2&gt;&lt;h3 id="11-anonymous-device--usage-data"&gt;1.1 Anonymous Device &amp;amp; Usage Data
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Device model, OS version, language settings&lt;/li&gt;
+&lt;li&gt;Interaction analytics, page visits, click behaviors&lt;/li&gt;
+&lt;li&gt;Crash logs and performance diagnostics&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="12-user-entered-content-stored-securely"&gt;1.2 User-Entered Content (Stored Securely)
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Local notes, assessment inputs, saving challenges, bookkeeping entries&lt;/li&gt;
+&lt;li&gt;Support tickets or screenshots you voluntarily submit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="2-how-we-use-data"&gt;2. How We Use Data
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Display global fintech coupons and referral codes&lt;/li&gt;
+&lt;li&gt;Generate non-identifiable analytics (e.g., spending psychology insights, monthly reports)&lt;/li&gt;
+&lt;li&gt;Improve UI, performance, and stability&lt;/li&gt;
+&lt;li&gt;Prevent abuse or malicious automation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="3-what-we-do-not-collect"&gt;3. What We Do &lt;strong&gt;Not&lt;/strong&gt; Collect
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Bank account numbers, brokerage credentials, passwords&lt;/li&gt;
+&lt;li&gt;Private keys, seed phrases, or crypto wallet recovery data&lt;/li&gt;
+&lt;li&gt;Precise GPS or physical addresses&lt;/li&gt;
+&lt;li&gt;Biometric identifiers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="4-data-security--storage"&gt;4. Data Security &amp;amp; Storage
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Local data is stored with encryption or device-level storage&lt;/li&gt;
+&lt;li&gt;Cloudflare Workers/KV may cache offer content, but it is not tied to user identity&lt;/li&gt;
+&lt;li&gt;Data transmission uses HTTPS&lt;/li&gt;
+&lt;li&gt;We do not sell or share data for identity tracking or marketing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="5-childrens-privacy"&gt;5. Children’s Privacy
+&lt;/h2&gt;&lt;p&gt;This app is &lt;strong&gt;not targeted at children under 13&lt;/strong&gt;. If such data is found, we delete it immediately.&lt;/p&gt;
+&lt;h2 id="6-your-rights"&gt;6. Your Rights
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Clear local bookkeeping or assessment data anytime&lt;/li&gt;
+&lt;li&gt;Request deletion of support materials you voluntarily sent&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="7-policy-updates"&gt;7. Policy Updates
+&lt;/h2&gt;&lt;p&gt;We may update this policy with new releases and will announce inside the app.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Commitment:&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;No identity data. No asset-level sensitive data. Only offers and insights.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Signed,&lt;/strong&gt;&lt;br&gt;
+laosji.net&lt;br&gt;
+Jan 2, 2026&lt;/p&gt;</description></item></channel></rss>
