@@ -15,6 +15,7 @@ license:
 hidden: false
 comments: true
 draft: false
+wechatlink: "https://mp.weixin.qq.com/s/mDtAAgr1318NwbHvBIMxbQ"
 ---
 
 2026 **世界杯将是历史上规模最大的一届赛事**。由 🇺🇸 United States、🇨🇦 Canada、🇲🇽 Mexico 共同主办，在 **16 个城市**举行，48 支球队参赛。
