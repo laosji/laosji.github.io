@@ -15,6 +15,7 @@ license:
 hidden: false
 comments: true
 draft: false
+image: "https://raw.githubusercontent.com/laosji/img/main/img/IMG_6440.png"
 wechatlink: "https://mp.weixin.qq.com/s/cCrBp2RcxBS6dhgCPIJGUQ"
 ---
 
