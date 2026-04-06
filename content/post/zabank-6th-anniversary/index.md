@@ -15,6 +15,7 @@ license:
 hidden: false
 comments: true
 draft: false
+wechatlink: "https://mp.weixin.qq.com/s/cCrBp2RcxBS6dhgCPIJGUQ"
 ---
 
 ZA Bank 已经成立 6 年了！为了和大家一起庆祝 6 周岁生日，ZA Bank 推出了一个 6 周年活动。
