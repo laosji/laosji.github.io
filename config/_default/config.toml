@@ -48,6 +48,7 @@ wechatQRCode = "img/qrcode.jpg"
 favicon = "/favicon.png"
 telegramLink = "https://t.me/+LD_hF5Oy8jJhYjM9"
 telegramQR = "/images/t_me-laosjigifts.jpg"  # 放在static目录下的Telegram二维码图片
+stripeCheckoutURL = "https://buy.stripe.com/bIYcP68ohdba4s8aEE"
 
 # 短博文配置
 [params.microblog]
@@ -146,7 +147,7 @@ link = "https://www.dukascopy.bank/swiss/open-mca-account/?ref=XFB-RE6&lang=en"
 [[params.categoryCards]]
 name = "Giffgaff"
 favicon = "https://www.giffgaff.com/apple-touch-icon.png"
-link = "http://www.giffgaff.com/orders/affiliate/pmdua778_1721188536165"
+link = "https://www.giffgaff.com/orders/affiliate/pmdua778_1721188536165"
 
 [[params.categoryCards]]
 name = "Vodafone"
@@ -178,15 +179,6 @@ name = "V2Free✈️机场"
 favicon = "https://w1.v2free.cc/images/authlogo.jpg"
 link = "https://w1.v2free.cc/auth/register?code=5Cs1"
 
-[params.sidebar]
-emoji = "🍥"
-subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-
-[params.sidebar.avatar]
-enabled = false
-local = true
-src = "img/avatar.png"
-
 [params.article]
 math = false
 toc = true
@@ -203,21 +195,6 @@ default = "Licensed under <a href=\"https://creativecommons.org/licenses/by-nc-n
 [params.footer]
 since = 2020
 customText = "Content licensed under <a href=\"https://creativecommons.org/licenses/by-nc-nd/4.0/\" target=\"_blank\">CC BY-NC-ND 4.0</a>"
-
-[params.widgets]
-homepage = [
-    { type = "search" },
-    { type = "micro-recent" },  # 添加短博文小部件
-    { type = "coupons", params = { limit = 3 } },
-    { type = "archives", params = { limit = 5 } },
-    { type = "categories", params = { limit = 10 } },
-    { type = "tag-cloud", params = { limit = 10 } }
-]
-
-page = [
-    { type = "coupons", params = { limit = 3 } },
-    { type = "toc" }
-]
 
 [markup.highlight]
 noClasses = false

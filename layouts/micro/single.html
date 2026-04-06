@@ -334,38 +334,36 @@
 }
 
 /* 暗色主题支持 */
-@media (prefers-color-scheme: dark) {
-    .single-tweet-container {
-        background: #15202b;
-        color: #ffffff;
-    }
-    
-    .tweet-header {
-        border-bottom-color: #38444d;
-    }
-    
-    .tweet-text.large,
-    .stat-item strong,
-    .comments-title,
-    .related-posts h3,
-    .related-content {
-        color: #ffffff;
-    }
-    
-    .tweet-time-full,
-    .tweet-stats,
-    .tweet-actions.large {
-        border-bottom-color: #38444d;
-    }
-    
-    .related-item {
-        border-color: #38444d;
-        background: #192734;
-    }
-    
-    .related-item:hover {
-        background: #22303c;
-    }
+[data-scheme="dark"] .single-tweet-container {
+    background: #15202b;
+    color: #ffffff;
+}
+
+[data-scheme="dark"] .tweet-header {
+    border-bottom-color: #38444d;
+}
+
+[data-scheme="dark"] .tweet-text.large,
+[data-scheme="dark"] .stat-item strong,
+[data-scheme="dark"] .comments-title,
+[data-scheme="dark"] .related-posts h3,
+[data-scheme="dark"] .related-content {
+    color: #ffffff;
+}
+
+[data-scheme="dark"] .tweet-time-full,
+[data-scheme="dark"] .tweet-stats,
+[data-scheme="dark"] .tweet-actions.large {
+    border-bottom-color: #38444d;
+}
+
+[data-scheme="dark"] .related-item {
+    border-color: #38444d;
+    background: #192734;
+}
+
+[data-scheme="dark"] .related-item:hover {
+    background: #22303c;
 }
 </style>
 

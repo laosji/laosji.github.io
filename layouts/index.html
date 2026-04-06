@@ -19,13 +19,13 @@
                     {{ if not (hasPrefix $imgSrc "http") }}
                         {{ $imgSrc = (path.Join .RelPermalink .Params.image) }}
                     {{ end }}
-                    <img src="{{ $imgSrc }}" alt="{{ .Title }}">
+                    <img src="{{ $imgSrc }}" alt="{{ .Title }}" width="800" height="450" loading="eager" fetchpriority="high">
                     {{ else }}
                     <!-- 从内容中提取第一张图片，如果没有则显示色块 -->
                     {{ $firstImage := findRE "<img src=\"([^\"]+)\"" .Content 1 }}
                     {{ if $firstImage }}
                         {{ $imageSrc := replaceRE "<img src=\"([^\"]+)\".*" "$1" (index $firstImage 0) }}
-                        <img src="{{ $imageSrc }}" alt="{{ .Title }}">
+                        <img src="{{ $imageSrc }}" alt="{{ .Title }}" width="800" height="450" loading="eager" fetchpriority="high">
                     {{ else }}
                         <!-- 渐变色背景 + 标题首字 -->
                         {{ $hash := md5 .Title }}
@@ -103,28 +103,6 @@
             });
         });
     </script>
-    <style>
-        .gradient-placeholder {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
-        .gradient-placeholder .first-char {
-            font-size: 4rem;
-            font-weight: 700;
-            color: rgba(255, 255, 255, 0.9);
-            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-            text-transform: uppercase;
-        }
-        @media (max-width: 768px) {
-            .gradient-placeholder .first-char {
-                font-size: 3rem;
-            }
-        }
-    </style>
 {{ end }}
 
 {{ define "right-sidebar" }}

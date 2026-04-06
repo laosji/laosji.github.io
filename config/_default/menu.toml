@@ -42,7 +42,7 @@ icon = "brand-twitter"
 
 [[social]]
 identifier = "wechat"
-name = "wecaht"
+name = "WeChat"
 url = "https://mp.weixin.qq.com/s/BLnizy3_WDwrgBElva8A3Q"
 
 [social.params]

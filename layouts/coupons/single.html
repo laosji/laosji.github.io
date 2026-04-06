@@ -170,12 +170,27 @@
     </dialog>
 </article>
 
+<div class="toast-notification" id="copyToast" aria-live="polite" role="status"></div>
 <script>
+function showToast(message) {
+    var toast = document.getElementById("copyToast");
+    toast.textContent = message;
+    toast.classList.add("show");
+    setTimeout(function() { toast.classList.remove("show"); }, 2000);
+}
+
 function copyCode() {
     var copyText = document.getElementById("couponCode");
-    copyText.select();
-    document.execCommand("copy");
-    alert("优惠码已复制: " + copyText.value);
+    var text = copyText.value;
+    if (navigator.clipboard) {
+        navigator.clipboard.writeText(text).then(function() {
+            showToast("优惠码已复制: " + text);
+        });
+    } else {
+        copyText.select();
+        document.execCommand("copy");
+        showToast("优惠码已复制: " + text);
+    }
 }
 
 function openImageModal() {
@@ -186,6 +201,27 @@ function closeImageModal() {
     document.getElementById("imageModal").close();
 }
 </script>
+<style>
+.toast-notification {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background: var(--card-text-color-main, #333);
+    color: var(--card-background, #fff);
+    padding: 12px 24px;
+    border-radius: var(--radius-md, 8px);
+    font-size: 0.9rem;
+    z-index: 9999;
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    pointer-events: none;
+}
+.toast-notification.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+</style>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
