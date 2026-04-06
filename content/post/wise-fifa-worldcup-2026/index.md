@@ -15,8 +15,11 @@ license:
 hidden: false
 comments: true
 draft: false
+image: "https://raw.githubusercontent.com/laosji/img/main/img/wise-fifa-worldcup-2026/cover.jpg"
 wechatlink: "https://mp.weixin.qq.com/s/mDtAAgr1318NwbHvBIMxbQ"
 ---
+
+![Wise FIFA World Cup 2026 限量卡](https://raw.githubusercontent.com/laosji/img/main/img/wise-fifa-worldcup-2026/cards.jpg)
 
 2026 **世界杯将是历史上规模最大的一届赛事**。由 🇺🇸 United States、🇨🇦 Canada、🇲🇽 Mexico 共同主办，在 **16 个城市**举行，48 支球队参赛。
 
