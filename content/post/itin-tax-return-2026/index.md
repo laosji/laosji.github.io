@@ -17,6 +17,7 @@ hidden: false
 comments: true
 draft: false
 featured: false
+wechatlink: "https://mp.weixin.qq.com/s/lSdmc7BoUYafp_Dx32a4Sg"
 ---
 
 4月是美国报税的截止月份。上个月我陆续收到了各个券商和银行寄来的税表，最后在 ChatGPT 的指导下，把税表提交给了 IRS。对我来说，这次报税主要有两个目的：一是让 ITIN 保持激活，二是把之前被多扣的税退回来。
