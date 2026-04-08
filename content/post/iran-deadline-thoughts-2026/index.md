@@ -1,6 +1,7 @@
 ---
 title: "明天醒来某个地方不会变“地狱”吧"
 description: 这是我在2026年4月7日晚、特朗普给伊朗谈判期限逼近前的一点思考。面对外敌压境，一个国家究竟该抵抗到底，还是选择暂时退让？
+slug: iran-two-week-ceasefire-choice
 date: 2026-04-08T00:00:16Z
 categories:
     - 碎片
