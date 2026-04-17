@@ -2,7 +2,7 @@
 title: "MetaMask Card 在 US 推出了，但中国护照更适合走英区申请"
 description: "实测 MetaMask Card 申请流程：美区暂不支持中国护照，改走英国区后可成功拿到免费虚拟卡，并绑定 Apple Pay。"
 slug: "metamask-card-uk-china-passport"
-date: 2026-04-17T09:30:00Z
+date: 2026-04-17T01:00:00Z
 categories:
   - 数字货币
 tags:
