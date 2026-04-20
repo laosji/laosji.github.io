@@ -19,7 +19,7 @@ license:
 hidden: false
 comments: true
 draft: false
-wechatlink: "https://mp.weixin.qq.com/s/u6dn6BcEjoF1Ie1m8OxAnw"
+wechatlink: "https://mp.weixin.qq.com/s/GcUUjrkLJ3I-98d35y0YzA"
 ---
 
 美国和伊朗第二轮谈判在即，国际地缘政治暂时趋于稳定，市场情绪也比前段时间缓和了不少。很多人又开始问我，是不是时候重新入市了。
