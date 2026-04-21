@@ -2,7 +2,7 @@
 title: "K-SPARK登陆澳门，抢免费门票"
 description: "K-SPARK 5月2日19点登陆澳门，门票难抢，但4月新注册澳门蚂蚁银行并完成50笔证券交易，有机会拿到一张799档免费门票。"
 slug: "kspark-macao-antbank-ticket"
-date: 2026-04-21T08:00:00Z
+date: 2026-04-21T07:50:00Z
 image: "https://raw.githubusercontent.com/laosji/img/main/img/332.jpeg"
 categories:
     - 澳门银行
