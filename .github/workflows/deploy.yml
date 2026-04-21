@@ -36,12 +36,7 @@ jobs:
                   echo "Validating changed posts:"
                   echo "$changed_posts"
 
-                  for post in $changed_posts; do
-                    if ! grep -q '^slug:' "$post"; then
-                      echo "::error file=$post::Missing explicit slug in frontmatter. Add an ASCII slug before deploy."
-                      exit 1
-                    fi
-                  done
+                  python3 scripts/validate_changed_posts.py $changed_posts
 
             - name: Cache Hugo resources
               uses: actions/cache@v5

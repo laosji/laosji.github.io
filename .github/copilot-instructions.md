@@ -56,6 +56,8 @@ Notes & gotchas for agents
 - Directory name quirk: `archetypes ` (with trailing space). Many code search tools will miss it if you search for `archetypes` without the space. Use repo listing or exact path when reading archetypes.
 - The repo includes pre-built output (HTML files). Do not change `index.html` at root or files under `p/` unless you intend to change built output; instead change `content/`, `layouts/`, or `config/` and run `hugo --minify`.
 - When adding a new post, create `content/post/<slug>.md` (or a folder with `index.md`)—use the archetype front-matter as a template.
+- For immediate publishing, `date:` must not be in the future relative to UTC. Hugo will build successfully but skip the page, which looks like a deploy/cache issue when the real cause is the future publish date. CI now checks changed posts for this.
+- In Codex sandboxed runs, Hugo may fail with `failed to acquire a build lock` when it cannot create `.hugo_build.lock`. That is an environment permission issue, not a content issue. Re-run Hugo outside the sandbox or with elevated permissions before debugging the post itself.
 
 Example — add a new post and preview locally
 1. Create `content/post/2025-xx-new-post.md` with front-matter following `archetypes /default.md`.
