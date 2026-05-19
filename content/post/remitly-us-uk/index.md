@@ -16,6 +16,9 @@ comments: true
 draft: false
 wechatlink: "https://mp.weixin.qq.com/s/3g4vpgE_XFu0zkQF1vAIRA"
 featured: false
+aliases:
+  - /p/remitly/
+  - /p/remitly从美国汇款到中国/
 ---
 
 从美国汇款到中国也可以使用 Remitly 啦，首笔免手续费，可以直接转账到微信、支付宝或者银行卡，而且还有 30 美金的立减优惠。今天来跟大家分享一下美区的 Remitly 优惠，之前是奖励 15 美金现在已经升级到 30 美金啦。有美国银行账户的朋友，可以来薅一下这 30 美金，无论是美国的 Revolut、SoFi、华美银行账户等都可以，PayPal 试了一下不支持。

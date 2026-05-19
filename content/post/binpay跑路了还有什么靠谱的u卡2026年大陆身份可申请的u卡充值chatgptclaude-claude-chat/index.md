@@ -3,6 +3,8 @@ title: "Binpay跑路了:还有什么靠谱的U卡？2026年大陆身份可申请
 description: "【交易所&钱包】"
 date: 2026-03-04T12:52:06Z
 image: image.jpg
+aliases:
+  - /p/chatgpt/
 categories:
   - 视频
 

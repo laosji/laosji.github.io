@@ -13,6 +13,8 @@ license:
 hidden: false
 comments: true
 draft: false
+aliases:
+    - /p/welab-bank/
 ---
 
 

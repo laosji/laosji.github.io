@@ -41,4 +41,4 @@ tags:
 
 ## 海妖kraken
 
-[注册链接](kraken.pxf.io/o4aXPm)
+[注册链接](https://kraken.pxf.io/o4aXPm)
