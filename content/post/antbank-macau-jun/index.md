@@ -22,6 +22,8 @@ draft: false
 
 🎉📢 6月澳门蚂蚁银行开户，最高享 **800 港币 + 80 澳门币** 好礼！
 
+![6月澳门蚂蚁银行五重好礼可叠加](https://raw.githubusercontent.com/laosji/img/main/img/antbank-macau-jun/01.png)
+
 澳门蚂蚁银行是阿里巴巴集团旗下的澳门分公司。6月份去澳门注册蚂蚁银行，同时开通证券账户，线上即可办理，门槛低、福利多。
 
 📅 **活动时间：6月1日 — 6月30日**
@@ -29,6 +31,8 @@ draft: false
 💡 线上 0️⃣ 门槛开户、0️⃣ 年费、0️⃣ 管理费、0️⃣ 跨境转账（仅需身份证 + 通行证）
 
 ## 🎁 五重福利可叠加
+
+![五重福利可叠加一览](https://raw.githubusercontent.com/laosji/img/main/img/antbank-macau-jun/02.png)
 
 ### ① 零门槛｜开户即得财富抵扣卡 × 1
 
@@ -67,3 +71,5 @@ draft: false
 
 - 专属邀请码：**LPA8T25Q**
 - 👉 [立即注册](https://render.alipay.com/p/c/180020570000149153/index.html?invite-code=LPA8T25Q)
+
+![开户要求与注册方式](https://raw.githubusercontent.com/laosji/img/main/img/antbank-macau-jun/03.png)
