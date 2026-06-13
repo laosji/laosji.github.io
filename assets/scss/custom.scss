@@ -2431,3 +2431,35 @@ html {
         }
     }
 }
+
+/* ===== Sidebar 会员订阅 CTA ===== */
+.left-sidebar .subscribe-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    box-sizing: border-box;
+    width: 100%;
+    margin: var(--space-md) 0 var(--space-sm);
+    padding: 11px var(--space-md);
+    background: var(--color-accent);
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.2;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast), filter var(--transition-fast);
+
+    &:hover {
+        color: #fff;
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-md);
+        filter: brightness(1.05);
+    }
+
+    svg {
+        width: 1.15em;
+        height: 1.15em;
+        flex-shrink: 0;
+    }
+}
