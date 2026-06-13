@@ -8,6 +8,14 @@
 #newtab = true
 
 [[main]]
+identifier = "membership"
+name = "会员订阅"
+url = "https://letters.laosji.net/"
+[main.params]
+icon = "gift"
+newtab = true
+
+[[main]]
 identifier = "nav"
 name = "导航"
 url = "https://1.laosji.net"
