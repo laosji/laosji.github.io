@@ -3,6 +3,7 @@ title: "嘉信理财注册卡住了？手把手截图版教程（老朋友专享
 description: "券商清退后，内地还能在线注册的主流美国券商基本只剩嘉信理财。这一期把整个注册流程做成手把手、带截图的 PDF 教程，照着点就行。订阅老朋友会员即可获取完整教程。"
 slug: "schwab-registration-guide-2026"
 date: 2026-06-13T00:00:00Z
+image: cover.svg
 categories:
     - 老朋友
     - 券商
