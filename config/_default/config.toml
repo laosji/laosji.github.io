@@ -48,7 +48,7 @@ wechatQRCode = "img/qrcode.jpg"
 favicon = "/favicon.png"
 telegramLink = "https://t.me/+LD_hF5Oy8jJhYjM9"
 telegramQR = "/images/t_me-laosjigifts.jpg"  # 放在static目录下的Telegram二维码图片
-stripeCheckoutURL = "https://buy.stripe.com/bIYcP68ohdba4s8aEE"
+# stripeCheckoutURL 已移除：公开打赏链接被盗卡测试刷，改用微信/支付宝收款码（见 donation.html）
 
 # 短博文配置
 [params.microblog]
