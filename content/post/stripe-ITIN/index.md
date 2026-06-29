@@ -34,9 +34,7 @@ draft: false
 ![laosji服务收款-stripe](image-1.png)
 
 给网站加上了打赏和打开微信链接阅读功能，不要惊叹，这些全部是由AI帮我完成的，所以，我说我已经离不开AI了，别拦我，我要买AI科技股。
-下面这个是stripe支付链接，感兴趣的朋友可以打开看看，有钱的朋友可以体验一下，当然也不用太有钱，有0.99美元就能体验了。
-
-[体验一下stripe]<https://buy.stripe.com/bIYcP68ohdba4s8aEE>
+原本这里挂着一个 stripe 打赏链接，后来因为被盗卡刷小额（card testing）已经下线，打赏改用文末的微信 / 支付宝收款码。
 
 ## 注册stripe（US）
 
