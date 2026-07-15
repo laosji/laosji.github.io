@@ -3,6 +3,7 @@ title: "BIT 美股开户新人福利：最高 $400 礼券 + 抽 NVDA 整股，�
 description: "BIT 新用户完成美股开户即解锁永久 0 佣金、$100 交易券、LV1 实时行情、USDT 50% APY 生息；财报季入金还有阶梯奖励和 NVDA 股票盲盒，从老虎/富途/长桥转仓最高再送 $300。邀请码 LAOSJI。"
 slug: "bit-us-stock-bonus"
 date: 2026-07-15T00:00:00Z
+image: cover.png
 categories:
     - 攻略
 tags:
