@@ -3,6 +3,7 @@ title: "7月澳门蚂蚁银行开户福利：六重好礼可叠加，最高享90
 description: "7月澳门蚂蚁银行新客活动，线上0门槛0年费开户，六重福利可叠加，最高享900港币+80澳门币好礼；7月限时加赠一张 HKD 100 抵扣卡，入金100万还可解锁 iPhone 17 Pro。"
 slug: "antbank-macau-jul"
 date: 2026-07-15T00:00:00Z
+image: cover.png
 categories:
     - 攻略
 tags:
