@@ -17,6 +17,7 @@ license:
 hidden: false
 comments: true
 draft: false
+wechatlink: "https://mp.weixin.qq.com/s/AovnHsvdzv9dPBMzuq8sAQ"
 ---
 
 ## 为什么现在值得开澳门蚂蚁银行
