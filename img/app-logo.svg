@@ -1,0 +1,12 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#11998e"/>
+      <stop offset="100%" style="stop-color:#38ef7d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="230" fill="url(#bg)"/>
+  <text x="380" y="620" font-family="Arial Black, Arial, sans-serif" font-size="580" font-weight="900" fill="white" text-anchor="middle" dominant-baseline="alphabetic">F</text>
+  <text x="680" y="620" font-family="Arial Black, Arial, sans-serif" font-size="430" font-weight="900" fill="white" text-anchor="middle" dominant-baseline="alphabetic">a</text>
+  <text x="512" y="825" font-family="Noto Serif CJK SC, Noto Serif SC, serif" font-size="130" font-weight="500" fill="rgba(255,255,255,0.92)" text-anchor="middle">发点小财</text>
+</svg>

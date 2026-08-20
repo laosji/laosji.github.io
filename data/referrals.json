@@ -1,0 +1,999 @@
+{
+  "lastUpdate": "2026-03-10",
+  "categories": [
+    {
+      "id": "brokerage",
+      "name": "券商",
+      "items": [
+        {
+          "platform": "Fidelity 富达基金",
+          "platformEn": "Fidelity",
+          "bonus": "免费取现",
+          "bonusEn": "Free ATM",
+          "activityDescription": "现金管理账户余额≥$250 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://fidelity.app.link/e/eozGEMuJLXb",
+          "updatedAt": "2026-03-10",
+          "hot": false,
+          "regions": [],
+          "titleZh": "全球免费取现，零手续费消费",
+          "titleEn": "Free Global ATM, Zero Fees"
+        },
+        {
+          "platform": "老虎证券",
+          "platformEn": "Tiger Brokers",
+          "bonus": "$200",
+          "bonusEn": "Up to $200",
+          "activityDescription": "首次开户 | 入金≥$2000 | 地区: US, HK | 长期有效",
+          "inviteCode": "laosji",
+          "referralLink": "https://tigr.link/7gIFaD",
+          "updatedAt": "2026-03-10",
+          "hot": false,
+          "regions": [
+            "US",
+            "HK"
+          ],
+          "titleZh": "开户送5股+200港币",
+          "titleEn": "Open account get 5 stocks + HK$200"
+        },
+        {
+          "platform": "盈透证券",
+          "platformEn": "Interactive Brokers",
+          "bonus": "$1000",
+          "bonusEn": "Up to $1000",
+          "activityDescription": "被推荐人入金交易 | 地区: US, HK, EU | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://www.interactivebrokers.com/referral/chao135",
+          "updatedAt": "2026-03-10",
+          "hot": true,
+          "regions": [
+            "US",
+            "HK",
+            "EU"
+          ],
+          "titleZh": "推荐奖励计划",
+          "titleEn": "Referral reward program"
+        },
+        {
+          "platform": "FSMOne",
+          "platformEn": "FSMOne",
+          "bonus": "注册即享多重优惠",
+          "bonusEn": "Multiple benefits upon registration",
+          "activityDescription": "使用邀请码 LAOSJI（必须大写） | 首3个月国债免认购费 | 地区: HK | 长期有效",
+          "inviteCode": "LAOSJI",
+          "referralLink": "https://www.fsmone.com.hk/en/join-us?promo=LAOSJI",
+          "updatedAt": "2026-03-10",
+          "hot": true,
+          "regions": [
+            "HK"
+          ],
+          "titleZh": "港股真正0手续费的港美股平台",
+          "titleEn": "Hong Kong Stocks Trading with Zero Commission"
+        },
+        {
+          "platform": "盈立证券（香港）",
+          "platformEn": "盈立证券（香港）",
+          "bonus": "460HKD",
+          "bonusEn": "460HKD",
+          "activityDescription": "需要身份证 | 需要海外银行账户（用于入金和账户证明） | 地区: 香港, 中国大陆 | 长期有效",
+          "inviteCode": "U02457",
+          "referralLink": "https://m.usmart66.com/webapp/open-account/apply.html?ICode=U02457#/register",
+          "updatedAt": "2026-03-10",
+          "hot": false,
+          "regions": [
+            "香港",
+            "中国大陆"
+          ],
+          "titleZh": "盈立证券开户入金奖励",
+          "titleEn": "盈立证券开户入金奖励"
+        },
+        {
+          "platform": "胜利证券",
+          "platformEn": "胜利证券",
+          "bonus": "2股",
+          "bonusEn": "2股",
+          "activityDescription": "需要身份证 | 大陆开户无需地址证明 | 地区: 香港 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://accountopen.victorysec.com.hk/login?ae=8E24C1E3BB1619E2",
+          "updatedAt": "2026-03-10",
+          "hot": false,
+          "regions": [
+            "香港"
+          ],
+          "titleZh": "胜利证券开户优惠",
+          "titleEn": "胜利证券开户优惠"
+        },
+        {
+          "platform": "致富证券",
+          "platformEn": "致富证券",
+          "bonus": "1000HKD",
+          "bonusEn": "1000HKD",
+          "activityDescription": "需要身份证 | 大陆开户无需地址证明 | 地区: 香港 | 长期有效",
+          "inviteCode": "DC6789",
+          "referralLink": "https://ca.chiefgroup.com.hk/hk/open/start?PromoCode=DC6789",
+          "updatedAt": "2026-03-10",
+          "hot": false,
+          "regions": [
+            "香港"
+          ],
+          "titleZh": "致富证券开户优惠",
+          "titleEn": "致富证券开户优惠"
+        },
+        {
+          "platform": "卓锐证券",
+          "platformEn": "卓锐证券",
+          "bonus": "1,200HKD",
+          "bonusEn": "1,200HKD",
+          "activityDescription": "需要海外地址证明或券商存量证明 | 股票现金券和基金加息券二选一 | 地区: 香港 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://openindie.zrsec.com/zhuorui_web_h5/?channelId=100283",
+          "updatedAt": "2026-03-10",
+          "hot": false,
+          "regions": [
+            "香港"
+          ],
+          "titleZh": "卓锐证券迎新奖赏高达1,200HKD",
+          "titleEn": "卓锐证券迎新奖赏高达1,200HKD"
+        },
+        {
+          "platform": "艾德证券",
+          "platformEn": "Eddid Securities",
+          "bonus": "1600HKD",
+          "bonusEn": "Up to 1600HKD",
+          "activityDescription": "香港或非中国大陆身份 | 新客户或2025年12月1日前已开户老客户 | 地区: HK | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://aoshk.eddidapp.com/?isOverseas=true&rf=UUQwMDIwOkdMQUE=&s=accOpen",
+          "updatedAt": "2026-03-10",
+          "hot": true,
+          "regions": [
+            "HK"
+          ],
+          "titleZh": "新春开户送1600HKD现金券+行情卡",
+          "titleEn": "CNY Promo: Up to 1600HKD Cash Vouchers + Quote Cards"
+        },
+        {
+          "platform": "立桥证券",
+          "platformEn": "立桥证券",
+          "bonus": "港股0佣至2027年底，美股期权最高50%回赠，开户送行情+股票奖励",
+          "bonusEn": "HK stocks 0 commission until end of 2027, US options up to 50% rebate, free market data + stock rewards",
+          "activityDescription": "📱新客开户五大福利 | ①港股现金账户限时0佣（免佣有效期：2026.1.1至2027.12.31） | 地区: HK, CN | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://sec.zbjjt.com:6003/webstatic/sign/index.html#/register?channelId=fj9r5MrAHPYN3ScwABsggQ%3D%3D&customerSourceId=FkAl3reBuNP2RCVkhIb40Q%3D%3D&aeCode=HHwfH8dTlcImS%2BveqlB41g%3D%3D&lang=zh_HK",
+          "updatedAt": "2026-03-10",
+          "hot": true,
+          "regions": [
+            "HK",
+            "CN"
+          ],
+          "titleZh": "2026新年开市红港股0佣0平台费，美股期权最高50%手续费回赠",
+          "titleEn": "2026 New Year Promo: HK Stock Zero Commission, US Options Up to 50% Fee Rebate"
+        },
+        {
+          "platform": "富途牛牛",
+          "platformEn": "Futu",
+          "bonus": "$1800HKD",
+          "bonusEn": "$1800",
+          "activityDescription": "入金之前兑换 | 路径：富途APP-我的-活动中心-兑换中心 | 长期有效",
+          "inviteCode": "AZ48SM",
+          "referralLink": "https://futunn.onelink.me/fzPs/ozxxzbk0",
+          "updatedAt": "2026-03-10",
+          "hot": false,
+          "regions": [],
+          "titleZh": "$1800hkd现金券",
+          "titleEn": "$1800 HKD cash voucher"
+        },
+        {
+          "platform": "嘉信理财（Charles Schwab）",
+          "platformEn": "嘉信理财",
+          "bonus": "开户即享零佣金交易",
+          "bonusEn": "开户即享零佣金交易",
+          "activityDescription": "年满18岁 | 提供有效身份证明（护照或身份证） | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://www.schwab.com/",
+          "updatedAt": "2026-03-10",
+          "hot": true,
+          "regions": [],
+          "titleZh": "嘉信理财 - 美国知名券商，全球投资首选",
+          "titleEn": "嘉信理财 - 美国知名券商，全球投资首选"
+        },
+        {
+          "platform": "华通证券",
+          "platformEn": "华通证券",
+          "bonus": "40%手续费优惠",
+          "bonusEn": "40%手续费优惠",
+          "activityDescription": "无需海外银行账户 | 支持数字货币出入金 | 地区: 全球 | 长期有效",
+          "inviteCode": "GT8EW",
+          "referralLink": "https://p.whalesb.com/xzCaHFJ?lan=zh",
+          "updatedAt": "2026-03-10",
+          "hot": true,
+          "regions": [
+            "全球"
+          ],
+          "titleZh": "华通证券开户优惠 - U买美股",
+          "titleEn": "华通证券开户优惠 - U买美股"
+        },
+        {
+          "platform": "Mystonks (麦通)",
+          "platformEn": "Mystonks (麦通)",
+          "bonus": "$15",
+          "bonusEn": "$15",
+          "activityDescription": "无需银行账户 | 使用USDT交易 | 地区: 全球 | 长期有效",
+          "inviteCode": "GPak60",
+          "referralLink": "https://mystonks.org/?code=GPak60",
+          "updatedAt": "2026-03-10",
+          "hot": true,
+          "regions": [
+            "全球"
+          ],
+          "titleZh": "Mystonks RWA平台 - U买美股",
+          "titleEn": "Mystonks RWA平台 - U买美股"
+        },
+        {
+          "platform": "Freetrade",
+          "platformEn": "Freetrade",
+          "bonus": "£10-100",
+          "bonusEn": "£10-100",
+          "activityDescription": "通过邀请链接注册 | 入金£50 | 地区: UK | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://t.co/EzlrCxdW3z",
+          "updatedAt": "2026-03-10",
+          "hot": false,
+          "regions": [
+            "UK"
+          ],
+          "titleZh": "新用户股票奖励",
+          "titleEn": "新用户股票奖励"
+        },
+        {
+          "platform": "NinjaTrader",
+          "platformEn": "NinjaTrader",
+          "bonus": "$50",
+          "bonusEn": "$50",
+          "activityDescription": "开设NinjaTrader Brokerage账户 | 入金至少$400 | 地区: US | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://ninjatraderdomesticvendor.sjv.io/aOdYvQ",
+          "updatedAt": "2026-03-10",
+          "hot": false,
+          "regions": [
+            "US"
+          ],
+          "titleZh": "开户入金送$50 + 免费交易平台",
+          "titleEn": "Open Account & Get $50 + Free Trading Platform"
+        }
+      ]
+    },
+    {
+      "id": "brokerage_sg",
+      "name": "新加坡券商",
+      "items": [
+        {
+          "platform": "iFAST环球市场",
+          "platformEn": "iFAST Global Markets",
+          "bonus": "通过推广链接开立iFAST新账户",
+          "bonusEn": "Open a new iFAST account via promo link",
+          "activityDescription": "通过指定推广链接提交开户申请 | 完成身份验证并通过审核 | 地区: 全球, 新加坡 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://www.ifastgm.com.sg/igm/main/account-opening?setupId=431362af799b4a3d94ce69d451cc22ec",
+          "updatedAt": "2026-03-10",
+          "hot": false,
+          "regions": [
+            "全球",
+            "新加坡"
+          ],
+          "titleZh": "iFAST Global Markets 新客户开户优惠",
+          "titleEn": "iFAST Global Markets New Account Opening Offer"
+        },
+        {
+          "platform": "uSMART盈立证券（新加坡）",
+          "platformEn": "uSMART Securities Singapore",
+          "bonus": "最高202美元现金+股票+券",
+          "bonusEn": "Up to USD 202 Cash+Stocks+Vouchers",
+          "activityDescription": "注册新账户即可获得 | USD 14新人礼：7张USD 2现金券 | 地区: SG | 长期有效",
+          "inviteCode": "7mk0",
+          "referralLink": "https://m.usmartsg66.com/promo/overseas/bonus-dec.html?ICode=7mk0&langType=1&Id=",
+          "updatedAt": "2026-03-10",
+          "hot": true,
+          "regions": [
+            "SG"
+          ],
+          "titleZh": "开户送最高202美元奖励",
+          "titleEn": "Get Up to USD 202 Rewards"
+        },
+        {
+          "platform": "Moomoo SG",
+          "platformEn": "Moomoo SG",
+          "bonus": "$20",
+          "bonusEn": "$20",
+          "activityDescription": "通过邀请链接注册 | 存入S$100 | 地区: SG | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://j.moomoo.com/017wOA",
+          "updatedAt": "2026-03-10",
+          "hot": false,
+          "regions": [
+            "SG"
+          ],
+          "titleZh": "新用户交易奖励",
+          "titleEn": "新用户交易奖励"
+        }
+      ]
+    },
+    {
+      "id": "bank",
+      "name": "银行",
+      "items": [
+        {
+          "platform": "UR 瑞士银行",
+          "platformEn": "UR Swiss Bank",
+          "bonus": "$5 新用户奖励",
+          "bonusEn": "$5 New User Bonus",
+          "activityDescription": "新用户注册 | 有效期至2026-01-06",
+          "inviteCode": "qn895r",
+          "referralLink": "https://get.ur.app/login?code=qn895r",
+          "updatedAt": "2026-03-10",
+          "hot": false,
+          "regions": [],
+          "titleZh": "瑞士个人IBAN，法币加密自由兑换",
+          "titleEn": "Swiss Personal IBAN, Fiat-Crypto Exchange"
+        },
+        {
+          "platform": "SoFi",
+          "platformEn": "SoFi",
+          "bonus": "$25",
+          "bonusEn": "$25 Cash",
+          "activityDescription": "需要ITIN | 美国手机号 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://www.sofi.com/invite/money?gcp=9a5b3723-5ab3-476c-abb5-4247030c6b64&isAliasGcp=false",
+          "updatedAt": "2026-03-10",
+          "hot": false,
+          "regions": [],
+          "titleZh": "美国银行账户，注册送$25",
+          "titleEn": "US Bank Account, $25 Bonus"
+        },
+        {
+          "platform": "Revolut",
+          "platformEn": "Revolut",
+          "bonus": "$10-$150 现金",
+          "bonusEn": "$10-$150 Cash",
+          "activityDescription": "需要ITIN | 美国手机号 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://www.revolut.com/en-US/referral/?referral-code=chaod%21JUN2-25-AR-US-H1-REFBLOCK-AE",
+          "updatedAt": "2026-03-10",
+          "hot": false,
+          "regions": [],
+          "titleZh": "美区注册，最高$150奖励",
+          "titleEn": "US Registration, Up to $150 Bonus"
+        },
+        {
+          "platform": "ZA Bank",
+          "platformEn": "ZA Bank",
+          "bonus": "HKD 2,026 + 10%-20% 定存利率",
+          "bonusEn": "HKD 2,026 + 10%-20% Deposit Rate",
+          "activityDescription": "奖赏 1: 3% 股票回赠及价值 HKD 2,026 奖赏（ZA Card 3% 回赠、基金券包 HKD 900、股票券包 HKD 1,000、兑换券 HKD 126） | 奖赏 2: 好友完成入金条件，可获 10% 港元定存年利率（+9.9% p.a. 7天加息券） | 长期有效",
+          "inviteCode": "NUGAP7",
+          "referralLink": "https://l.za.group/EFxA9",
+          "updatedAt": "2026-03-10",
+          "hot": false,
+          "regions": [],
+          "titleZh": "众安银行开户奖赏",
+          "titleEn": "众安银行开户奖赏"
+        },
+        {
+          "platform": "iFastGB",
+          "platformEn": "iFastGB",
+          "bonus": "£5",
+          "bonusEn": "£5",
+          "activityDescription": "通过邀请链接注册 | 存入£500 | 地区: UK | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://www.ifastgb.com/tellafriend/chaod1702",
+          "updatedAt": "2026-03-10",
+          "hot": true,
+          "regions": [
+            "UK"
+          ],
+          "titleZh": "存款奖励",
+          "titleEn": "存款奖励"
+        },
+        {
+          "platform": "蚂蚁银行(澳门)",
+          "platformEn": "Ant Bank (Macau)",
+          "bonus": "2股阿里(约340港币) + iPhone 17 Pro",
+          "bonusEn": "2 Alibaba shares (~340 HKD) + iPhone 17 Pro",
+          "activityDescription": "仅需身份证+通行证即可开户 | 首次净入资≥3000HKD：送2股阿里巴巴(09988.HK) | 长期有效",
+          "inviteCode": "LPA8T25Q",
+          "referralLink": "https://render.alipay.com/p/c/180020570000149153/index.html?invite-code=LPA8T25Q",
+          "updatedAt": "2026-03-10",
+          "hot": true,
+          "regions": [],
+          "titleZh": "澳门蚂蚁银行新春福利🧧2股阿里+iPhone17 Pro",
+          "titleEn": "Ant Bank Macau Spring Festival: 2 Alibaba shares + iPhone 17 Pro"
+        },
+        {
+          "platform": "WeLab Bank",
+          "platformEn": "WeLab Bank",
+          "bonus": "335HKD",
+          "bonusEn": "335 HKD",
+          "activityDescription": "年满18岁 | 持有香港身份证或内地身份证 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://www.welab.bank/",
+          "updatedAt": "2026-03-10",
+          "hot": true,
+          "regions": [],
+          "titleZh": "汇立银行",
+          "titleEn": "WeLab Bank"
+        },
+        {
+          "platform": "HSBC",
+          "platformEn": "HSBC",
+          "bonus": "HKD 3,800",
+          "bonusEn": "新客户理财奖赏最高 HKD 3,800",
+          "activityDescription": "年满18岁 | 持有有效身份证件 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://www.hsbc.com.hk/",
+          "updatedAt": "2026-03-10",
+          "hot": true,
+          "regions": [],
+          "titleZh": "HSBC - 汇丰银行香港开户",
+          "titleEn": "HSBC - 汇丰银行香港开户"
+        },
+        {
+          "platform": "中银香港",
+          "platformEn": "中银香港",
+          "bonus": "最高300港币现金 + BoC Pay 50港币券",
+          "bonusEn": "Up to HKD 300 Cash + HKD 50 BoC Pay Coupon",
+          "activityDescription": "全新开立或提升至「智盈理财」账户 | 综合理财总值50万元至100万元以下：奖赏300港币 | 长期有效",
+          "inviteCode": "M26996872070",
+          "referralLink": "https://www.bochk.com/",
+          "updatedAt": "2026-03-10",
+          "hot": true,
+          "regions": [],
+          "titleZh": "开户送最高300港币现金奖赏",
+          "titleEn": "Get Up to HKD 300 Cash Reward"
+        },
+        {
+          "platform": "渣打银行（香港）",
+          "platformEn": "Standard Chartered Hong Kong",
+          "bonus": "最高22,000港币现金或22万里数",
+          "bonusEn": "Up to HKD 22,000 Cash or 220k Miles",
+          "activityDescription": "全新客户开立综合理财服务账户并存入新资金 | 优先理财：高达HK$22,000现金回赠或220,000「亚洲万里通」里数 | 地区: HK | 长期有效",
+          "inviteCode": "A5669256",
+          "referralLink": "https://www.sc.com/hk/zh/referral/?p=bp&referid=A5669256",
+          "updatedAt": "2026-03-10",
+          "hot": true,
+          "regions": [
+            "HK"
+          ],
+          "titleZh": "开户送最高22,000港币现金回赠",
+          "titleEn": "Get Up to HKD 22,000 Cash Rebate"
+        },
+        {
+          "platform": "东亚银行",
+          "platformEn": "东亚银行",
+          "bonus": "新客户开户礼遇",
+          "bonusEn": "新客户开户礼遇",
+          "activityDescription": "年满18岁 | 持有有效身份证件 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://www.hkbea.com/",
+          "updatedAt": "2026-03-10",
+          "hot": false,
+          "regions": [],
+          "titleZh": "东亚银行 - 香港东亚银行开户",
+          "titleEn": "东亚银行 - 香港东亚银行开户"
+        },
+        {
+          "platform": "工银亚洲",
+          "platformEn": "工银亚洲",
+          "bonus": "新客户开户迎新礼遇",
+          "bonusEn": "新客户开户迎新礼遇",
+          "activityDescription": "年满18岁 | 持有有效身份证件（支持内地身份证） | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://www.icbcasia.com/",
+          "updatedAt": "2026-03-10",
+          "hot": false,
+          "regions": [],
+          "titleZh": "工银亚洲 - 中国工商银行（亚洲）",
+          "titleEn": "工银亚洲 - 中国工商银行（亚洲）"
+        },
+        {
+          "platform": "建银亚洲",
+          "platformEn": "建银亚洲",
+          "bonus": "新客户专享开户优惠",
+          "bonusEn": "新客户专享开户优惠",
+          "activityDescription": "年满18岁 | 持有有效身份证件 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://www.asia.ccb.com/",
+          "updatedAt": "2026-03-10",
+          "hot": false,
+          "regions": [],
+          "titleZh": "建银亚洲 - 中国建设银行（亚洲）",
+          "titleEn": "建银亚洲 - 中国建设银行（亚洲）"
+        }
+      ]
+    },
+    {
+      "id": "ucard",
+      "name": "U卡",
+      "items": [
+        {
+          "platform": "MyFin",
+          "platformEn": "MyFin",
+          "bonus": "BGN 10/人",
+          "bonusEn": "BGN 10 each",
+          "activityDescription": "通过邀请链接下载并注册 MyFin | 注册时填写邀请码 CH00WHP4 | 地区: BG | 有效期至2025-12-31",
+          "inviteCode": "CH00WHP4",
+          "referralLink": "https://ref.myfin.bg/referral/invitation-link",
+          "updatedAt": "2026-03-10",
+          "hot": false,
+          "regions": [
+            "BG"
+          ],
+          "titleZh": "好友邀请注册 MyFin，填写邀请码 CH00WHP4 领取奖励",
+          "titleEn": "You received invitation from a friend. Join MyFin and earn. Use this code upon registration: CH00WHP4"
+        },
+        {
+          "platform": "Crydit Card",
+          "platformEn": "Crydit Card",
+          "bonus": "$100 优惠券",
+          "bonusEn": "$100 Coupon",
+          "activityDescription": "申请2张卡 | 长期有效",
+          "inviteCode": "9F6266VY",
+          "referralLink": "https://h5.company.crydit.com/register?invite_code=9F6266VY",
+          "updatedAt": "2026-03-10",
+          "hot": false,
+          "regions": [],
+          "titleZh": "支持大额消费，申请2张卡送$100",
+          "titleEn": "Large Spending Support, $100 for 2 Cards"
+        },
+        {
+          "platform": "OneKey Card",
+          "platformEn": "OneKey Card",
+          "bonus": "1%",
+          "bonusEn": "1%",
+          "activityDescription": "首次充值 | 无最低金额 | 地区: US, EU, SG | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://shop.onekey.so?sca_ref=6048948.tE865rEQRf",
+          "updatedAt": "2026-03-10",
+          "hot": false,
+          "regions": [
+            "US",
+            "EU",
+            "SG"
+          ],
+          "titleZh": "首充返现",
+          "titleEn": "First top-up cashback"
+        },
+        {
+          "platform": "Ready Card",
+          "platformEn": "Ready Card",
+          "bonus": "$15",
+          "bonusEn": "$15",
+          "activityDescription": "通过邀请链接注册Ready账户 | 7天内申请Ready Metal卡 | 地区: 全球 | 长期有效",
+          "inviteCode": "THVS-VMQT-HZVW",
+          "referralLink": "https://join.ready.co/THVS-VMQT-HZVW",
+          "updatedAt": "2026-03-10",
+          "hot": true,
+          "regions": [
+            "全球"
+          ],
+          "titleZh": "Ready Card - 注册奖$15 + 3%返利",
+          "titleEn": "Ready Card - $15 Signup Bonus + 3% Cashback"
+        },
+        {
+          "platform": "Krak Card",
+          "platformEn": "Krak Card",
+          "bonus": "1%返现 + 无年费",
+          "bonusEn": "1% Cashback + No Annual Fee",
+          "activityDescription": "通过邀请链接注册Krak账户 | 完成KYC身份验证 | 地区: UK, EU | 长期有效",
+          "inviteCode": "laosjifuli",
+          "referralLink": "https://krak.app/zh-cn/@laosjifuli",
+          "updatedAt": "2026-03-10",
+          "hot": true,
+          "regions": [
+            "UK",
+            "EU"
+          ],
+          "titleZh": "1%返现加密货币借记卡",
+          "titleEn": "1% Cashback Crypto Debit Card"
+        },
+        {
+          "platform": "Ether.fi",
+          "platformEn": "Ether.fi",
+          "bonus": "邀请好友赚10%返现 + 餐饮15%返现",
+          "bonusEn": "Earn 10% on Referrals + 15% Food Cashback",
+          "activityDescription": "邀请好友并在1月份消费可获得10%返现 | 本人餐饮消费可获得15%返现 | 地区: US, EU | 长期有效",
+          "inviteCode": "6b61161d",
+          "referralLink": "https://www.ether.fi/refer/6b61161d",
+          "updatedAt": "2026-03-10",
+          "hot": true,
+          "regions": [
+            "US",
+            "EU"
+          ],
+          "titleZh": "Spend Eat Earn活动 - 每笔消费获得返现",
+          "titleEn": "Spend Eat Earn - Get Cashback on Every Purchase"
+        },
+        {
+          "platform": "Payy",
+          "platformEn": "Payy",
+          "bonus": "免费虚拟卡",
+          "bonusEn": "8UFBN7",
+          "activityDescription": "通过邀请链接注册 | 完成认证即可开卡 | 地区: US, HK, SG | 长期有效",
+          "inviteCode": "8UFBN7",
+          "referralLink": "https://payy.link/invite/8UFBN7",
+          "updatedAt": "2026-03-10",
+          "hot": false,
+          "regions": [
+            "US",
+            "HK",
+            "SG"
+          ],
+          "titleZh": "免费美元U卡",
+          "titleEn": "免费美元U卡"
+        },
+        {
+          "platform": "Bitget Wallet",
+          "platformEn": "Bitget Wallet",
+          "bonus": "0费用",
+          "bonusEn": "0费用",
+          "activityDescription": "通过邀请链接注册 | 完成认证即可申请卡片 | 地区: US, HK, SG, EU | 长期有效",
+          "inviteCode": "jApNeR",
+          "referralLink": "https://newshare.bwb.global/en/referralLanding?inviteCode=jApNeR&type=card&channel=Copylink&utm_source=newInviteRebate",
+          "updatedAt": "2026-03-10",
+          "hot": false,
+          "regions": [
+            "US",
+            "HK",
+            "SG",
+            "EU"
+          ],
+          "titleZh": "终身零费用U卡",
+          "titleEn": "终身零费用U卡"
+        }
+      ]
+    },
+    {
+      "id": "exchange",
+      "name": "交易所",
+      "items": [
+        {
+          "platform": "Kraken",
+          "platformEn": "Kraken",
+          "bonus": "$75",
+          "bonusEn": "$75",
+          "activityDescription": "通过邀请链接注册并验证账户 | 存入至少US$100 | 地区: US, HK, SG, CN | 长期有效",
+          "inviteCode": "5b55g8j3",
+          "referralLink": "https://invite.kraken.com/JDNW/ksns3h7o",
+          "updatedAt": "2026-03-10",
+          "hot": true,
+          "regions": [
+            "US",
+            "HK",
+            "SG",
+            "CN"
+          ],
+          "titleZh": "注册奖励 - 最高US$75",
+          "titleEn": "Sign-up Bonus - Up to US$75"
+        },
+        {
+          "platform": "OKX",
+          "platformEn": "OKX",
+          "bonus": "100 USDT",
+          "bonusEn": "100 USDT",
+          "activityDescription": "通过推荐链接注册OKX账户 | 完成身份验证(KYC) | 长期有效",
+          "inviteCode": "61967724",
+          "referralLink": "https://www.mkwebmpengrus.com/join/61967724",
+          "updatedAt": "2026-03-10",
+          "hot": true,
+          "regions": [],
+          "titleZh": "注册送最高100 USDT奖励",
+          "titleEn": "Sign Up Bonus - Up to 100 USDT"
+        },
+        {
+          "platform": "Bitget",
+          "platformEn": "Bitget",
+          "bonus": "200,000 U",
+          "bonusEn": "200,000 USDT",
+          "activityDescription": "活动时间：2026年01月05日 - 2026年01月11日 | 注册即领：完成注册且KYC，直接领5U体验金 | 有效期至2026-01-11",
+          "inviteCode": "kcyf5919",
+          "referralLink": "https://partner.hdmune.cn/bg/kcyf5919",
+          "updatedAt": "2026-03-10",
+          "hot": true,
+          "regions": [],
+          "titleZh": "新人开门红 200,000 U 大奖任你拿",
+          "titleEn": "New User Welcome - Win up to 200,000 USDT"
+        },
+        {
+          "platform": "币安",
+          "platformEn": "Binance",
+          "bonus": "$100",
+          "bonusEn": "Invite friends to buy $50+ crypto, both get up to $100 fee rebate within 48 hours",
+          "activityDescription": "好友需通过邀请码或链接注册 | 好友必须完成身份验证（KYC） | 长期有效",
+          "inviteCode": "CPA_00U6B6DNIR",
+          "referralLink": "https://www.bmwweb.link/activity/referral-entry/CPA?ref=CPA_00U6B6DNIR",
+          "updatedAt": "2026-03-10",
+          "hot": true,
+          "regions": [],
+          "titleZh": "邀请好友 - 各得最高 $100 手续费返还券",
+          "titleEn": "Refer a Friend - Up to $100 Fee Rebate Each"
+        },
+        {
+          "platform": "MetaMask",
+          "platformEn": "MetaMask",
+          "bonus": "注册获得250积分",
+          "bonusEn": "250 points for registration",
+          "activityDescription": "通过推荐链接注册 | 做多或做空永续合约 | 地区: US, GLOBAL | 长期有效",
+          "inviteCode": "HNAT67",
+          "referralLink": "https://link.metamask.io/rewards?referral=HNAT67",
+          "updatedAt": "2026-03-10",
+          "hot": true,
+          "regions": [
+            "US",
+            "GLOBAL"
+          ],
+          "titleZh": "奖励第1季已经到来",
+          "titleEn": "Rewards Season 1 is Here"
+        },
+        {
+          "platform": "Neverless",
+          "platformEn": "Neverless",
+          "bonus": "$298",
+          "bonusEn": "Worth $298",
+          "activityDescription": "新用户注册 | 48小时内首次投资 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://neverless.com/referral?code=laosji",
+          "updatedAt": "2026-03-10",
+          "hot": false,
+          "regions": [],
+          "titleZh": "注册48小时内完成首笔投资，可享2年免费交易",
+          "titleEn": "Invest within 48h, get 2 years free trading"
+        },
+        {
+          "platform": "NEXO",
+          "platformEn": "NEXO",
+          "bonus": "BTC 奖励",
+          "bonusEn": "BTC Bonus",
+          "activityDescription": "新用户注册 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://nexo.com/ref/hohlm5otzh?src=ios-link",
+          "updatedAt": "2026-03-10",
+          "hot": false,
+          "regions": [],
+          "titleZh": "加密货币交易平台，注册送BTC",
+          "titleEn": "Crypto Platform, Free BTC Bonus"
+        },
+        {
+          "platform": "OKX (美国)",
+          "platformEn": "OKX (US)",
+          "bonus": "$200",
+          "bonusEn": "$200",
+          "activityDescription": "中国护照 + ITIN/SSN | 需要一定美国信用记录 | 地区: US | 长期有效",
+          "inviteCode": "33958179",
+          "referralLink": "https://app.okx.com/en-us/join/33958179",
+          "updatedAt": "2026-03-10",
+          "hot": false,
+          "regions": [
+            "US"
+          ],
+          "titleZh": "入金$200+交易$200，双方各得$200",
+          "titleEn": "Deposit $200 + Trade $200, both get $200"
+        },
+        {
+          "platform": "Polymarket",
+          "platformEn": "Polymarket",
+          "bonus": "$10",
+          "bonusEn": "$10 Free Trade",
+          "activityDescription": "需要美国手机号 | 需要美国地址 | 地区: US | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://polymarket.com/",
+          "updatedAt": "2026-03-10",
+          "hot": true,
+          "regions": [
+            "US"
+          ],
+          "titleZh": "美区注册送$10免费交易",
+          "titleEn": "US Registration Get $10 Free Trade"
+        }
+      ]
+    },
+    {
+      "id": "remittance",
+      "name": "汇款",
+      "items": [
+        {
+          "platform": "Wise",
+          "platformEn": "Wise",
+          "bonus": "600USD免費匯款额度",
+          "bonusEn": "$600USD",
+          "activityDescription": "首次使用获得600USD免费转账额度 | 提供香港星展银行账户 | 地区: US, UK, EU, SG | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://wise.com/invite/dic/duanc11",
+          "updatedAt": "2026-03-10",
+          "hot": true,
+          "regions": [
+            "US",
+            "UK",
+            "EU",
+            "SG"
+          ],
+          "titleZh": "首次转账免手续费",
+          "titleEn": "600USD free transfer"
+        },
+        {
+          "platform": "Remitly",
+          "platformEn": "Remitly",
+          "bonus": "$25",
+          "bonusEn": "$25",
+          "activityDescription": "单笔汇款≥$50 | 新用户 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://remit.ly/3gto8u3r",
+          "updatedAt": "2026-03-10",
+          "hot": false,
+          "regions": [],
+          "titleZh": "汇款到英国立减25美元",
+          "titleEn": "Get $25 off when sending to the UK"
+        },
+        {
+          "platform": "西联汇款",
+          "platformEn": "Western Union",
+          "bonus": "首笔免手续费 + Amazon 礼品卡",
+          "bonusEn": "Fee-free first transfer + Amazon eGift",
+          "activityDescription": "新用户首笔汇款 | 汇款金额≥$100 | 地区: Global | 长期有效",
+          "inviteCode": "",
+          "referralLink": "https://www.westernunion.com",
+          "updatedAt": "2026-03-10",
+          "hot": false,
+          "regions": [
+            "Global"
+          ],
+          "titleZh": "首笔汇款免手续费 + Amazon 礼品卡",
+          "titleEn": "First Transfer Fee-Free + Amazon eGift Cards"
+        },
+        {
+          "platform": "Lemfi",
+          "platformEn": "Lemfi",
+          "bonus": "首笔10%返现，最高$/€/£50",
+          "bonusEn": "£50",
+          "activityDescription": "新用户注册 | 使用推荐码 LAOSJI | 地区: US, CA, GB, EU | 长期有效",
+          "inviteCode": "LAOSJI",
+          "referralLink": "https://ssqt.co/mQIfPd5",
+          "updatedAt": "2026-03-10",
+          "hot": false,
+          "regions": [
+            "US",
+            "CA",
+            "GB",
+            "EU"
+          ],
+          "titleZh": "首笔汇款10%返现，最高$/€/£50",
+          "titleEn": "10% Cashback on First Transfer, up to $/€/£50"
+        },
+        {
+          "platform": "Krak",
+          "platformEn": "Krak",
+          "bonus": "$10",
+          "bonusEn": "$10",
+          "activityDescription": "创建并验证账户 | 存入至少 $10 | 地区: US, HK, SG | 长期有效",
+          "inviteCode": "@laosjifuli",
+          "referralLink": "https://krak.app/@laosjifuli",
+          "updatedAt": "2026-03-10",
+          "hot": false,
+          "regions": [
+            "US",
+            "HK",
+            "SG"
+          ],
+          "titleZh": "注册Krak首笔存款大于$10可得$10",
+          "titleEn": "Krak Referral: Both Get $10"
+        },
+        {
+          "platform": "熊猫速汇",
+          "platformEn": "PandaRemit",
+          "bonus": "首笔免手续费，限额HKD 500-30,000",
+          "bonusEn": "First transfer fee-free, limit HKD 500-30,000",
+          "activityDescription": "新用户注册 | 首笔汇款港币回国 | 地区: HK | 长期有效",
+          "inviteCode": "10370739",
+          "referralLink": "https://p.pandaremit.com/h5ditui/launchIndex?invtCode=10370739&area=HKG&type=ditui",
+          "updatedAt": "2026-03-10",
+          "hot": false,
+          "regions": [
+            "HK"
+          ],
+          "titleZh": "港币回国首笔免手续费",
+          "titleEn": "First HKD to China transfer fee-free"
+        }
+      ]
+    },
+    {
+      "id": "sim_card",
+      "name": "SIM卡",
+      "items": [
+        {
+          "platform": "Xesim",
+          "platformEn": "Xesim",
+          "bonus": "9折",
+          "bonusEn": "10% OFF",
+          "activityDescription": "使用优惠码：zfWBpM | 通过推荐链接注册 | 地区: GLOBAL | 长期有效",
+          "inviteCode": "zfWBpM",
+          "referralLink": "https://xesim.cc/?DIST=RkJOFQ%3D%3D",
+          "updatedAt": "2026-03-10",
+          "hot": false,
+          "regions": [
+            "GLOBAL"
+          ],
+          "titleZh": "九折优惠码 - eSIM全球数据套餐",
+          "titleEn": "10% OFF - Global eSIM Data Plans"
+        },
+        {
+          "platform": "giffgaff",
+          "platformEn": "giffgaff",
+          "bonus": "10英镑",
+          "bonusEn": "£10 Credit",
+          "activityDescription": "推荐期限：2026年1月1日至1月31日 | 最多可推荐15位好友 | 长期有效",
+          "inviteCode": "",
+          "referralLink": "http://www.giffgaff.com/orders/affiliate/pmdua778_1721188536165",
+          "updatedAt": "2026-03-10",
+          "hot": true,
+          "regions": [],
+          "titleZh": "推荐好友获得£10现金回报",
+          "titleEn": "Refer a Friend - Earn £10 Payback"
+        }
+      ]
+    },
+    {
+      "id": "tool",
+      "name": "工具",
+      "items": [
+        {
+          "platform": "Extrabux",
+          "platformEn": "Extrabux",
+          "bonus": "$20",
+          "bonusEn": "$20",
+          "activityDescription": "通过推荐链接注册即可获得 $20 现金奖励 | 返利比例从 1.5% 至 13%，部分商家提供超级返利 | 地区: Global, CN, US | 长期有效",
+          "inviteCode": "67458575b6",
+          "referralLink": "https://www.extrabux.cn/r/67458575b6",
+          "updatedAt": "2026-03-10",
+          "hot": false,
+          "regions": [
+            "Global",
+            "CN",
+            "US"
+          ],
+          "titleZh": "注册领取 $20 现金奖励",
+          "titleEn": "Sign up and get $20 cash reward"
+        },
+        {
+          "platform": "Tiptrans",
+          "platformEn": "Tiptrans",
+          "bonus": "$25",
+          "bonusEn": "$25",
+          "activityDescription": "通过此链接注册获得 $25 | 地区: Global | 长期有效",
+          "inviteCode": "131031",
+          "referralLink": "https://www.tiptrans.com/?ref=131031",
+          "updatedAt": "2026-03-10",
+          "hot": false,
+          "regions": [
+            "Global"
+          ],
+          "titleZh": "通过此链接注册获得 $25",
+          "titleEn": "Sign up via this link to get $25"
+        },
+        {
+          "platform": "Traveling Mailbox",
+          "platformEn": "Traveling Mailbox",
+          "bonus": "10-15%",
+          "bonusEn": "10-15%",
+          "activityDescription": "通过推荐链接注册账户 | 订阅任意套餐即可激活 | 地区: US, Global | 长期有效",
+          "inviteCode": "3435",
+          "referralLink": "https://travelingmailbox.com/?ref=3435",
+          "updatedAt": "2026-03-10",
+          "hot": true,
+          "regions": [
+            "US",
+            "Global"
+          ],
+          "titleZh": "注册获得虚拟邮箱服务",
+          "titleEn": "Virtual Mailbox Service"
+        }
+      ]
+    }
+  ]
+}

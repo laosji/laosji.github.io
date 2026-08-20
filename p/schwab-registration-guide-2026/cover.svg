@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
+  <title id="title">嘉信理财注册教程·手把手截图版</title>
+  <desc id="desc">白底封面，左侧标题为嘉信理财注册教程、老朋友专享，以及护照与英文地址证明的准备项，右侧为在线开户六步的步骤卡片。</desc>
+  <defs>
+    <linearGradient id="schwabBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2f80ed"/>
+      <stop offset="100%" stop-color="#0a4bd1"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="20" flood-color="#0a4bd1" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="1536" height="1024" fill="#f7f7f5"/>
+
+  <!-- decorative blobs -->
+  <circle cx="1460" cy="120" r="280" fill="#0a4bd1" opacity="0.06"/>
+  <circle cx="150" cy="980" r="220" fill="#0a4bd1" opacity="0.05"/>
+
+  <g font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif">
+    <!-- eyebrow pill -->
+    <rect x="120" y="208" width="222" height="62" rx="31" fill="#e7f0ff"/>
+    <text x="231" y="250" font-size="32" font-weight="600" fill="#0a4bd1" text-anchor="middle">老朋友专享</text>
+
+    <!-- title -->
+    <text x="116" y="430" font-size="132" font-weight="800" fill="#151515">嘉信理财</text>
+    <text x="116" y="572" font-size="132" font-weight="800" fill="#0a4bd1">注册教程</text>
+    <text x="120" y="652" font-size="44" font-weight="500" fill="#5a6b7b">Charles Schwab · 手把手截图版</text>
+
+    <!-- prep chips -->
+    <g>
+      <rect x="120" y="742" width="186" height="66" rx="33" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <circle cx="156" cy="775" r="9" fill="#19b36b"/>
+      <text x="182" y="787" font-size="32" font-weight="500" fill="#2d3a47">护照</text>
+
+      <rect x="326" y="742" width="320" height="66" rx="33" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <circle cx="362" cy="775" r="9" fill="#19b36b"/>
+      <text x="388" y="787" font-size="32" font-weight="500" fill="#2d3a47">英文地址证明</text>
+    </g>
+
+    <!-- step card -->
+    <rect x="900" y="230" width="520" height="560" rx="28" fill="#ffffff" filter="url(#softShadow)"/>
+
+    <!-- card title bar -->
+    <rect x="936" y="270" width="448" height="64" rx="14" fill="url(#schwabBlue)"/>
+    <text x="962" y="312" font-size="32" font-weight="700" fill="#ffffff">在线开户 · 6 步</text>
+
+    <!-- step rows -->
+    <g>
+      <!-- row 1 -->
+      <circle cx="978" cy="410" r="23" fill="url(#schwabBlue)"/>
+      <text x="978" y="421" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+      <rect x="1024" y="394" width="300" height="16" rx="8" fill="#e6eaf0"/>
+      <rect x="1024" y="418" width="196" height="12" rx="6" fill="#eef1f5"/>
+      <!-- row 2 -->
+      <circle cx="978" cy="495" r="23" fill="url(#schwabBlue)"/>
+      <text x="978" y="506" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+      <rect x="1024" y="479" width="280" height="16" rx="8" fill="#e6eaf0"/>
+      <rect x="1024" y="503" width="220" height="12" rx="6" fill="#eef1f5"/>
+      <!-- row 3 -->
+      <circle cx="978" cy="580" r="23" fill="url(#schwabBlue)"/>
+      <text x="978" y="591" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+      <rect x="1024" y="564" width="312" height="16" rx="8" fill="#e6eaf0"/>
+      <rect x="1024" y="588" width="180" height="12" rx="6" fill="#eef1f5"/>
+      <!-- row 4: done -->
+      <circle cx="978" cy="665" r="23" fill="#19b36b"/>
+      <path d="M967 665 l8 9 l15 -18" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="1024" y="649" width="240" height="16" rx="8" fill="#dff3e8"/>
+      <rect x="1024" y="673" width="150" height="12" rx="6" fill="#eef7f1"/>
+    </g>
+  </g>
+</svg>
