@@ -3,6 +3,7 @@ title: "抹茶「金卡」：返 10%，0 开卡费"
 description: "MEXC 金卡处于邀请测试阶段，专为身处内地的朋友设计：0 开卡费、无手续费、最高 10% 返现，支持 Apple Pay 和支付宝。内地地址即可申请，不用地址证明，但必须有海外手机号。附完整申请教程和返现档位说明。"
 slug: "mexc-gold-card-10-cashback"
 date: 2026-08-20T00:00:00Z
+image: cover.jpg
 categories:
     - 攻略
 tags:
